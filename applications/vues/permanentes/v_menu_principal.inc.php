@@ -55,7 +55,7 @@
 
     <!-- PAGE DE CHARGEMENT -->
     <body onload="load()">
-        ?>
+        
         <div class="loader" id="loader">
             <center style="padding-top: 27%;"><div id="ballsWaveG">
                     <div id="ballsWaveG_1" class="ballsWaveG"></div>
@@ -81,24 +81,24 @@
                 <ul id="gn-menu" class="gn-menu-main">
                     <li class="gn-trigger">
                         <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-                        <nav class="gn-menu-wrapper">
+                        <nav class="gn-menu-wrapper" style="background-color: #e6e3e3;">
                             <div class="gn-scroller">
                                 <ul class="gn-menu">
                                     <li class="gn-search-item" style="width: 100%;">
                                         <input placeholder="Rechercher..." type="search" class="gn-search">
                                         <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a>
                                     </li>
-                                    <li style="width: 100%;">
+                                    
                                     <li style="width: 100%;"><a class="gn-icon gn-icon-help" style="width: 100%;">Rubrique 2</a></li>
 
-                                    </li>
+                                    
                                     <li style="width: 100%;"><a class="gn-icon gn-icon-help" style="width: 100%;">Rubrique 2</a></li>
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=candidature" class="gn-icon gn-icon-archive" style="width: 100%;">Candidature</a></li>
                                 </ul>
 
                                 </br>
-                                <ul style="background:white;">
-                                    <center><h1 style="color:#e74c3c;">Gaxieu Ingenierie</h1><img src="public/images/logo.png"/></center>
+                                <ul style="background:#e6e3e3;">
+                                    <center><img src="public/images/logo.png"/></center>
                                 </ul>
                             </div>
                         </nav>

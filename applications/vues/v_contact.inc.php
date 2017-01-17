@@ -9,7 +9,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
-                  <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Implantation<b></u></span></h2></center>
+                  <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Implantation</b></u></span></h2></center>
                   <center><p>Cliquez sur les icones pour obtenir les coordonnées de l’agence souhaitée</p></center></div></div>
               <center><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1F3ynml9IRaKZFJnfp0veVDvvClQ" width="100%" height="500"></iframe></center>
               </div>
@@ -56,12 +56,14 @@
 <?php
 // <editor-fold defaultstate="collapsed" desc="FORMULAIRE DE CONTACT">
         ?>
+
+
   <section id="contact" class="contact">
 
-        <div class="container">                   
-                <center><h2>Envoyez votre message !</h2>
-                <p class="lead">Besoin de nous contactez ? Besoin d'informations ou autres ? Le formulaire contact est la pour ça !</p></center>           
-            <div class="row contact-wrap"> 
+                       <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
+                  <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Envoyez votre message</b></u></span></h2></center>
+                  <center><p>Besoin de nous contactez ? Besoin d'informations ? Le formulaire contact est la pour ça !</p></center></div>
+      <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
                 <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
                     <div class="col-sm-5 col-sm-offset-1">
@@ -113,7 +115,7 @@
                     </div>
                 </form> 
             </div>
-        </div>
+        
     </section>
 <?php
 // </editor-fold> 

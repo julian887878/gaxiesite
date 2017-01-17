@@ -20,29 +20,29 @@
             <li>
                 <img src="public/images/slider/ville5.jpg" alt="image02"  />
                 <div class="ei-title">
-                    <h2 style="text-align: center;">Friendly</h2>
-                    <h3 style="text-align: center;">Devil</h3>
+                    <h2 style="text-align: center;">Titre</h2>
+                    <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
                 <img src="public/images/slider/ville2.jpg" alt="image03" />
                 <div class="ei-title">
-                    <h2 style="text-align: center;">Tranquilent</h2>
-                    <h3 style="text-align: center;">Compatriot</h3>
+                    <h2 style="text-align: center;">Titre</h2>
+                    <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
                 <img src="public/images/slider/ville4.jpg" alt="image04" />
                 <div class="ei-title">
-                    <h2 style="text-align: center;">Insecure</h2>
-                    <h3 style="text-align: center;">Hussler</h3>
+                    <h2 style="text-align: center;">Titre</h2>
+                    <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
                 <img src="public/images/slider/ville5.jpg" alt="image05"/>
                 <div class="ei-title">
-                    <h2 style="text-align: center;">Loving</h2>
-                    <h3 style="text-align: center;">Rebel</h3>
+                    <h2 style="text-align: center;">Titre</h2>
+                    <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
         </ul><!-- ei-slider-large -->
@@ -91,29 +91,29 @@
                 
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
-		<li><img src="slider2/data1/images/photogroupe.jpg" alt="photogroupe" title="photogroupe" id="wows1_0"/></li>
-		<li><img src="slider2/data1/images/ville2.jpg" alt="ville2" title="ville2" id="wows1_1"/></li>
-		<li><img src="slider2/data1/images/ville4.jpg" alt="ville4" title="ville4" id="wows1_2"/></li>
-		<li><img src="slider2/data1/images/ville5.jpg" alt="ville5" title="ville5" id="wows1_3"/></li>
-		<li><img src="slider2/data1/images/slider1.jpg" alt="slider1" title="slider1" id="wows1_4"/></li>
-		<li><img src="slider2/data1/images/slider2.jpg" alt="slider2" title="slider2" id="wows1_5"/></li>
-		<li><img src="slider2/data1/images/slider3.jpg" alt="slider3" title="slider3" id="wows1_6"/></li>
-		<li><img src="slider2/data1/images/slider4.jpg" alt="slider4" title="slider4" id="wows1_7"/></li>
-		<li><a href="#"><img src="slider2/data1/images/slider5.jpg" alt="slider" title="slider5" id="wows1_8"/></a></li>
-		<li><img src="slider2/data1/images/slider6.jpg" alt="slider6" title="slider6" id="wows1_9"/></li>
+		<li><a href="#"><img src="slider2/data1/images/photogroupe.jpg" alt="photogroupe" title="Aménagement" id="wows1_0"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/ville2.jpg" alt="ville2" title="Ouvrages techniques" id="wows1_1"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/ville4.jpg" alt="ville4" title="Ouvrages de traitement" id="wows1_2"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/ville5.jpg" alt="ville5" title="Réseaux humides et secs" id="wows1_3"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/slider1.jpg" alt="slider1" title="Eolien" id="wows1_4"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/slider2.jpg" alt="slider2" title="Urbanisme opérationnel" id="wows1_5"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/slider3.jpg" alt="slider3" title="Etudes hydrauliques, modélisation, dossiers règlementaires" id="wows1_6"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/slider4.jpg" alt="slider4" title="Infographies, vidéos" id="wows1_7"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/slider5.jpg" alt="slider" title="Assistance à maîtrise d’ouvrage" id="wows1_8"/></a></li>
+		<li><a href="#"><img src="slider2/data1/images/slider6.jpg" alt="slider6" title="???" id="wows1_9"/></a></li>
 	</ul></div>
 	<div class="ws_thumbs">
 <div>
-		<a href="#" title="photogroupe"><img src="slider2/data1/tooltips/photogroupe.jpg" alt="" /></a>
-		<a href="#" title="ville2"><img src="slider2/data1/tooltips/ville2.jpg" alt="" /></a>
-		<a href="#" title="ville4"><img src="slider2/data1/tooltips/ville4.jpg" alt="" /></a>
-		<a href="#" title="ville5"><img src="slider2/data1/tooltips/ville5.jpg" alt="" /></a>
-		<a href="#" title="slider1"><img src="slider2/data1/tooltips/slider1.jpg" alt="" /></a>
-		<a href="#" title="slider2"><img src="slider2/data1/tooltips/slider2.jpg" alt="" /></a>
-		<a href="#" title="slider3"><img src="slider2/data1/tooltips/slider3.jpg" alt="" /></a>
-		<a href="#" title="slider4"><img src="slider2/data1/tooltips/slider4.jpg" alt="" /></a>
-		<a href="#" title="slider5"><img src="slider2/data1/tooltips/slider5.jpg" alt="" /></a>
-		<a href="#" title="slider6"><img src="slider2/data1/tooltips/slider6.jpg" alt="" /></a>
+		<a href="#" title="Aménagement"><img src="slider2/data1/tooltips/photogroupe.jpg" alt="" /></a>
+		<a href="#" title="Ouvrages techniques"><img src="slider2/data1/tooltips/ville2.jpg" alt="" /></a>
+		<a href="#" title="Ouvrages de traitement"><img src="slider2/data1/tooltips/ville4.jpg" alt="" /></a>
+		<a href="#" title="Réseaux humides et secs"><img src="slider2/data1/tooltips/ville5.jpg" alt="" /></a>
+		<a href="#" title="Eolien"><img src="slider2/data1/tooltips/slider1.jpg" alt="" /></a>
+		<a href="#" title="Urbanisme opérationnel"><img src="slider2/data1/tooltips/slider2.jpg" alt="" /></a>
+		<a href="#" title="Etudes hydrauliques, modélisation, dossiers règlementaires"><img src="slider2/data1/tooltips/slider3.jpg" alt="" /></a>
+		<a href="#" title="Infographies, vidéos"><img src="slider2/data1/tooltips/slider4.jpg" alt="" /></a>
+		<a href="#" title="Assistance à maîtrise d’ouvrage"><img src="slider2/data1/tooltips/slider5.jpg" alt="" /></a>
+		<a href="#" title="???"><img src="slider2/data1/tooltips/slider6.jpg" alt="" /></a>
 	</div>
 </div>
 </div>	

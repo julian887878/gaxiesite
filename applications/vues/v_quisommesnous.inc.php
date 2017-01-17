@@ -12,7 +12,7 @@
     <div class="row">
     <div class="col-md-12">
     <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
-    <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Qui sommes-nous ?<b></u></span></h2></center>
+        <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Qui sommes-nous ?</b></u></span></h2></center>
     <center><p>Depuis 1972 le cabinet GAXIEU assiste les collectivités locale dans la réalisation de leurs projets d’infrastructures.</p><p>GAXIEU INGENIERIE a pour mission de mobiliser toutes les compétences nécessaires et mettre en oeuvre tous les moyens adaptés pour faire aboutir les projets d’aménagements participants au développement durable du territoire où il est ancré.</p></center></div></div>
     </div>
     </div>
@@ -98,7 +98,7 @@
     <p><i>L'Assistant au Maitre d’Ouvrage est au service du Maitre d’Ouvrage pour l’aider à satisfaire à ses obligations sous la forme d’assistance à la mise en place des procédures, la réalisation d’études, le pilotage d’études ou l’appui à la conduite de projet.</i></p>
     <p><b>MISSION D'AMO TRANSVERSALE</b></p>
     <p><b>CONDUITE D'OPÉRATION</b></p>
-    <p><ul style="padding-left: 40px;">
+    <ul style="padding-left: 40px;">
     <li>Mission d’assistance générale à caractére administratif, financier et technique</li>
     <li>Pilotage de Schéma directeur (eau potable, eaux usées, pluvial)</li>
     <li>AMO des missions complémentaires aux projets d’infrastructures (topographie, géo­ technique, calcul de structure, SPS, contrôle technique, essais de réception des travaux, essais de garantie, … )</li>
@@ -114,7 +114,7 @@
     <li>Développement durable</li>
     <li>Planification strategique</li>
 
-    </ul></p>
+    </ul>
 
     </div>
     </div>
@@ -235,7 +235,7 @@
     <li>Lotissements</li>
     <li>Zones d’activités</li>
     <li>Front de mer</li>
-    </ul></p>
+    </ul>
 
     </div>
     </div>
@@ -517,7 +517,7 @@
     
     </div>
     </div>
-    
+</section>
           <?php
 // </editor-fold> 
 ?> 

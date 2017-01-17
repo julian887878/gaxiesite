@@ -19,7 +19,7 @@
                                         <li><a href="#">Rubrique 2</a></li>
                                         <li><a href="#">Rubrique 3</a></li>
                                         <li><a href="#">Demande d'emploie</a></li>
-                                        <li><a href="#">Rubrique 4</a></li>
+                                        <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -68,7 +68,7 @@
 
 
 <!-- FLECHE REMONTANTE -->
-<div id="scroll-to-top" class="scroll-to-top" style="z-index: 9999999;">
+<div id="scroll-to-top" class="scroll-to-top" style="z-index: 99999;">
     <span>
         <i class="fa fa-chevron-up"></i>    
     </span>
