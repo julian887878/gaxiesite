@@ -91,29 +91,29 @@
                 
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/photogroupe.jpg" title="Aménagement" id="wows1_0"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/ville2.jpg" title="Ouvrages techniques" id="wows1_1"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/ville4.jpg"  title="Ouvrages de traitement" id="wows1_2"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/ville5.jpg"  title="Réseaux humides et secs" id="wows1_3"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider1.jpg"  title="Eolien" id="wows1_4"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider2.jpg"  title="Urbanisme juridique et opérationnel" id="wows1_5"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider3.jpg"  title="Etudes hydrauliques, modélisation, dossiers règlementaires" id="wows1_6"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider4.jpg"  title="Infographies, vidéos" id="wows1_7"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider5.jpg"  title="Assistance à maîtrise d’ouvrage" id="wows1_8"/></a></li>
-		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider6.jpg" title="Digues et barrages" id="wows1_9"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/photogroupe.jpg" title="Aménagement" id="wows1_0"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/ville2.jpg" title="Ouvrages techniques" id="wows1_1"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/ville4.jpg"  title="Ouvrages de traitement" id="wows1_2"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/ville5.jpg"  title="Réseaux humides et secs" id="wows1_3"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/slider1.jpg"  title="Eolien" id="wows1_4"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/slider2.jpg"  title="Urbanisme juridique et opérationnel" id="wows1_5"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/slider3.jpg"  title="Etudes hydrauliques, modélisation, dossiers règlementaires" id="wows1_6"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/slider4.jpg"  title="Infographies, vidéos" id="wows1_7"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/slider5.jpg"  title="Assistance à maîtrise d’ouvrage" id="wows1_8"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/slider6.jpg" title="Digues et barrages" id="wows1_9"/></a></li>
 	</ul></div>
 	<div class="ws_thumbs">
 <div>
-		<a href="#" title="Aménagement"><img src="slider2/data1/tooltips/photogroupe.jpg" /></a>
-		<a href="#" title="Ouvrages techniques"><img src="slider2/data1/tooltips/ville2.jpg" /></a>
-		<a href="#" title="Ouvrages de traitement"><img src="slider2/data1/tooltips/ville4.jpg"/></a>
-		<a href="#" title="Réseaux humides et secs"><img src="slider2/data1/tooltips/ville5.jpg" /></a>
-		<a href="#" title="Eolien"><img src="slider2/data1/tooltips/slider1.jpg" /></a>
-		<a href="#" title="Urbanisme juridique et opérationnel"><img src="slider2/data1/tooltips/slider2.jpg"  /></a>
-		<a href="#" title="Etudes hydrauliques, modélisation, dossiers règlementaires"><img src="slider2/data1/tooltips/slider3.jpg" /></a>
-		<a href="#" title="Infographies, vidéos"><img src="slider2/data1/tooltips/slider4.jpg" /></a>
-		<a href="#" title="Assistance à maîtrise d’ouvrage"><img src="slider2/data1/tooltips/slider5.jpg" /></a>
-		<a href="#" title="Digues et barrages"><img src="slider2/data1/tooltips/slider6.jpg" /></a>
+		<a href="#" title="Aménagement"><img src="public/images/slider_secondaire/images_thumbsnails/photogroupe.jpg" /></a>
+		<a href="#" title="Ouvrages techniques"><img src="public/images/slider_secondaire/images_thumbsnails/ville2.jpg" /></a>
+		<a href="#" title="Ouvrages de traitement"><img src="public/images/slider_secondaire/images_thumbsnails/ville4.jpg"/></a>
+		<a href="#" title="Réseaux humides et secs"><img src="public/images/slider_secondaire/images_thumbsnails/ville5.jpg" /></a>
+		<a href="#" title="Eolien"><img src="public/images/slider_secondaire/images_thumbsnails/slider1.jpg" /></a>
+		<a href="#" title="Urbanisme juridique et opérationnel"><img src="public/images/slider_secondaire/images_thumbsnails/slider2.jpg"  /></a>
+		<a href="#" title="Etudes hydrauliques, modélisation, dossiers règlementaires"><img src="public/images/slider_secondaire/images_thumbsnails/slider3.jpg" /></a>
+		<a href="#" title="Infographies, vidéos"><img src="public/images/slider_secondaire/images_thumbsnails/slider4.jpg" /></a>
+		<a href="#" title="Assistance à maîtrise d’ouvrage"><img src="public/images/slider_secondaire/images_thumbsnails/slider5.jpg" /></a>
+		<a href="#" title="Digues et barrages"><img src="public/images/slider_secondaire/images_thumbsnails/slider6.jpg" /></a>
 </div>
 </div>
 </div>	
