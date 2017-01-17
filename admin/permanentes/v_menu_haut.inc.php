@@ -15,6 +15,7 @@
                                         <span class=" fa fa-angle-down"></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li><a href="index.php?cas=afficherAccueil">Retour vers le site</a></li>
                                         <li><a href="javascript:;">Profil</a></li>
                                         <li>
                                             <a href="javascript:;">
