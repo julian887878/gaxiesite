@@ -13,7 +13,7 @@
             <li>
                 <img src="public/images/slider/ville4.jpg" />
                 <div class="ei-title">
-                    <h2 style="text-align: center;">Titre</h2>
+                    <h2 style="text-align: center;">Titre!</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
