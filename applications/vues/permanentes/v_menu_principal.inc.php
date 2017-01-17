@@ -43,8 +43,8 @@
 
         <!--CSS SLIDER 2-->
 
-        <link rel="stylesheet" type="text/css" href="slider2/engine1/style.css" />
-        <script type="text/javascript" src="slider2/engine1/jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="public/assets/css/slider_secondaire/style.css" />
+        <script type="text/javascript" src="public/assets/js/slider_secondaire/jquery.js"></script>
 
 
         <!--CSS SLIDER 1--> 

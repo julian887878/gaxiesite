@@ -198,8 +198,8 @@
     
     
     <!--SCRIPT SLIDER 2--> 
-<script type="text/javascript" src="slider2/engine1/wowslider.js"></script>
-<script type="text/javascript" src="slider2/engine1/script.js"></script>
+<script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
+<script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
 
     <!--SCRIPT SLIDER 1--> 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
