@@ -671,7 +671,7 @@
 		/**
 		 * Change the pagination - provides the internal logic for pagination in a simple API
 		 * function. With this function you can have a DataTables table go to the next,
-		 * previous, first or last pages.
+		 * previous, first or last utilisateurs.
 		 *  @param {string|int} mAction Paging action to take: "first", "previous", "next" or "last"
 		 *    or page number to jump to (integer), note that page 0 is the first page.
 		 *  @param {bool} [bRedraw=true] Redraw the table or not
@@ -745,7 +745,7 @@
 		/**
 		 * Sort the table by a particular column
 		 *  @param {int} iCol the data index to sort on. Note that this will not match the
-		 *    'display index' if you have hidden data entries
+		 *    'display index' if you have hidden data utilisateurs
 		 *  @dtopt API
 		 *  @deprecated Since v1.10
 		 *
@@ -4870,13 +4870,13 @@
 							visRecords = settings.fnRecordsDisplay(),
 							all        = len === -1,
 							page = all ? 0 : Math.ceil( start / len ),
-							pages = all ? 1 : Math.ceil( visRecords / len ),
-							buttons = plugin(page, pages),
+							utilisateurs = all ? 1 : Math.ceil( visRecords / len ),
+							buttons = plugin(page, utilisateurs),
 							i, ien;
 	
 						for ( i=0, ien=features.p.length ; i<ien ; i++ ) {
 							_fnRenderer( settings, 'pageButton' )(
-								settings, features.p[i], i, buttons, page, pages
+								settings, features.p[i], i, buttons, page, utilisateurs
 							);
 						}
 					}
@@ -7436,7 +7436,7 @@
 	 *
 	 * @return {object} Object with the following properties set:
 	 *  * `page` - Current page index (zero based - i.e. the first page is `0`)
-	 *  * `pages` - Total number of pages
+	 *  * `utilisateurs` - Total number of utilisateurs
 	 *  * `start` - Display index for the first record shown on the current page
 	 *  * `end` - Display index for the last record shown on the current page
 	 *  * `length` - Display length (number of records). Note that generally `start
@@ -7460,7 +7460,7 @@
 	
 		return {
 			"page":           all ? 0 : Math.floor( start / len ),
-			"pages":          all ? 1 : Math.ceil( visRecords / len ),
+			"utilisateurs":          all ? 1 : Math.ceil( visRecords / len ),
 			"start":          start,
 			"end":            settings.fnDisplayEnd(),
 			"length":         len,
@@ -10072,7 +10072,7 @@
 	
 	
 		/**
-		 * This parameter allows you to readily specify the entries in the length drop
+		 * This parameter allows you to readily specify the utilisateurs in the length drop
 		 * down menu that DataTables shows when pagination is enabled. It can be
 		 * either a 1D array of options which will be used for both the displayed
 		 * option and the value, or a 2D array which will use the array in the first
@@ -10357,7 +10357,7 @@
 		 * Enable or disable the display of a 'processing' indicator when the table is
 		 * being processed (e.g. a sort). This is particularly useful for tables with
 		 * large amounts of data where it can take a noticeable amount of time to sort
-		 * the entries.
+		 * the utilisateurs.
 		 *  @type boolean
 		 *  @default false
 		 *
@@ -10643,7 +10643,7 @@
 	
 		/**
 		 * When rendering large numbers in the information element for the table
-		 * (i.e. "Showing 1 to 10 of 57 entries") DataTables will render large numbers
+		 * (i.e. "Montrer 1 to 10 of 57 utilisateurs") DataTables will render large numbers
 		 * to have a comma separator for the 'thousands' units (e.g. 1 million is
 		 * rendered as "1,000,000") to help readability for the end user. This
 		 * function will override the default method DataTables uses.
@@ -11378,10 +11378,10 @@
 			 * * `\_TOTAL\_` - Number of records in the table after filtering
 			 * * `\_MAX\_` - Number of records in the table without filtering
 			 * * `\_PAGE\_` - Current page number
-			 * * `\_PAGES\_` - Total number of pages of data in the table
+			 * * `\_PAGES\_` - Total number of utilisateurs of data in the table
 			 *
 			 *  @type string
-			 *  @default Showing _START_ to _END_ of _TOTAL_ entries
+			 *  @default Afficher _START_ to _END_ of _TOTAL_ utilisateurs
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.info
@@ -11390,19 +11390,19 @@
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "language": {
-			 *          "info": "Showing page _PAGE_ of _PAGES_"
+			 *          "info": "Montrer page _PAGE_ des _PAGES_"
 			 *        }
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "Afficher _START_ à _END_ des _TOTAL_ utilisateurs",
 	
 	
 			/**
 			 * Display information string for when the table is empty. Typically the
 			 * format of this string should match `info`.
 			 *  @type string
-			 *  @default Showing 0 to 0 of 0 entries
+			 *  @default Montrer 0 to 0 of 0 utilisateurs
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.infoEmpty
@@ -11411,12 +11411,12 @@
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "language": {
-			 *          "infoEmpty": "No entries to show"
+			 *          "infoEmpty": "No utilisateurs to show"
 			 *        }
 			 *      } );
 			 *    } );
 			 */
-			"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			"sInfoEmpty": "Montrer 0 to 0 of 0 utilisateurs",
 	
 	
 			/**
@@ -11424,7 +11424,7 @@
 			 * to the information (`info`) to give an idea of how strong the filtering
 			 * is. The variable _MAX_ is dynamically updated.
 			 *  @type string
-			 *  @default (filtered from _MAX_ total entries)
+			 *  @default (filtered from _MAX_ total utilisateurs)
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.infoFiltered
@@ -11438,7 +11438,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoFiltered": "(filtered from _MAX_ total entries)",
+			"sInfoFiltered": "(filtered from _MAX_ total utilisateurs)",
 	
 	
 			/**
@@ -11524,7 +11524,7 @@
 			 * with a default select list of 10, 25, 50 and 100, and can be replaced
 			 * with a custom select box if required.
 			 *  @type string
-			 *  @default Show _MENU_ entries
+			 *  @default Show _MENU_ utilisateurs
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.lengthMenu
@@ -11556,7 +11556,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Montrer _MENU_ utilisateurs",
 	
 	
 			/**
@@ -12912,7 +12912,7 @@
 			"bFilter": null,
 	
 			/**
-			 * Table information element (the 'Showing x of y records' div) enable
+			 * Table information element (the 'Montrer x of y records' div) enable
 			 * flag.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
@@ -14016,7 +14016,7 @@
 		 * The functions defined take two parameters:
 		 *
 		 * 1. `{int} page` The current page index
-		 * 2. `{int} pages` The number of pages in the table
+		 * 2. `{int} utilisateurs` The number of utilisateurs in the table
 		 *
 		 * Each function is expected to return an array where each element of the
 		 * array can be one of:
@@ -14040,7 +14040,7 @@
 		 *
 		 *  @example
 		 *    // Show previous, next and current page buttons only
-		 *    $.fn.dataTableExt.oPagination.current = function ( page, pages ) {
+		 *    $.fn.dataTableExt.oPagination.current = function ( page, utilisateurs ) {
 		 *      return [ 'previous', page, 'next' ];
 		 *    };
 		 */
@@ -14440,30 +14440,30 @@
 	
 	var extPagination = DataTable.ext.pager;
 	
-	function _numbers ( page, pages ) {
+	function _numbers ( page, utilisateurs ) {
 		var
 			numbers = [],
 			buttons = extPagination.numbers_length,
 			half = Math.floor( buttons / 2 ),
 			i = 1;
 	
-		if ( pages <= buttons ) {
-			numbers = _range( 0, pages );
+		if ( utilisateurs <= buttons ) {
+			numbers = _range( 0, utilisateurs );
 		}
 		else if ( page <= half ) {
 			numbers = _range( 0, buttons-2 );
 			numbers.push( 'ellipsis' );
-			numbers.push( pages-1 );
+			numbers.push( utilisateurs-1 );
 		}
-		else if ( page >= pages - 1 - half ) {
-			numbers = _range( pages-(buttons-2), pages );
+		else if ( page >= utilisateurs - 1 - half ) {
+			numbers = _range( utilisateurs-(buttons-2), utilisateurs );
 			numbers.splice( 0, 0, 'ellipsis' ); // no unshift in ie6
 			numbers.splice( 0, 0, 0 );
 		}
 		else {
 			numbers = _range( page-half+2, page+half-1 );
 			numbers.push( 'ellipsis' );
-			numbers.push( pages-1 );
+			numbers.push( utilisateurs-1 );
 			numbers.splice( 0, 0, 'ellipsis' );
 			numbers.splice( 0, 0, 0 );
 		}
@@ -14474,24 +14474,24 @@
 	
 	
 	$.extend( extPagination, {
-		simple: function ( page, pages ) {
+		simple: function ( page, utilisateurs ) {
 			return [ 'previous', 'next' ];
 		},
 	
-		full: function ( page, pages ) {
+		full: function ( page, utilisateurs ) {
 			return [  'first', 'previous', 'next', 'last' ];
 		},
 	
-		numbers: function ( page, pages ) {
-			return [ _numbers(page, pages) ];
+		numbers: function ( page, utilisateurs ) {
+			return [ _numbers(page, utilisateurs) ];
 		},
 	
-		simple_numbers: function ( page, pages ) {
-			return [ 'previous', _numbers(page, pages), 'next' ];
+		simple_numbers: function ( page, utilisateurs ) {
+			return [ 'previous', _numbers(page, utilisateurs), 'next' ];
 		},
 	
-		full_numbers: function ( page, pages ) {
-			return [ 'first', 'previous', _numbers(page, pages), 'next', 'last' ];
+		full_numbers: function ( page, utilisateurs ) {
+			return [ 'first', 'previous', _numbers(page, utilisateurs), 'next', 'last' ];
 		},
 	
 		// For testing and plug-ins to use
@@ -14504,7 +14504,7 @@
 	
 	$.extend( true, DataTable.ext.renderer, {
 		pageButton: {
-			_: function ( settings, host, idx, buttons, page, pages ) {
+			_: function ( settings, host, idx, buttons, page, utilisateurs ) {
 				var classes = settings.oClasses;
 				var lang = settings.oLanguage.oPaginate;
 				var aria = settings.oLanguage.oAria.paginate || {};
@@ -14547,13 +14547,13 @@
 	
 								case 'next':
 									btnDisplay = lang.sNext;
-									btnClass = button + (page < pages-1 ?
+									btnClass = button + (page < utilisateurs-1 ?
 										'' : ' '+classes.sPageButtonDisabled);
 									break;
 	
 								case 'last':
 									btnDisplay = lang.sLast;
-									btnClass = button + (page < pages-1 ?
+									btnClass = button + (page < utilisateurs-1 ?
 										'' : ' '+classes.sPageButtonDisabled);
 									break;
 	

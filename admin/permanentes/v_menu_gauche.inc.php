@@ -44,7 +44,6 @@
                                     <li><a><i class="fa fa-user"></i>Utilisateurs<span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu">
                                             <li><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=liste_utilisateur">Liste des utilisateurs</a></li>
-                                            <li><a href="form.html">Ajouter un utilisateur</a></li>
                                             <li><a href="form.html">Valider un utilisateur</a></li>
                                             <li><a href="form.html">Supprimer un utilisateur</a></li>
                                             <li><a href="form.html">Nommer un utilisateur en Administrateur</a></li>

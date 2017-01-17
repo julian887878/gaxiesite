@@ -43,6 +43,14 @@
                             <td>0604855658</td>
                             <td>OUI</td>
                         </tr>
+                        <tr>
+                            <td><input type="checkbox" class="flat" name="table_records"></td>
+                            <td>De La Pena Enzo</td>
+                            <td>Developpeur WEB</td>
+                            <td>delapena.enzo@gmail.com</td>
+                            <td>0604855658</td>
+                            <td>OUI</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

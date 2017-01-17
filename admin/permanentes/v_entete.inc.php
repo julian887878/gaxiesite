@@ -30,6 +30,13 @@
         <link href="public/admin/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
         <link href="public/admin/vendors/starrr/dist/starrr.css" rel="stylesheet">
         
+        <!-- Datatables -->
+    <link href="public/admin/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="public/admin/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="public/admin/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="public/admin/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="public/admin/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+        
         <!-- Custom Theme Style -->
         <link href="public/admin/build/css/custom.min.css" rel="stylesheet">
     </head>
