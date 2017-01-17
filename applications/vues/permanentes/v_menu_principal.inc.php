@@ -1,18 +1,19 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <!--<![endif]-->
-<html class="no-js" lang=""> 
+<html class="no-js" lang="">
     <head>
-        <!-- BALISES META & TITLE-->
+
+<?php
+// <editor-fold defaultstate="collapsed" desc="BALISES META & TITLE">
+        ?>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cabinet d'étude GAXIEU - ALES BEZIERS CABESTANY LIMOUX MILLAU</title>
         <meta name="description" content="Gaxieu">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="public/images/icon/logo.ico" />
+        <?php // </editor-fold> 
+?>
 
-        <?php
+<?php
 // <editor-fold defaultstate="collapsed" desc="TOUS LES CSS">
         ?>
         <!-- Bootstrap CSS -->
@@ -35,9 +36,9 @@
         <script src="public/assets/js/modernizr.custom.js"></script>
 
         <!--CSS SLIDER 2-->
-        
-<link rel="stylesheet" type="text/css" href="slider2/engine1/style.css" />
-<script type="text/javascript" src="slider2/engine1/jquery.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="slider2/engine1/style.css" />
+        <script type="text/javascript" src="slider2/engine1/jquery.js"></script>
 
 
         <!--CSS SLIDER 1--> 
@@ -48,14 +49,15 @@
         <link rel="stylesheet" type="text/css" href="public/assets/css/slider_principal/noscript.css" />
         </noscript>
         <?php // </editor-fold> 
-        ?>
+?>
+</head>
 
-    </head>
-
-
+<?php
+// <editor-fold defaultstate="collapsed" desc="CHARGEMENT DE PAGE">
+    ?>
     <!-- PAGE DE CHARGEMENT -->
     <body onload="load()">
-        
+
         <div class="loader" id="loader">
             <center style="padding-top: 27%;"><div id="ballsWaveG">
                     <div id="ballsWaveG_1" class="ballsWaveG"></div>
@@ -71,10 +73,12 @@
 
     <!-- DEBUT DU SITE -->        
     <div id="site">
+        
+        <?php // </editor-fold> 
+?>
 
         <header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">     
-
-            <?php
+<?php
 // <editor-fold defaultstate="collapsed" desc="MENU PRINCIPAL">
             ?>
             <div class="container2">
@@ -88,10 +92,10 @@
                                         <input placeholder="Rechercher..." type="search" class="gn-search">
                                         <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a>
                                     </li>
-                                    
+
                                     <li style="width: 100%;"><a class="gn-icon gn-icon-help" style="width: 100%;">Rubrique 2</a></li>
 
-                                    
+
                                     <li style="width: 100%;"><a class="gn-icon gn-icon-help" style="width: 100%;">Rubrique 2</a></li>
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=candidature" class="gn-icon gn-icon-archive" style="width: 100%;">Candidature</a></li>
                                 </ul>
@@ -112,6 +116,5 @@
             </div>
 
             <?php // </editor-fold> 
-            ?>
-
+?>
         </header>
