@@ -189,7 +189,14 @@
             </div>
         </div>
     </div>
+</div>
 
+
+
+
+
+    
+    
     <!--SCRIPT SLIDER 2--> 
 <script type="text/javascript" src="slider2/engine1/wowslider.js"></script>
 <script type="text/javascript" src="slider2/engine1/script.js"></script>

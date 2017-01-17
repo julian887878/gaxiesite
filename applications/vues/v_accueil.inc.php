@@ -4,42 +4,42 @@
     <div id="ei-slider" class="ei-slider">
         <ul class="ei-slider-large">
             <li>
-                <img src="public/images/slider/photogroupe.jpg" alt="image06" />
+                <img src="public/images/slider/photogroupe.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Gaxieu Ingenierie</h2>
                     <h3 style="text-align: center;">80 employés pour vous assister</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville4.jpg" alt="image01" />
+                <img src="public/images/slider/ville4.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville5.jpg" alt="image02"  />
+                <img src="public/images/slider/ville5.jpg"  />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville2.jpg" alt="image03" />
+                <img src="public/images/slider/ville2.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville4.jpg" alt="image04" />
+                <img src="public/images/slider/ville4.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville5.jpg" alt="image05"/>
+                <img src="public/images/slider/ville5.jpg"/>
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
@@ -47,13 +47,13 @@
             </li>
         </ul><!-- ei-slider-large -->
         <ul class="ei-slider-thumbs">
-            <li class="ei-slider-element">Current</li>
-            <li><a href="#">Slide 6</a><img src="public/images/slider/photogroupe.jpg" alt="thumb06" /></li>
-            <li><a href="#">Slide 1</a><img src="public/images/slider/ville4.jpg" alt="thumb01" /></li>
-            <li><a href="#">Slide 2</a><img src="public/images/slider/ville5.jpg" alt="thumb02" /></li>
-            <li><a href="#">Slide 3</a><img src="public/images/slider/ville2.jpg" alt="thumb03" /></li>
-            <li><a href="#">Slide 4</a><img src="public/images/slider/ville4.jpg" alt="thumb04" /></li>
-            <li><a href="#">Slide 5</a><img src="public/images/slider/ville5.jpg" alt="thumb05" /></li>
+            <li class="ei-slider-element"></li>
+            <li><a href="#"></a><img src="public/images/slider/photogroupe.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider/ville4.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider/ville5.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider/ville2.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider/ville4.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider/ville5.jpg"/></li>
         </ul><!-- ei-slider-thumbs -->
     </div><!-- ei-slider -->
 </div><!-- wrapper -->
@@ -91,30 +91,30 @@
                 
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
-		<li><a href="#"><img src="slider2/data1/images/photogroupe.jpg" alt="photogroupe" title="Aménagement" id="wows1_0"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/ville2.jpg" alt="ville2" title="Ouvrages techniques" id="wows1_1"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/ville4.jpg" alt="ville4" title="Ouvrages de traitement" id="wows1_2"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/ville5.jpg" alt="ville5" title="Réseaux humides et secs" id="wows1_3"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/slider1.jpg" alt="slider1" title="Eolien" id="wows1_4"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/slider2.jpg" alt="slider2" title="Urbanisme opérationnel" id="wows1_5"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/slider3.jpg" alt="slider3" title="Etudes hydrauliques, modélisation, dossiers règlementaires" id="wows1_6"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/slider4.jpg" alt="slider4" title="Infographies, vidéos" id="wows1_7"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/slider5.jpg" alt="slider" title="Assistance à maîtrise d’ouvrage" id="wows1_8"/></a></li>
-		<li><a href="#"><img src="slider2/data1/images/slider6.jpg" alt="slider6" title="???" id="wows1_9"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/photogroupe.jpg" title="Aménagement" id="wows1_0"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/ville2.jpg" title="Ouvrages techniques" id="wows1_1"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/ville4.jpg"  title="Ouvrages de traitement" id="wows1_2"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/ville5.jpg"  title="Réseaux humides et secs" id="wows1_3"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider1.jpg"  title="Eolien" id="wows1_4"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider2.jpg"  title="Urbanisme juridique et opérationnel" id="wows1_5"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider3.jpg"  title="Etudes hydrauliques, modélisation, dossiers règlementaires" id="wows1_6"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider4.jpg"  title="Infographies, vidéos" id="wows1_7"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider5.jpg"  title="Assistance à maîtrise d’ouvrage" id="wows1_8"/></a></li>
+		<li><a href="" data-toggle="modal" data-target="#login-modal"><img src="slider2/data1/images/slider6.jpg" title="Digues et barrages" id="wows1_9"/></a></li>
 	</ul></div>
 	<div class="ws_thumbs">
 <div>
-		<a href="#" title="Aménagement"><img src="slider2/data1/tooltips/photogroupe.jpg" alt="" /></a>
-		<a href="#" title="Ouvrages techniques"><img src="slider2/data1/tooltips/ville2.jpg" alt="" /></a>
-		<a href="#" title="Ouvrages de traitement"><img src="slider2/data1/tooltips/ville4.jpg" alt="" /></a>
-		<a href="#" title="Réseaux humides et secs"><img src="slider2/data1/tooltips/ville5.jpg" alt="" /></a>
-		<a href="#" title="Eolien"><img src="slider2/data1/tooltips/slider1.jpg" alt="" /></a>
-		<a href="#" title="Urbanisme opérationnel"><img src="slider2/data1/tooltips/slider2.jpg" alt="" /></a>
-		<a href="#" title="Etudes hydrauliques, modélisation, dossiers règlementaires"><img src="slider2/data1/tooltips/slider3.jpg" alt="" /></a>
-		<a href="#" title="Infographies, vidéos"><img src="slider2/data1/tooltips/slider4.jpg" alt="" /></a>
-		<a href="#" title="Assistance à maîtrise d’ouvrage"><img src="slider2/data1/tooltips/slider5.jpg" alt="" /></a>
-		<a href="#" title="???"><img src="slider2/data1/tooltips/slider6.jpg" alt="" /></a>
-	</div>
+		<a href="#" title="Aménagement"><img src="slider2/data1/tooltips/photogroupe.jpg" /></a>
+		<a href="#" title="Ouvrages techniques"><img src="slider2/data1/tooltips/ville2.jpg" /></a>
+		<a href="#" title="Ouvrages de traitement"><img src="slider2/data1/tooltips/ville4.jpg"/></a>
+		<a href="#" title="Réseaux humides et secs"><img src="slider2/data1/tooltips/ville5.jpg" /></a>
+		<a href="#" title="Eolien"><img src="slider2/data1/tooltips/slider1.jpg" /></a>
+		<a href="#" title="Urbanisme juridique et opérationnel"><img src="slider2/data1/tooltips/slider2.jpg"  /></a>
+		<a href="#" title="Etudes hydrauliques, modélisation, dossiers règlementaires"><img src="slider2/data1/tooltips/slider3.jpg" /></a>
+		<a href="#" title="Infographies, vidéos"><img src="slider2/data1/tooltips/slider4.jpg" /></a>
+		<a href="#" title="Assistance à maîtrise d’ouvrage"><img src="slider2/data1/tooltips/slider5.jpg" /></a>
+		<a href="#" title="Digues et barrages"><img src="slider2/data1/tooltips/slider6.jpg" /></a>
+</div>
 </div>
 </div>	
 
@@ -237,3 +237,7 @@ function juizScrollTo(element){
 };
 juizScrollTo('a[href^="#"]');
 </script>
+
+
+
+
