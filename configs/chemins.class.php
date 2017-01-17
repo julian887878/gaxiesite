@@ -6,7 +6,6 @@ class Chemins {
     const MODELES = "applications/modeles/";
     const VUES = "applications/vues/";
     const VUES_MEMBRE = "applications/vues/partie_connecter/";
-    const VUES_ADMIN = "applications/vues/partie_admin/";
     const VUES_PERMANENTES = "applications/vues/permanentes/";
     const CONTROLEURS = "applications/controleurs/";
     //Chemins à l'intérieur du dossier PUBLIC
@@ -16,6 +15,9 @@ class Chemins {
     //Autres chemins du site
     const CONFIGS = "configs/";
     const LIBS = "libs/";
+    //Chemins administrateur
+    const VUES_ADMIN = "admin/production/";
+    const VUES_PERMANENTES_ADMIN = "admin/permanentes/";
 
 }
 ?>
