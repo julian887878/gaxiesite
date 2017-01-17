@@ -451,7 +451,7 @@
     </div>
     <div class="media-body" style="text-align:left;">
         <p>Le cabinet <span class="caps">GAXIEU</span> est compétent pour l’ensemble des activités nécessaires aux projets d’infrastructures.</p>
-<center><img src="public/images/certification1.png"></center>
+<center><img src="public/images/qualification/certification1.png"></center>
    
     </div>
     </div>
@@ -487,8 +487,8 @@
     <div id="collapseThree4" class="panel-collapse collapse">
     <div class="panel-body" style="background-color: #f9f9f9;text-align:left;">
         <p>Le Cabinet GAXIEU est agréé pour la pratique du droit à titre accessoire à l’activité principale.</p>
-        <center><img src="public/images/certification2.jpg" width="40%">
-    <img src="public/images/certification3.png" width="40%"></center>
+        <center><img src="public/images/qualification/certification2.jpg" width="40%">
+    <img src="public/images/qualification/certification3.png" width="40%"></center>
     </div>
     </div>
     </div>
@@ -505,7 +505,7 @@
     <div id="collapseFour4" class="panel-collapse collapse">
     <div class="panel-body" style="background-color: #f9f9f9;text-align:left;">
     <p>Le Cabinet GAXIEU est agréé pour l’étude et le diagnostic de digues et petits barrages.</p>     
-<center><img src="public/images/certification4.png"></center>
+<center><img src="public/images/qualification/certification4.png"></center>
     </div>
     </div>
     </div>

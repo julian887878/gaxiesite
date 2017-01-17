@@ -4,42 +4,42 @@
     <div id="ei-slider" class="ei-slider">
         <ul class="ei-slider-large">
             <li>
-                <img src="public/images/slider/photogroupe.jpg" />
+                <img src="public/images/slider_principal/photogroupe.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Gaxieu Ingenierie</h2>
                     <h3 style="text-align: center;">80 employés pour vous assister</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville4.jpg" />
-                <div class="ei-title">
-                    <h2 style="text-align: center;">Titre!</h2>
-                    <h3 style="text-align: center;">Description</h3>
-                </div>
-            </li>
-            <li>
-                <img src="public/images/slider/ville5.jpg"  />
+                <img src="public/images/slider_principal/ville4.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville2.jpg" />
+                <img src="public/images/slider_principal/ville5.jpg"  />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville4.jpg" />
+                <img src="public/images/slider_principal/ville2.jpg" />
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
             <li>
-                <img src="public/images/slider/ville5.jpg"/>
+                <img src="public/images/slider_principal/ville4.jpg" />
+                <div class="ei-title">
+                    <h2 style="text-align: center;">Titre</h2>
+                    <h3 style="text-align: center;">Description</h3>
+                </div>
+            </li>
+            <li>
+                <img src="public/images/slider_principal/ville5.jpg"/>
                 <div class="ei-title">
                     <h2 style="text-align: center;">Titre</h2>
                     <h3 style="text-align: center;">Description</h3>
@@ -48,12 +48,12 @@
         </ul><!-- ei-slider-large -->
         <ul class="ei-slider-thumbs">
             <li class="ei-slider-element"></li>
-            <li><a href="#"></a><img src="public/images/slider/photogroupe.jpg"/></li>
-            <li><a href="#"></a><img src="public/images/slider/ville4.jpg"/></li>
-            <li><a href="#"></a><img src="public/images/slider/ville5.jpg"/></li>
-            <li><a href="#"></a><img src="public/images/slider/ville2.jpg"/></li>
-            <li><a href="#"></a><img src="public/images/slider/ville4.jpg"/></li>
-            <li><a href="#"></a><img src="public/images/slider/ville5.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider_principal/photogroupe.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider_principal/ville4.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider_principal/ville5.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider_principal/ville2.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider_principal/ville4.jpg"/></li>
+            <li><a href="#"></a><img src="public/images/slider_principal/ville5.jpg"/></li>
         </ul><!-- ei-slider-thumbs -->
     </div><!-- ei-slider -->
 </div><!-- wrapper -->
