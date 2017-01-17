@@ -17,7 +17,7 @@ if (isset($_REQUEST['categorie'])) {
 
 switch ($cas) {
     case 'afficherAccueil' : {
-            require Chemins::VUES . 'v_accueil.inc.php';
+            require Chemins::VUES . 'v_accueiil.inc.php';
             break;
         }
     case 'afficherSections' : {
