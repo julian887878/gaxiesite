@@ -53,7 +53,7 @@
                         <ul>
                             <li style="display: inline-block;"><a href="#">Accueil</a></li>
                             <li style="display: inline-block;"><a href="#">Contact</a></li>
-                            <li style="display: inline-block"><a href="" data-toggle="modal" data-target="#login-modal">Connexion</a></li> 
+                            <li style="display: inline-block"><a href="#" data-toggle="modal" data-target="#login-modal">Connexion</a></li> 
                         </ul>
                     </nav>
                 </div>
