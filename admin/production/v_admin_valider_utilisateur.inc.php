@@ -21,7 +21,8 @@
                             <th>Poste</th>
                             <th>Email</th>
                             <th>Téléphone</th>
-                            <th>Administrateur</th>
+                            <th>Statut</th>
+                            <th>Validation</th>
                         </tr>
                     </thead>
 
@@ -33,23 +34,26 @@
                             <td>Développeur WEB</td>
                             <td>mickael.alias@hotmail.fr</td>
                             <td>0770830928</td>
-                            <td>OUI</td>
+                            <td>En attente...</td>
+                            <td>Valider</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" class="flat" name="table_records"></td>
                             <td>De La Pena Enzo</td>
                             <td>Developpeur WEB</td>
                             <td>delapena.enzo@gmail.com</td>
-                            <td>0604855658</td>
-                            <td>OUI</td>
+                            <td>0770830928</td>
+                            <td>En attente...</td>
+                            <td>Valider</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" class="flat" name="table_records"></td>
                             <td>De La Pena Enzo</td>
                             <td>Developpeur WEB</td>
                             <td>delapena.enzo@gmail.com</td>
-                            <td>0604855658</td>
-                            <td>OUI</td>
+                            <td>0770830928</td>
+                            <td>En attente...</td>
+                            <td>Valider</td>
                         </tr>
                     </tbody>
                 </table>
