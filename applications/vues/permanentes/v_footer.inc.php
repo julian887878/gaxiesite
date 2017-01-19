@@ -277,6 +277,23 @@
             <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
+    
+    
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider6.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>NOUS CONTACTER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Redirection</a></p>            
+        </figcaption>
+    </figure><figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider6.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>FERMER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">X</a></p>            
+        </figcaption>
+    </figure>
   
 </div>
 
