@@ -58,14 +58,14 @@
         
         <!--POPUP GALERY-->
 
-        
-<!-- animate.css -->
-<link rel="stylesheet" href="popup_galery/assets/animate/animate.css" />
-<link rel="stylesheet" href="popup_galery/assets/animate/set.css" />
+<link rel="stylesheet" href="public/popup_galery/assets/animate/animate.css" />
+<link rel="stylesheet" href="public/popup_galery/assets/animate/set.css" />
 
-<!-- gallery -->
-<link rel="stylesheet" href="popup_galery/assets/gallery/blueimp-gallery.min.css">
+<link rel="stylesheet" href="public/popup_galery/assets/gallery/blueimp-gallery.min.css">
 
+<!--LIGHTBOX-->
+
+		<link rel="stylesheet" href="please/assets/css/main.css" />
 
         <?php // </editor-fold> 
 ?>

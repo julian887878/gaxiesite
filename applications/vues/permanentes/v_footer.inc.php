@@ -209,7 +209,7 @@
         <figcaption>
             <?php  $test = "<h2>Ouvrages techniques</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -217,7 +217,7 @@
         <figcaption>
             <?php  $test = "<h2>Ouvrages de traitement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -225,7 +225,7 @@
         <figcaption>
             <?php  $test = "<h2>Réseaux humides et secs</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      
@@ -234,7 +234,7 @@
         <figcaption>
             <?php  $test = "<h2>Eolien</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -242,7 +242,7 @@
         <figcaption>
             <?php  $test = "<h2>Urbanisme juridique et opérationnel</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -250,7 +250,7 @@
         <figcaption>
            <?php  $test = "<h2>Etudes hydrauliques, modélisation, dossiers règlementaires</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -258,7 +258,7 @@
         <figcaption>
             <?php  $test = "<h2>Infographies, vidéos</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -266,7 +266,7 @@
         <figcaption>
             <?php  $test = "<h2>Assistance à maîtrise d’ouvrage</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -274,7 +274,7 @@
         <figcaption>
             <?php  $test = "<h2>Digues et barrages</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Voir plus</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
     
@@ -284,14 +284,14 @@
         <figcaption>
             <?php  $test = "<h2>NOUS CONTACTER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">Redirection</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Redirection</a></p>            
         </figcaption>
     </figure><figure class="effect-oscar  wowload fadeInUp">
         <img src="public/images/slider_secondaire/images/slider6.jpg"/>
         <figcaption>
             <?php  $test = "<h2>FERMER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-            <a href="#">X</a></p>            
+            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">X</a></p>            
         </figcaption>
     </figure>
   
@@ -310,59 +310,104 @@
     </div>
 </div>
 
-<script src="popup_galery/assets/mobile/touchSwipe.min.js"></script>
-<script src="popup_galery/assets/respond/respond.js"></script>
+<script src="public/popup_galery/assets/mobile/touchSwipe.min.js"></script>
+<script src="public/popup_galery/assets/respond/respond.js"></script>
 
-<script src="popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
+<script src="public/popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
 
 <!-- SCRIPT POP UP LIGHTBOX -->
-<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">                      
+<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow-y: scroll;">
+    <div class="modal-dialog" style=" width: 100%;">
+        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
             <div class="modal-body">
 
                 <button data-toggle="modal" data-target="#login-modal" data-dismiss="modal" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 align='center'>Connexion Administrateur</h4>
-                <section id="contact" class="contact">
-                    <br><br>
-
-                    <div class="container"> 
-                        <div class="row contact-wrap"> 
-                            <div class="status alert alert-success" style="display: none"></div>
-                            <form method="POST" id="main-contact-form" class="contact-form" name="contact-form" action="index_admin.php?cas=cacherSectionsAdmin&categorie=verifier_connexion">
-                                <div class="row">
-                                    <div class="col-sm-4" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <label>Adresse mail</label><br>
-                                            <input type="mail" name="mail" class="form-control" required="required">
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <label>Mot de passe</label><br>
-                                            <input type="password" name="password" class="form-control" required="required">
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-3" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Connexion</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                        </div>
 
 
-                        <p class="aa-lost-password"><a href="" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#mdp-forgot">Mot de passe oublié ?</a></p>
+		
+
+		<!-- Wrapper -->
+			<div id="wrapper">
 
 
-                        </form>
-                    </div>  
+
+				<!-- Main -->
+					<div id="main">
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2>Magna feugiat lorem</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/02.jpg" class="image"><img src="please/images/thumbs/02.jpg" alt="" /></a>
+							<h2>Nisl adipiscing</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/03.jpg" class="image"><img src="please/images/thumbs/03.jpg" alt="" /></a>
+							<h2>Tempus aliquam veroeros</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/04.jpg" class="image"><img src="please/images/thumbs/04.jpg" alt="" /></a>
+							<h2>Aliquam ipsum sed dolore</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/05.jpg" class="image"><img src="please/images/thumbs/05.jpg" alt="" /></a>
+							<h2>Cursis aliquam nisl</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/06.jpg" class="image"><img src="please/images/thumbs/06.jpg" alt="" /></a>
+							<h2>Sed consequat phasellus</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/07.jpg" class="image"><img src="please/images/thumbs/07.jpg" alt="" /></a>
+							<h2>Mauris id tellus arcu</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/08.jpg" class="image"><img src="please/images/thumbs/08.jpg" alt="" /></a>
+							<h2>Nunc vehicula id nulla</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/09.jpg" class="image"><img src="please/images/thumbs/09.jpg" alt="" /></a>
+							<h2>Neque et faucibus viverra</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/10.jpg" class="image"><img src="please/images/thumbs/10.jpg" alt="" /></a>
+							<h2>Mattis ante fermentum</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/11.jpg" class="image"><img src="please/images/thumbs/11.jpg" alt="" /></a>
+							<h2>Sed ac elementum arcu</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="please/images/fulls/12.jpg" class="image"><img src="please/images/thumbs/12.jpg" alt="" /></a>
+							<h2>Vehicula id nulla dignissim</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+					</div>
+
+				
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="please/assets/js/jquery.min.js"></script>
+			<script src="please/assets/js/jquery.poptrox.min.js"></script>
+			<script src="please/assets/js/skel.min.js"></script>
+			<script src="please/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="please/assets/js/main.js"></script>
+
+
             </div>
         </div>
     </div>
