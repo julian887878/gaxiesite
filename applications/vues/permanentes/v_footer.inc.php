@@ -96,7 +96,7 @@
                                     <div class="col-sm-4" style="padding-left: 30px;">
                                         <div class="form-group">
                                             <label>Adresse mail</label><br>
-                                            <input type="mail" name="mail" class="form-control" required="required">
+                                            <input type="emailUtilisateur" name="emailUtilisateur" class="form-control" required="required">
                                         </div> 
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                     <div class="col-sm-4" style="padding-left: 30px;">
                                         <div class="form-group">
                                             <label>Mot de passe</label><br>
-                                            <input type="password" name="password" class="form-control" required="required">
+                                            <input type="mdpUtilisateur" name="mdpUtilisateur" class="form-control" required="required">
                                         </div> 
                                     </div>
                                 </div>
