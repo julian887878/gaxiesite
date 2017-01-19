@@ -38,7 +38,7 @@ class GestionAdmin {
                 self::$pdoCnxBase->query("SET CHARACTER SET utf8");
             } catch (Exception $ex) {
                 //l'objet pdoCnxBase a généré automatiquement un objet de type exeption 
-                echo 'Erreur : ' . $e->getMessage() . '<br/>'; //Méthode de la classe exception 
+                echo 'Erreur : ' . $ex->getMessage() . '<br/>'; //Méthode de la classe exception 
                 echo 'Code : ' . $e->getCode(); //méthode de la classe exception
             }
         }
@@ -109,7 +109,7 @@ class GestionAdmin {
     public static function getUserByMail($emailUtilisateur) {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM utlisateur WHERE emailUtilisateur='$emailUtilisateur'";
+        self::$requete = "SELECT * FROM utilisateur WHERE emailUtilisateur='$emailUtilisateur'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -157,6 +157,55 @@ class GestionAdmin {
 
 //  </editor-fold>
     
+    
+    // <editor-fold defaultstate="collapsed" desc="région QUI SOMMES NOUS">
+    /**
+     * Permet de se connecter à la base de données 
+     */ 
+    
+    
+       public static function getOngletCategorie() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM ongletCategorie";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+    //  </editor-fold>
+    
+     public static function getOngletSousCategorieByCategorie($id) {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM ongletSousCategorie WHERE idCategorie='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+        public static function modifTitreCategorie($id, $titre) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE ongletCategorie SET id = '$id', titre = '$titre' WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('id', $id);
+        self::$pdoStResults->bindValue('titre', $titre);
+
+
+        self::$pdoStResults->execute();
+    }
     
 }
 
