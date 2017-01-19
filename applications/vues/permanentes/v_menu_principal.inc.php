@@ -54,6 +54,19 @@
         <noscript>
         <link rel="stylesheet" type="text/css" href="public/assets/css/slider_principal/noscript.css" />
         </noscript>
+        
+        
+        <!--POPUP GALERY-->
+
+        
+<!-- animate.css -->
+<link rel="stylesheet" href="popup_galery/assets/animate/animate.css" />
+<link rel="stylesheet" href="popup_galery/assets/animate/set.css" />
+
+<!-- gallery -->
+<link rel="stylesheet" href="popup_galery/assets/gallery/blueimp-gallery.min.css">
+
+
         <?php // </editor-fold> 
 ?>
 </head>

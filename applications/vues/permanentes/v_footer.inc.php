@@ -145,51 +145,131 @@
         <div class="modal-content">                      
             <div class="modal-body">
 
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 align='center'>Connexion Administrateur</h4>
-                <section id="contact" class="contact">
-                    <br><br>
+                <!-- works -->
+<div id="works"  class=" clearfix grid"> 
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/1.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Cappuchino</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/2.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Latte</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="public/images/slider_principal/photogroupe.jpg" title="2" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/3.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Ambience</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/4.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Fruits</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/5.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Breakfast</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/5.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/6.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Kitchen</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/6.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/1.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Cappuchino</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/2.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Latte</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/2.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/3.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Ambience</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="popup_galery/images/portfolio/4.jpg" alt="img01"/>
+        <figcaption>
+            <h2>Fruits</h2>
+            <p>Lily likes to play with crayons and pencils<br>
+            <a href="popup_galery/images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
+        </figcaption>
+    </figure>
 
-                    <div class="container"> 
-                        <div class="row contact-wrap"> 
-                            <div class="status alert alert-success" style="display: none"></div>
-                            <form method="POST" id="main-contact-form" class="contact-form" name="contact-form" action="sendemail.php">
-                                <div class="row">
-                                    <div class="col-sm-4" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <label>Adresse mail</label><br>
-                                            <input type="mail" name="mail" class="form-control" required="required">
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <label>Mot de passe</label><br>
-                                            <input type="password" name="password" class="form-control" required="required">
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-3" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Connexion</button>
-                                        </div>
-                                    </div>
-                                </div>
+  
+</div>
 
-                        </div>
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title">Title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+</div>
 
 
-                        <p class="aa-lost-password"><a href="" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#mdp-forgot">Mot de passe oublié ?</a></p>
-
-
-                        </form>
-                    </div>  
+                
+                
+                
+                
+                
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- jquery mobile -->
+<script src="popup_galery/assets/mobile/touchSwipe.min.js"></script>
+<script src="popup_galery/assets/respond/respond.js"></script>
+
+<!-- gallery -->
+<script src="popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+
+
+
+
+
+
+
 
 
 
