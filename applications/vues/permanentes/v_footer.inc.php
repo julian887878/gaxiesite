@@ -68,7 +68,7 @@
 
 
 <!-- FLECHE REMONTANTE -->
-<div id="scroll-to-top" class="scroll-to-top" style="z-index: 99999;">
+<div id="scroll-to-top" class="scroll-to-top" style="z-index: 1049;">
     <span>
         <i class="fa fa-chevron-up"></i>    
     </span>
@@ -141,94 +141,93 @@
 
 <!-- SCRIPT POP UP INSCRIPTION ADMIN -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" style="margin-top: 18%">
-        <div class="modal-content">                      
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
             <div class="modal-body">
 
                 <!-- works -->
 <div id="works"  class=" clearfix grid"> 
     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/1.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/photogroupe.jpg"/>
         <figcaption>
-            <h2>Cappuchino</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Aménagement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+                <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/2.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/ville2.jpg"/>
         <figcaption>
-            <h2>Latte</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="public/images/slider_principal/photogroupe.jpg" title="2" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Ouvrages techniques</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/3.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/ville4.jpg"/>
         <figcaption>
-            <h2>Ambience</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Ouvrages de traitement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/4.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/ville5.jpg"/>
         <figcaption>
-            <h2>Fruits</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Réseaux humides et secs</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/5.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/slider1.jpg"/>
         <figcaption>
-            <h2>Breakfast</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/5.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Eolien</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/6.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/slider2.jpg"/>
         <figcaption>
-            <h2>Kitchen</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/6.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Urbanisme juridique et opérationnel</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/1.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/slider3.jpg"/>
         <figcaption>
-            <h2>Cappuchino</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
+           <?php  $test = "<h2>Etudes hydrauliques, modélisation, dossiers règlementaires</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/2.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/slider4.jpg"/>
         <figcaption>
-            <h2>Latte</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/2.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Infographies, vidéos</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/3.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/slider5.jpg"/>
         <figcaption>
-            <h2>Ambience</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Assistance à maîtrise d’ouvrage</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
-        <img src="popup_galery/images/portfolio/4.jpg" alt="img01"/>
+        <img src="public/images/slider_secondaire/images/slider6.jpg"/>
         <figcaption>
-            <h2>Fruits</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="popup_galery/images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
+            <?php  $test = "<h2>Digues et barrages</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#">Voir plus</a></p>            
         </figcaption>
     </figure>
-
   
 </div>
 

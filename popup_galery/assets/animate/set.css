@@ -27,7 +27,7 @@
 	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -56,10 +56,7 @@
 	opacity: 0;
 }
 
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 700;
-}
+
 
 .grid figure h2,
 .grid figure p {
@@ -609,23 +606,13 @@ figure.effect-oscar figcaption {
 	transition: background-color 0.35s;*/
 }
 
-figure.effect-oscar figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid #fff;
-	content: '';
-}
+
 
 figure.effect-oscar h2 {
 	margin: 0;
 	line-height: 1em;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
 }
 
 figure.effect-oscar figcaption::before,
