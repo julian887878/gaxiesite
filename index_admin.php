@@ -4,6 +4,8 @@
 session_start();
 require_once 'configs/chemins.class.php';
 require_once Chemins::CONFIGS . 'mysql_config.class.php';
+require_once Chemins::MODELES . 'gestion_admin.class.php';
+
 
 require_once Chemins::VUES_PERMANENTES_ADMIN . 'v_entete.inc.php';
 require_once Chemins::VUES_PERMANENTES_ADMIN . 'v_menu_gauche.inc.php';
@@ -39,8 +41,8 @@ switch ($cas) {
         }
 
     case 'cacherSectionsAdmin' : {
-            if (file_exists(Chemins::VUES_ADMIN . 'v_admin_' . $categorie . '.inc.php')) {
-                require Chemins::VUES_ADMIN . 'v_admin_' . $categorie . '.inc.php';
+            if (file_exists(Chemins::VUES_CACHER . 'v_admin_' . $categorie . '.inc.php')) {
+                require Chemins::VUES_CACHER . 'v_admin_' . $categorie . '.inc.php';
             } else {
                 require Chemins::VUES . 'v_erreur404.inc.php';
             }

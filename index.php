@@ -1,8 +1,10 @@
 <?php
-
 session_start();
+
 require_once 'configs/chemins.class.php';
 require_once Chemins::CONFIGS . 'mysql_config.class.php';
+require_once Chemins::MODELES . 'gestion_admin.class.php';
+
 
 require Chemins::VUES_PERMANENTES . 'v_menu_principal.inc.php';
 
@@ -36,8 +38,20 @@ switch ($cas) {
             }
             break;
         }
+        case 'SeDeconnecter': {
+            //Suppression des variables de session et de la session
+            $_SESSION = array();
+            session_destroy();
+            //setcookie('login_admin','');
+            echo "<SCRIPT langage=JavaScript>
+            document.location.href='index.php?cas=afficherAccueil'
+            </SCRIPT>";
+            break;
+        }
 }
 
 require Chemins::VUES_PERMANENTES . 'v_footer.inc.php';
+var_dump($_SESSION['membre']);
+
 ?>
 
