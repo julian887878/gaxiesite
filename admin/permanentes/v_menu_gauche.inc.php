@@ -1,3 +1,5 @@
+<?php $infos = GestionAdmin::getUserByMail($_SESSION['membre']); ?>
+
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
@@ -12,11 +14,11 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="public/admin/images/img.jpg" alt="..." class="img-circle profile_img">
+                       <?php echo " <img src='public/admin/images/$infos->avatarUtilisateur' alt='...' class='img-circle profile_img'> ";?>
                         </div>
                         <div class="profile_info">
                             <span>Bienvenue,</span>
-                            <h2>Alias Mickael</h2>
+                            <h2><?php echo "$infos->nomUtilisateur $infos->prenomUtilisateur"; ?></h2>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
