@@ -189,20 +189,19 @@
 
 
 
-<!-- SCRIPT POP UP INSCRIPTION ADMIN -->
+<!-- SCRIPT POP UP GALLERY -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
             <div class="modal-body">
 
-                <!-- works -->
 <div id="works"  class=" clearfix grid"> 
     <figure class="effect-oscar  wowload fadeInUp">
         <img src="public/images/slider_secondaire/images/photogroupe.jpg"/>
         <figcaption>
             <?php  $test = "<h2>Aménagement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
             <p><br>
-                <a href="#">Voir plus</a></p>            
+                <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -281,51 +280,79 @@
   
 </div>
 
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
     <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
     <h3 class="title">Title</h3>
     <a class="prev">‹</a>
     <a class="next">›</a>
-    <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+    <a class="close">×</a>   
+</div>
+   
+            </div>
+        </div>
+    </div>
 </div>
 
+<script src="popup_galery/assets/mobile/touchSwipe.min.js"></script>
+<script src="popup_galery/assets/respond/respond.js"></script>
 
-                
-                
-                
-                
-                
+<script src="popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+
+<!-- SCRIPT POP UP LIGHTBOX -->
+<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">                      
+            <div class="modal-body">
+
+                <button data-toggle="modal" data-target="#login-modal" data-dismiss="modal" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 align='center'>Connexion Administrateur</h4>
+                <section id="contact" class="contact">
+                    <br><br>
+
+                    <div class="container"> 
+                        <div class="row contact-wrap"> 
+                            <div class="status alert alert-success" style="display: none"></div>
+                            <form method="POST" id="main-contact-form" class="contact-form" name="contact-form" action="index_admin.php?cas=cacherSectionsAdmin&categorie=verifier_connexion">
+                                <div class="row">
+                                    <div class="col-sm-4" style="padding-left: 30px;">
+                                        <div class="form-group">
+                                            <label>Adresse mail</label><br>
+                                            <input type="mail" name="mail" class="form-control" required="required">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4" style="padding-left: 30px;">
+                                        <div class="form-group">
+                                            <label>Mot de passe</label><br>
+                                            <input type="password" name="password" class="form-control" required="required">
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="padding-left: 30px;">
+                                        <div class="form-group">
+                                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Connexion</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+
+
+                        <p class="aa-lost-password"><a href="" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#mdp-forgot">Mot de passe oublié ?</a></p>
+
+
+                        </form>
+                    </div>  
             </div>
         </div>
     </div>
 </div>
 
 
-<!-- jquery mobile -->
-<script src="popup_galery/assets/mobile/touchSwipe.min.js"></script>
-<script src="popup_galery/assets/respond/respond.js"></script>
 
-<!-- gallery -->
-<script src="popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
     <!--SCRIPT SLIDER 2--> 
 <script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
 <script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
