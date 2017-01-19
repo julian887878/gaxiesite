@@ -51,7 +51,6 @@ switch ($cas) {
 }
 
 require Chemins::VUES_PERMANENTES . 'v_footer.inc.php';
-var_dump($_SESSION['membre']);
 
 ?>
 
