@@ -40,7 +40,7 @@
                                         <li><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=liste_onglet">Liste des onglets</a>
                                         <li><a>Onglet catégorie<span class="fa fa-chevron-down"></span></a>
                                             <ul class="nav child_menu">
-                                                <li class="sub_menu"><a href="#level2_1">Ajouter une categorie</a>
+                                                <li class="sub_menu"><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=ajouter_onglet_categorie">Ajouter une categorie</a>
                                                 </li>
                                                 <li class="sub_menu"><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=liste_onglet">Modifier une categorie</a>
                                                 </li>
@@ -50,7 +50,7 @@
                                         </li>
                                         <li><a>Onglet sous-catégorie<span class="fa fa-chevron-down"></span></a>
                                             <ul class="nav child_menu">
-                                                <li class="sub_menu"><a href="#level2_1">Ajouter une sous-categorie</a>
+                                                <li class="sub_menu"><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=ajouter_onglet_sous_categorie">Ajouter une sous-categorie</a>
                                                 </li>
                                                 <li class="sub_menu"><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=liste_onglet">Modifier une sous-categorie</a>
                                                 </li>

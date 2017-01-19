@@ -101,7 +101,7 @@
                                     <div class="widget_summary">
                                         <div class="w_95">
                                             <ul>
-                                                <li><span><a href='#'>Modification slider principal</a></span></li>
+                                                <li><span><a href='#'>Liste des onglets</a></span></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
@@ -110,7 +110,7 @@
                                     <div class="widget_summary">
                                         <div class="w_95">
                                             <ul>
-                                                <li><span><a href='#'>Modification slider secondaire</a></span></li>
+                                                <li><span><a href='#'>Modification d'un onglet</a></span></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
@@ -119,7 +119,7 @@
                                     <div class="widget_summary">
                                         <div class="w_95">
                                             <ul>
-                                                <li><span><a href='#'>Modification du bandeau d'information</a></span></li>
+                                                <li><span><a href='#'>Suppression d'un onglet</a></span></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
@@ -153,10 +153,12 @@
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
+
+
                                     <div class="widget_summary">
                                         <div class="w_95">
                                             <ul>
-                                                <li><span><a href='#'>Ajouter un utilisateur</a></span></li>
+                                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=valider_utilisateur'>Valider un utilisateur</a></span></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
@@ -165,16 +167,7 @@
                                     <div class="widget_summary">
                                         <div class="w_95">
                                             <ul>
-                                                <li><span><a href='#'>Valider un utilisateur</a></span></li>
-                                            </ul>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-
-                                    <div class="widget_summary">
-                                        <div class="w_95">
-                                            <ul>
-                                                <li><span><a href='#'>Supprimer un utilisateur</a></span></li>
+                                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_utilisateur'>Supprimer un utilisateur</a></span></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
@@ -182,7 +175,7 @@
                                     <div class="widget_summary">
                                         <div class="w_95">
                                             <ul>
-                                                <li><span><a href='#'>Nommer un utilisateur en Administrateur</a></span></li>
+                                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_utilisateur'>Nommer un utilisateur en Administrateur</a></span></li>
                                             </ul>
                                         </div>
                                         <div class="clearfix"></div>
