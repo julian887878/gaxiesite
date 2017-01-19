@@ -18,6 +18,8 @@ class Chemins {
     //Chemins administrateur
     const VUES_ADMIN = "admin/production/";
     const VUES_PERMANENTES_ADMIN = "admin/permanentes/";
+    const VUES_CACHER = "admin/background/";
+
 
 }
 ?>

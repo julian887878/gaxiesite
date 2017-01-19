@@ -27,9 +27,18 @@ switch ($cas) {
             require Chemins::VUES_ADMIN . 'v_admin_accueil.inc.php';
             break;
         }
-    
+
 
     case 'afficherSectionsAdmin' : {
+            if (file_exists(Chemins::VUES_ADMIN . 'v_admin_' . $categorie . '.inc.php')) {
+                require Chemins::VUES_ADMIN . 'v_admin_' . $categorie . '.inc.php';
+            } else {
+                require Chemins::VUES . 'v_erreur404.inc.php';
+            }
+            break;
+        }
+
+    case 'cacherSectionsAdmin' : {
             if (file_exists(Chemins::VUES_ADMIN . 'v_admin_' . $categorie . '.inc.php')) {
                 require Chemins::VUES_ADMIN . 'v_admin_' . $categorie . '.inc.php';
             } else {
