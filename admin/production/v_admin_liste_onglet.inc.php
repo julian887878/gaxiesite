@@ -14,7 +14,7 @@
         <div class='col-md-12 col-sm-12 col-xs-12'>
             <div class='x_panel tile fixed_height_320'>
                 <div class='x_title'>
-                    <h2>$unOngletCategorie->titre&nbsp;&nbsp;<a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_categorie&id=$unOngletCategorie->id' alt='Modifier'><i class='fa fa-pencil'></i></a> &nbsp;&nbsp;<a href='#' data-toggle='modal' data-target='.supperimer-onglet-categorie' alt='Supprimer'><i class='fa fa-trash'></i></a></h2>
+                    <h2>$unOngletCategorie->titre&nbsp;&nbsp;<a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_categorie&titre=$unOngletCategorie->titre&id=$unOngletCategorie->id' alt='Modifier'><i class='fa fa-pencil'></i></a> &nbsp;&nbsp;<a href='#' data-toggle='modal' data-target='.supperimer-onglet-categorie' alt='Supprimer'><i class='fa fa-trash'></i></a></h2>
                     <ul class='nav navbar-right panel_toolbox'>
                         <li><a class='collapse-link'><i class='fa fa-chevron-up'></i></a>
                         </li>
