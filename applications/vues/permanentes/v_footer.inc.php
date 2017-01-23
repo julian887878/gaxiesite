@@ -71,6 +71,82 @@
 ?>
 
 <?php
+// <editor-fold defaultstate="collapsed" desc="Script JAVA/JQUERY">
+?>
+
+<!-- DEBUT - Facebook intégration -->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- UTILE POUR LA POP UP -->
+<script>window.jQuery || document.write('<script src="public/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+
+<!-- Include Custom Js </-->
+<script src="public/assets/js/custom.min.js"></script>
+
+<!-- SCRIPT MENU PRINCIPAL -->
+<script src="public/assets/js/classie.js"></script>
+<script src="public/assets/js/gnmenu.js"></script>
+<script>
+    new gnMenu(document.getElementById('gn-menu'));
+</script>
+
+<!-- SCRIPT POUR CHARGEMENT -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $(".loader").fadeOut("1000");
+        $(".site").fadeIn("1000");
+    })
+</script>
+
+<!-- GOOGLE PLUS -->
+<script type="text/javascript">
+    window.___gcfg = {lang: 'fr'};
+
+    (function () {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>
+
+    <!--SCRIPT SLIDER 2--> 
+<script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
+<script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
+
+    <!--SCRIPT SLIDER 1--> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('#ei-slider').eislideshow({
+            animation: 'center',
+            autoplay: true,
+            slideshow_interval: 3000,
+            titlesFactor: 0
+        });
+    });
+    </script>
+
+   
+    <?php
+// </editor-fold> 
+?>  
+
+<?php
 // <editor-fold defaultstate="collapsed" desc="CODE GENERAL(FLECHE REMONTANTE, POPUP)">
 ?>
 <!-- FLECHE REMONTANTE -->
@@ -332,10 +408,10 @@
 			</div>
 
 			<script src="public/popup_lightbox/assets/js/jquery.min.js"></script>
-			<script src="public/popup_lightbox/js/jquery.poptrox.min.js"></script>
-			<script src="public/popup_lightbox/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="public/popup_lightbox/js/main.js"></script>
+			<script src="public/popup_lightbox/assets/js/jquery.poptrox.min.js"></script>
+			<script src="public/popup_lightbox/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="public/popup_lightbox/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="public/popup_lightbox/assets/js/main.js"></script>
 
             </div>
         </div>
@@ -346,81 +422,7 @@
 // </editor-fold> 
 ?>
 
-<?php
-// <editor-fold defaultstate="collapsed" desc="Script JAVA/JQUERY">
-?>
-
-<!-- DEBUT - Facebook intégration -->
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id))
-            return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- UTILE POUR LA POP UP -->
-<script>window.jQuery || document.write('<script src="public/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
-
-<!-- Include Custom Js </-->
-<script src="public/assets/js/custom.min.js"></script>
-
-<!-- SCRIPT MENU PRINCIPAL -->
-<script src="public/assets/js/classie.js"></script>
-<script src="public/assets/js/gnmenu.js"></script>
-<script>
-    new gnMenu(document.getElementById('gn-menu'));
-</script>
-
-<!-- SCRIPT POUR CHARGEMENT -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-    $(window).load(function () {
-        $(".loader").fadeOut("1000");
-        $(".site").fadeIn("1000");
-    })
-</script>
-
-<!-- GOOGLE PLUS -->
-<script type="text/javascript">
-    window.___gcfg = {lang: 'fr'};
-
-    (function () {
-        var po = document.createElement('script');
-        po.type = 'text/javascript';
-        po.async = true;
-        po.src = 'https://apis.google.com/js/platform.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(po, s);
-    })();
-</script>
-
-    <!--SCRIPT SLIDER 2--> 
-<script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
-<script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
-
-    <!--SCRIPT SLIDER 1--> 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.eislideshow.js"></script>
-    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.easing.1.3.js"></script>
-    <script type="text/javascript">
-    $(function () {
-        $('#ei-slider').eislideshow({
-            animation: 'center',
-            autoplay: true,
-            slideshow_interval: 3000,
-            titlesFactor: 0
-        });
-    });
-    </script>
-
-   
-    <?php
-// </editor-fold> 
-?>      
+    
 
 </body>
 </html>

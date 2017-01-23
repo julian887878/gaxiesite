@@ -63,10 +63,8 @@
 <link rel="stylesheet" href="public/popup_galery/assets/gallery/blueimp-gallery.min.css">
 
 <!--LIGHTBOX-->
-
-		<link rel="stylesheet" href="public/popup_lightbox/assets/css/main.css" />
+<link rel="stylesheet" href="public/popup_lightbox/assets/css/main.css" />
                 
-                <!-- CKEDITOR -->
         <?php // </editor-fold> 
 ?>
                 
