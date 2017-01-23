@@ -71,6 +71,19 @@
 ?>
 
 <?php
+// <editor-fold defaultstate="collapsed" desc="FLECHE REMONTANTE">
+?>
+
+<div id="scroll-to-top" class="scroll-to-top" style="z-index: 1049;">
+    <span>
+        <i class="fa fa-chevron-up"></i>    
+    </span>
+</div>
+<?php
+// </editor-fold> 
+?>
+
+<?php
 // <editor-fold defaultstate="collapsed" desc="Script JAVA/JQUERY">
 ?>
 
@@ -122,24 +135,7 @@
     })();
 </script>
 
-    <!--SCRIPT SLIDER 2--> 
-<script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
-<script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
 
-    <!--SCRIPT SLIDER 1--> 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.eislideshow.js"></script>
-    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.easing.1.3.js"></script>
-    <script type="text/javascript">
-    $(function () {
-        $('#ei-slider').eislideshow({
-            animation: 'center',
-            autoplay: true,
-            slideshow_interval: 3000,
-            titlesFactor: 0
-        });
-    });
-    </script>
 
    
     <?php
@@ -147,14 +143,9 @@
 ?>  
 
 <?php
-// <editor-fold defaultstate="collapsed" desc="CODE GENERAL(FLECHE REMONTANTE, POPUP)">
+// <editor-fold defaultstate="collapsed" desc="POPUP">
 ?>
-<!-- FLECHE REMONTANTE -->
-<div id="scroll-to-top" class="scroll-to-top" style="z-index: 1049;">
-    <span>
-        <i class="fa fa-chevron-up"></i>    
-    </span>
-</div>
+
 
 <!-- POP UP INSCRIPTION ADMIN -->
 <div class="modal fade" id="co-admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -422,7 +413,29 @@
 // </editor-fold> 
 ?>
 
-    
+<?php
+// <editor-fold defaultstate="collapsed" desc="SCRIPT SLIDER 1 & 2">
+?>
+        <!--SCRIPT SLIDER 2--> 
+<script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
+<script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
 
+    <!--SCRIPT SLIDER 1--> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $('#ei-slider').eislideshow({
+            animation: 'center',
+            autoplay: true,
+            slideshow_interval: 3000,
+            titlesFactor: 0
+        });
+    });
+    </script>
+<?php
+// </editor-fold> 
+?>
 </body>
 </html>
