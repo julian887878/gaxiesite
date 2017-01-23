@@ -36,7 +36,7 @@ $id = $_REQUEST['id'];?>
                 <h4 class="modal-title" id="myModalLabel2">Modification d'un onglet</h4>
             </div>
             <div class="modal-body">
-                <h4><i>Onglet numéro 1</i></h4>
+                <h4><i>Onglet <?php echo "$infosSousCat->titre" ?></i></h4>
                 <p>Vous allez modifier l'onglet <?php echo "$titre" ?> de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
             </div>
             <div class="modal-footer">

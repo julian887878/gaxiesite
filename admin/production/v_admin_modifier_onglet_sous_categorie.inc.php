@@ -48,16 +48,40 @@ $lesCateg = GestionAdmin::getCategorie();
         </div>
         <div class='row'>
             <div class="col-md-12">
-                <textarea cols="80" class="ckeditor" id="contenu" name="contenu" rows="10"></textarea>
+            <?php echo "<textarea cols='80' class='ckeditor' id='contenu' name='contenu' rows='10'>$infosSousCat->contenu</textarea>"; ?>
             </div>
         </div><br />
 
 
         <div class="row">
             <div class='col-lg-12'>
-                <center><button type=submit class="btn btn-primary">Ajouter la sous catégorie</button></center>
+                <center><a data-toggle="modal" data-target=".supprimer-onglet-sous-categorie" class="btn btn-primary">Modifier la sous catégorie</a></center>
             </div>
         </div><br>
+        
+        
+        <div class="modal fade supprimer-onglet-sous-categorie" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">Modification d'un onglet de sous catégorie</h4>
+            </div>
+            <div class="modal-body">
+                <h4><i>Onglet <?php echo "$infosSousCat->titre" ?></i></h4>
+                <p>Vous allez modifier l'onglet <?php echo "$infosSousCat->titre" ?> de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+                <button type="submit" class="btn btn-primary">Oui, modifier</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+        
     </form>
 </div>
 
