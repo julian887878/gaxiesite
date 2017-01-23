@@ -152,7 +152,7 @@ class GestionAdmin {
     public static function getOngletCategorie() {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM ongletCategorie";
+        self::$requete = "SELECT * FROM quisommesnous_ongletCategorie";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -168,7 +168,7 @@ class GestionAdmin {
     public static function getOngletSousCategorieByCategorie($id) {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM ongletSousCategorie WHERE idCategorie='$id'";
+        self::$requete = "SELECT * FROM quisommesnous_ongletSousCategorie WHERE idCategorie='$id'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -182,7 +182,7 @@ class GestionAdmin {
     public static function getOngletSousCategorieByidSousCategorie($id) {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM ongletSousCategorie WHERE id='$id'";
+        self::$requete = "SELECT * FROM quisommesnous_ongletSousCategorie WHERE id='$id'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -196,7 +196,7 @@ class GestionAdmin {
         public static function getOngletSousCategorie() {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM ongletSousCategorie";
+        self::$requete = "SELECT * FROM quisommesnous_ongletSousCategorie";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -210,7 +210,7 @@ class GestionAdmin {
     public static function getCategorie() {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM ongletCategorie";
+        self::$requete = "SELECT * FROM quisommesnous_ongletCategorie";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -224,7 +224,7 @@ class GestionAdmin {
     public static function modifTitreCategorie($id, $titre) {
         self::seConnecter();
 
-        self::$requete = "UPDATE ongletCategorie SET id = '$id', titre = '$titre' WHERE id='$id'";
+        self::$requete = "UPDATE quisommesnous_ongletCategorie SET id = '$id', titre = '$titre' WHERE id='$id'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->bindValue('id', $id);
@@ -237,7 +237,7 @@ class GestionAdmin {
     public static function modifSousCategorie($id, $titre, $contenu, $categories) {
         self::seConnecter();
 
-        self::$requete = "UPDATE ongletSousCategorie SET id = '$id', titre = '$titre', contenu = '$contenu', idCategorie = '$categories' WHERE id='$id'";
+        self::$requete = "UPDATE quisommesnous_ongletSousCategorie SET id = '$id', titre = '$titre', contenu = '$contenu', idCategorie = '$categories' WHERE id='$id'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->bindValue('id', $id);
@@ -252,7 +252,7 @@ class GestionAdmin {
     public static function ajoutOngletPrincipal($titre) {
         self::seConnecter();
 
-        self::$requete = "INSERT INTO ongletCategorie (titre) values ('$titre')";
+        self::$requete = "INSERT INTO quisommesnous_ongletCategorie (titre) values ('$titre')";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->bindValue('titre', $titre);
@@ -263,7 +263,7 @@ class GestionAdmin {
     public static function ajoutSousCategorie($titre, $contenu, $idCategorie) {
         self::seConnecter();
 
-        self::$requete = "INSERT INTO ongletSousCategorie (titre, contenu, idCategorie) values ('$titre', '$contenu', '$idCategorie')";
+        self::$requete = "INSERT INTO quisommesnous_ongletSousCategorie (titre, contenu, idCategorie) values ('$titre', '$contenu', '$idCategorie')";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->bindValue('titre', $titre);
