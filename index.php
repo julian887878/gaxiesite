@@ -8,6 +8,7 @@ require_once Chemins::MODELES . 'gestion_admin.class.php';
 
 require Chemins::VUES_PERMANENTES . 'v_menu_principal.inc.php';
 
+
 if (!isset($_REQUEST['cas'])) {
     $cas = 'afficherAccueil';
 } else {

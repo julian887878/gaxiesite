@@ -5,7 +5,7 @@ session_start();
 require_once 'configs/chemins.class.php';
 require_once Chemins::CONFIGS . 'mysql_config.class.php';
 require_once Chemins::MODELES . 'gestion_admin.class.php';
-
+require_once Chemins::LIBS . 'session.class.php';
 
 require_once Chemins::VUES_PERMANENTES_ADMIN . 'v_entete.inc.php';
 require_once Chemins::VUES_PERMANENTES_ADMIN . 'v_menu_gauche.inc.php';
