@@ -1,5 +1,5 @@
 <?php $infos = GestionAdmin::getUserByMail($_SESSION['membre']); ?>
-
+<?php var_dump($infos); ?>
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
