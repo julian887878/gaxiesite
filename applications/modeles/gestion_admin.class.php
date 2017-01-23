@@ -193,6 +193,20 @@ class GestionAdmin {
         return self::$resultat;
     }
 
+        public static function getOngletSousCategorie() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM ongletSousCategorie";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
     public static function getCategorie() {
 
         self::seConnecter();

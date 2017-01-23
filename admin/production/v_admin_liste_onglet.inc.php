@@ -1,15 +1,17 @@
-<?php $lesOngletCategorie = GestionAdmin::getOngletCategorie();
-      ?>
+<?php
+$lesOngletCategorie = GestionAdmin::getOngletCategorie();
+$ongletSousCat = GestionAdmin::getOngletSousCategorie();
+?>
 
 
 <div class='right_col' role='main'> 
-  
+
     <?php
-    foreach ($lesOngletCategorie as $unOngletCategorie){
-            $lesSousCategorie = GestionAdmin::getOngletSousCategorieByCategorie($unOngletCategorie->id);
-   
-    
-    echo "
+    foreach ($lesOngletCategorie as $unOngletCategorie) {
+        $lesSousCategorie = GestionAdmin::getOngletSousCategorieByCategorie($unOngletCategorie->id);
+
+
+        echo "
     <div class='row'>
         <div class='col-md-12 col-sm-12 col-xs-12'>
             <div class='x_panel tile fixed_height_520'>
@@ -42,18 +44,41 @@
                                             </tr>
                                         </thead>
                                         ";
-    foreach ($lesSousCategorie as $uneCateg) {
-        echo "
+        foreach ($lesSousCategorie as $uneCateg) {
+            echo "
                                         <tbody>
                                             <tr>
                                                 <th scope='row'><center>$uneCateg->id</center></th>
                                                 <td><center>$uneCateg->titre</center></td>
                                     <td><center><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_sous_categorie&id=$uneCateg->id'><i class='fa fa-pencil'></i></a></center></td>
-                                                <td><center><a href='#&id=5' data-toggle='modal' data-target='.supprimer-onglet-de-sous-categorie'><i class='fa fa-trash'></i></a></center></td>
+                                                <td><center><a href='' data-toggle='modal' data-target='.supprimer-onglet-de-sous-categorie-$uneCateg->id'><i class='fa fa-trash'></i></a></center></td>
                                         </tr>
                                                               
-                                        </tbody>";}echo "
-    </table>
+                                        </tbody>";
+        }echo "
+    </table>";
+        foreach ($lesSousCategorie as $uneCateg) {
+            echo "<div class='modal fade supprimer-onglet-de-sous-categorie-$uneCateg->id' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Modification d'un onglet</h4>
+            </div>
+            <div class='modal-body'>
+                <h4><i>Onglet</i></h4>
+                <p>Vous allez modifier l'onglet de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <button type='submit' class='btn btn-primary'>Oui, modifier</button>
+            </div>
+
+        </div>
+    </div>
+        </div>";}echo"
     
 
                                 </div>
@@ -65,31 +90,12 @@
             </div>
         </div>
     </div>
-    
-    ";}
-    echo "<div class='modal fade supprimer-onglet-de-sous-categorie' tabindex='-1' role='dialog' aria-hidden='true'>
-            <div class='modal-dialog modal-sm'>
-                <div class='modal-content'>
-
-                    <div class='modal-header'>
-                        <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
-                        </button>
-                        <h4 class='modal-title' id='myModalLabel2'>Suppression</h4>
-                    </div>
-                    <div class='modal-body'>
-                        <h4><i>Onglet</i></h4>
-                        <p>Vous allez suppriemr le sous onglet de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
-                    </div>
-                    <div class='modal-footer'>
-                        <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
-                        <a href='' class='btn btn-primary'>Oui, supprimer</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>"
-    
-    ?>
-    
+     
+";
+    }
+  ?>
 </div>
+  
+    
+    
 
