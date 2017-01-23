@@ -1,9 +1,6 @@
 <?php
 
- 
 class GestionAdmin {
-    
-    
 
     // <editor-fold defaultstate="collapsed" desc="région Champs">
     /**
@@ -21,13 +18,10 @@ class GestionAdmin {
     private static $resultat = null; //resultat de la requete 
 
     // </editor-fold>
-    
-   
     // <editor-fold defaultstate="collapsed" desc="région Méthode statiques">
     /**
      * Permet de se connecter à la base de données 
      */
-
     public static function seConnecter() {
         if (!isset(self::$pdoCnxBase)) { //S'il n'y a pas encore eu de connexion
             try {
@@ -48,13 +42,12 @@ class GestionAdmin {
         self::$pdoCnxBase = null;
         //Si on n'appelle pas la méthode, la déconnecion a lieu en fin de script
     }
-    // </editor-fold>
 
-    
-     // <editor-fold defaultstate="collapsed" desc="région utilisateurs">
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="région utilisateurs">
     /**
      * Permet de se connecter à la base de données 
-     */ 
+     */
     public static function ajoutUsers($nomUtilisateur, $prenomUtilisateur, $emailUtilisateur, $telUtilisateur, $mdpUtilisateur, $posteUtilisateur) {
         self::seConnecter();
 
@@ -70,8 +63,7 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
     }
-    
-        
+
     public static function getMailDernierUser() {
         self::seConnecter();
 
@@ -88,7 +80,7 @@ class GestionAdmin {
     public static function getConnectionUser($emailUtilisateur, $mdpUtilisateur) {
         self::seConnecter();
 
-        
+
 
         self::$requete = "SELECT count(*) AS nbUsers FROM utilisateur WHERE emailUtilisateur='$emailUtilisateur' and mdpUtilisateur='$mdpUtilisateur'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
@@ -119,7 +111,7 @@ class GestionAdmin {
 
         return self::$resultat;
     }
-   
+
     public static function verifMail($emailUtilisateur) {
 
         self::seConnecter();
@@ -133,8 +125,6 @@ class GestionAdmin {
 
         return self::$resultat;
     }
-
-
 
     public static function isAdminOK($emailUtilisateur, $mdpUtilisateur) {
         self::seConnecter();
@@ -154,17 +144,12 @@ class GestionAdmin {
             return false;
     }
 
-
 //  </editor-fold>
-    
-    
     // <editor-fold defaultstate="collapsed" desc="région QUI SOMMES NOUS">
     /**
      * Permet de se connecter à la base de données 
-     */ 
-    
-    
-       public static function getOngletCategorie() {
+     */
+    public static function getOngletCategorie() {
 
         self::seConnecter();
         self::$requete = "SELECT * FROM ongletCategorie";
@@ -177,10 +162,10 @@ class GestionAdmin {
 
         return self::$resultat;
     }
-    
+
     //  </editor-fold>
-    
-     public static function getOngletSousCategorieByCategorie($id) {
+
+    public static function getOngletSousCategorieByCategorie($id) {
 
         self::seConnecter();
         self::$requete = "SELECT * FROM ongletSousCategorie WHERE idCategorie='$id'";
@@ -193,8 +178,8 @@ class GestionAdmin {
 
         return self::$resultat;
     }
-    
-         public static function getOngletSousCategorieByidSousCategorie($id) {
+
+    public static function getOngletSousCategorieByidSousCategorie($id) {
 
         self::seConnecter();
         self::$requete = "SELECT * FROM ongletSousCategorie WHERE id='$id'";
@@ -207,8 +192,8 @@ class GestionAdmin {
 
         return self::$resultat;
     }
-    
-      public static function getCategorie() {
+
+    public static function getCategorie() {
 
         self::seConnecter();
         self::$requete = "SELECT * FROM ongletCategorie";
@@ -221,7 +206,8 @@ class GestionAdmin {
 
         return self::$resultat;
     }
-        public static function modifTitreCategorie($id, $titre) {
+
+    public static function modifTitreCategorie($id, $titre) {
         self::seConnecter();
 
         self::$requete = "UPDATE ongletCategorie SET id = '$id', titre = '$titre' WHERE id='$id'";
@@ -233,8 +219,8 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
     }
-    
-            public static function modifSousCategorie($id, $titre, $contenu, $categories) {
+
+    public static function modifSousCategorie($id, $titre, $contenu, $categories) {
         self::seConnecter();
 
         self::$requete = "UPDATE ongletSousCategorie SET id = '$id', titre = '$titre', contenu = '$contenu', idCategorie = '$categories' WHERE id='$id'";
@@ -248,9 +234,33 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
     }
-    
-}
 
+    public static function ajoutOngletPrincipal($titre) {
+        self::seConnecter();
+
+        self::$requete = "INSERT INTO ongletCategorie (titre) values ('$titre')";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('titre', $titre);
+
+        self::$pdoStResults->execute();
+    }
+
+    public static function ajoutSousCategorie($titre, $contenu, $idCategorie) {
+        self::seConnecter();
+
+        self::$requete = "INSERT INTO ongletSousCategorie (titre, contenu, idCategorie) values ('$titre', '$contenu', '$idCategorie')";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('titre', $titre);
+        self::$pdoStResults->bindValue('contenu', $contenu);
+        self::$pdoStResults->bindValue('idCategorie', $idCategorie);
+
+
+        self::$pdoStResults->execute();
+    }
+
+}
 ?>
 
 
