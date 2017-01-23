@@ -6,4 +6,4 @@ GestionAdmin::modifTitreCategorie($_POST['id'], $_POST['titre']);
             document.location.href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_onglet'
             </SCRIPT>";
         GestionAdmin::seDeconnecter();
-
+?>

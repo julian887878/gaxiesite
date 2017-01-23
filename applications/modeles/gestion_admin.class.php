@@ -208,6 +208,19 @@ class GestionAdmin {
         return self::$resultat;
     }
     
+      public static function getCategorie() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM ongletCategorie";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
         public static function modifTitreCategorie($id, $titre) {
         self::seConnecter();
 
@@ -216,6 +229,21 @@ class GestionAdmin {
 
         self::$pdoStResults->bindValue('id', $id);
         self::$pdoStResults->bindValue('titre', $titre);
+
+
+        self::$pdoStResults->execute();
+    }
+    
+            public static function modifSousCategorie($id, $titre, $contenu, $categories) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE ongletSousCategorie SET id = '$id', titre = '$titre', contenu = '$contenu', idCategorie = '$categories' WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('id', $id);
+        self::$pdoStResults->bindValue('titre', $titre);
+        self::$pdoStResults->bindValue('contenu', $contenu);
+        self::$pdoStResults->bindValue('categories', $categories);
 
 
         self::$pdoStResults->execute();

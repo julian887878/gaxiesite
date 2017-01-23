@@ -1,6 +1,9 @@
-<?php $infosSousCat = GestionAdmin::getOngletSousCategorieByidSousCategorie($_REQUEST['id']); ?> 
+<?php $infosSousCat = GestionAdmin::getOngletSousCategorieByidSousCategorie($_REQUEST['id']);
+$lesCateg = GestionAdmin::getCategorie();
+?> 
 
-<div class="right_col" role="main">   
+<div class="right_col" role="main"> 
+
     <div class="row">
         <div class="col-lg-12">
             <center><h2>Modifier l'onglet de sous catégorie</h2></center>
@@ -8,103 +11,57 @@
         </div>
     </div>
     <!-- start form for validation -->
-    <form id="demo-form" data-parsley-validate>
+    <form  method="post" action="index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_sous_categorie">
+        <label for='fullname'>Identifiant :</label>
+        <div class='row'>
+            <div class='col-lg-6'>
+<?php echo "<input type='text' class='form-control' name='id' id='id' readonly='readonly' value='$infosSousCat->id'/> "; ?>
+            </div>
+        </div><br>
         <label for="fullname">Titre de la sous catégorie :</label>
         <div class="row">
             <div class="col-lg-12">
-             <?php echo "<input type='text' id='fullname' class='form-control' name='titre' value='$infosSousCat->titre' required/>"; ?>
+<?php echo "<input type='text' id='titre' class='form-control' name='titre' value='$infosSousCat->titre' required/>"; ?>
             </div>
         </div><br>
         <div class='row'>
             <div class="col-lg-12">
-                <label for="fullname">Categorie correspondant :</label>
-                 <select id="heard" class="form-control" required>
-                            <option value="">Catégorie..</option>
-                            <option value="press">Categorie 1</option>
-                            <option value="net">Categorie 2</option>
-                            <option value="mouth">Categorie 3</option>
-                          </select>
+                <label for="categories">Categorie correspondant :</label>
+                <select id="categories" name='categories' class="form-control" required>
+                    <option value="">Catégorie..</option>
+                    <?php
+                    foreach ($lesCateg as $uneCategorie) {
+                        echo"<option value='$uneCategorie->id'>$uneCategorie->titre</option>";
+                    }
+                    ?>
+                </select>
             </div>
         </div><br>
+
+
+
         <div class='row'>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              
-                  <label for="fullname">Contenu :</label>
-
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <div id="alerts"></div>
-                  <div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor">
-                    <div class="btn-group">
-                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="fa fa-font"></i><b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                      </ul>
-                    </div>
-
-                    <div class="btn-group">
-                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Taille de la police"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a data-edit="fontSize 5">
-                            <p style="font-size:17px">Grande</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a data-edit="fontSize 3">
-                            <p style="font-size:14px">Normale</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a data-edit="fontSize 1">
-                            <p style="font-size:11px">Petite</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="btn-group">
-                      <a class="btn" data-edit="bold" title="Gras (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
-                      <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
-                      <a class="btn" data-edit="strikethrough" title="Barré"><i class="fa fa-strikethrough"></i></a>
-                      <a class="btn" data-edit="underline" title="Souligné (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
-                    </div>
-
-                    <div class="btn-group">
-                      <a class="btn" data-edit="insertunorderedlist" title="Liste de puce"><i class="fa fa-list-ul"></i></a>
-                      <a class="btn" data-edit="insertorderedlist" title="Liste de nombre"><i class="fa fa-list-ol"></i></a>
-                      <a class="btn" data-edit="outdent" title="Enlever l'indentation (Shift+Tab)"><i class="fa fa-dedent"></i></a>
-                      <a class="btn" data-edit="indent" title="Indenter (Tab)"><i class="fa fa-indent"></i></a>
-                    </div>
-
-                    <div class="btn-group">
-                      <a class="btn" data-edit="justifyleft" title="Aligner à gauche (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
-                      <a class="btn" data-edit="justifycenter" title="Centrer (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
-                      <a class="btn" data-edit="justifyright" title="Aligner à droite (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
-                      <a class="btn" data-edit="justifyfull" title="Justifier (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
-                    </div>
-
-                    <div class="btn-group">
-                      <a class="btn" data-edit="undo" title="Annuler (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
-                      <a class="btn" data-edit="redo" title="Revenir (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
-                    </div>
-                  </div>
-
-                <?php echo "  <div id='editor' class='editor-wrapper'>$infosSousCat->contenu</div>"; ?>
-
-                <textarea name='contenu' id='contenu' style='display:none;'></textarea>
-                  <br />
-                </div>
-              </div>
-        <div class="row">
-            <div class='col-lg-12'>
-                <center><span class="btn btn-primary">Ajouter la sous catégorie</span></center>
+            <div class="col-lg-12">
+                <label for="fullname">Contenu :</label>
+                <div class="clearfix"></div>
             </div>
         </div>
-</div>
-        
+        <div class='row'>
+            <div class="col-md-12">
+                <textarea cols="80" class="ckeditor" id="contenu" name="contenu" rows="10"></textarea>
+            </div>
+        </div><br />
+
+
+        <div class="row">
+            <div class='col-lg-12'>
+                <center><button type=submit class="btn btn-primary">Ajouter la sous catégorie</button></center>
+            </div>
+        </div><br>
     </form>
-    <!-- end form for validations -->
+</div>
+
+<!-- end form for validations -->
 
 </div>
 

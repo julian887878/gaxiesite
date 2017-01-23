@@ -66,7 +66,8 @@
 <!--LIGHTBOX-->
 
 		<link rel="stylesheet" href="please/assets/css/main.css" />
-
+                
+                <!-- CKEDITOR -->
         <?php // </editor-fold> 
 ?>
 </head>

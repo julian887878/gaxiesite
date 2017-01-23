@@ -41,4 +41,7 @@
         
         <!-- Custom Theme Style -->
         <link href="public/admin/build/css/custom.min.css" rel="stylesheet">
+        
+                        <script type="text/javascript" src='libs/ckeditor/ckeditor.js'/></script>
+
     </head>
