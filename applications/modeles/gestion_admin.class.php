@@ -88,7 +88,7 @@ class GestionAdmin {
     public static function getConnectionUser($emailUtilisateur, $mdpUtilisateur) {
         self::seConnecter();
 
-        $_SESSION['membre'] = $emailUtilisateur;
+        
 
         self::$requete = "SELECT count(*) AS nbUsers FROM utilisateur WHERE emailUtilisateur='$emailUtilisateur' and mdpUtilisateur='$mdpUtilisateur'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
@@ -188,6 +188,20 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
         self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+         public static function getOngletSousCategorieByidSousCategorie($id) {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM ongletSousCategorie WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
 
         self::$pdoStResults->closeCursor();
 

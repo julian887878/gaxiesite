@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Gaxieu Administration</title>
-<?php $infos = GestionAdmin::getUserByMail($_SESSION['membre']); ?>
+<?php $infos = GestionAdmin::getUserByMail($_SESSION['membre']); 
+?>
 
         <!-- Bootstrap -->
         <link href="public/admin/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

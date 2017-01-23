@@ -7,27 +7,7 @@
 </footer>
 <!-- /footer content -->
 
-<div class="modal fade supperimer-onglet-categorie" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
 
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel2">Suppression d'un onglet</h4>
-            </div>
-            <div class="modal-body">
-                <h4><i>Onglet numéro 1</i></h4>
-                <p>Vous allez supprimer l'onglet de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
-                <button type="button" class="btn btn-primary">Oui, supprimer</button>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 
 

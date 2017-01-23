@@ -48,7 +48,7 @@
                                             <tr>
                                                 <th scope='row'><center>$uneCateg->id</center></th>
                                                 <td><center>$uneCateg->titre</center></td>
-                                    <td><center><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_sous_categorie'><i class='fa fa-pencil'></i></a></center></td>
+                                    <td><center><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_sous_categorie&id=$uneCateg->id'><i class='fa fa-pencil'></i></a></center></td>
                                                 <td><center><i class='fa fa-trash'></i></center></td>
                                         </tr>
                                                               

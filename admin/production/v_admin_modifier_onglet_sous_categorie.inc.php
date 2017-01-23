@@ -1,3 +1,5 @@
+<?php $infosSousCat = GestionAdmin::getOngletSousCategorieByidSousCategorie($_REQUEST['id']); ?> 
+
 <div class="right_col" role="main">   
     <div class="row">
         <div class="col-lg-12">
@@ -10,7 +12,7 @@
         <label for="fullname">Titre de la sous catégorie :</label>
         <div class="row">
             <div class="col-lg-12">
-                <input type="text" id="fullname" class="form-control" name="fullname" required />
+             <?php echo "<input type='text' id='fullname' class='form-control' name='titre' value='$infosSousCat->titre' required/>"; ?>
             </div>
         </div><br>
         <div class='row'>
@@ -88,9 +90,9 @@
                     </div>
                   </div>
 
-                  <div id="editor" class="editor-wrapper"></div>
+                <?php echo "  <div id='editor' class='editor-wrapper'>$infosSousCat->contenu</div>"; ?>
 
-                  <textarea name="descr" id="descr" style="display:none;"></textarea>
+                <textarea name='contenu' id='contenu' style='display:none;'></textarea>
                   <br />
                 </div>
               </div>
