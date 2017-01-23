@@ -1,5 +1,7 @@
-
-<!-- Footer Section -->
+<?php
+// <editor-fold defaultstate="collapsed" desc="FOOTER">
+?>
+<!--FOOTER-->
 <footer id="colophon" class="footer site-footer" role="contentinfo">
     <div class="footer-top">
         <div class="section-padding" style="padding-top: 20px; padding-bottom: 20px;">
@@ -64,9 +66,13 @@
         </div>
     </div>
 </footer>
+<?php
+// </editor-fold> 
+?>
 
-
-
+<?php
+// <editor-fold defaultstate="collapsed" desc="CODE GENERAL(FLECHE REMONTANTE, POPUP)">
+?>
 <!-- FLECHE REMONTANTE -->
 <div id="scroll-to-top" class="scroll-to-top" style="z-index: 1049;">
     <span>
@@ -74,10 +80,7 @@
     </span>
 </div>
 
-<?php
-// <editor-fold defaultstate="collapsed" desc="Script JAVA/JQUERY">
-?>
-<!-- SCRIPT POP UP INSCRIPTION ADMIN -->
+<!-- POP UP INSCRIPTION ADMIN -->
 <div class="modal fade" id="co-admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" style="margin-top: 18%">
         <div class="modal-content">                      
@@ -128,6 +131,225 @@
         </div>
     </div>
 </div>
+
+
+<!-- POP UP GALLERY -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
+            <div class="modal-body">
+
+<div id="works"  class=" clearfix grid"> 
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/photogroupe.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Aménagement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+                <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/ville2.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Ouvrages techniques</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/ville4.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Ouvrages de traitement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/ville5.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Réseaux humides et secs</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider1.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Eolien</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider2.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Urbanisme juridique et opérationnel</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider3.jpg"/>
+        <figcaption>
+           <?php  $test = "<h2>Etudes hydrauliques, modélisation, dossiers règlementaires</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine" >Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider4.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Infographies, vidéos</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider5.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Assistance à maîtrise d’ouvrage</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine" >Voir plus</a></p>            
+        </figcaption>
+    </figure>
+     <figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/slider_secondaire/images/slider5.jpg"/>
+        <figcaption>
+            <?php  $test = "<h2>Digues et barrages</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+            <p><br>
+            <a href="#" data-toggle="modal" data-target="#co-admine" >Voir plus</a></p>            
+        </figcaption>
+    </figure>
+    
+    
+    <a href="index.php?cas=afficherSections&categorie=contact"><figure class="effect-oscar  wowload fadeInUp">
+        <img src="public/images/popup_galery/contact.png"/>
+        <figcaption>
+            <?php  $test = "<h2>NOUS CONTACTER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+                      
+        </figcaption>
+        </figure></a><figure class="effect-oscar  wowload fadeInUp" data-dismiss="modal">
+        <img src="public/images/popup_galery/fermer.png"/>
+        <figcaption>
+            <?php  $test = "<h2>FERMER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
+                       
+        </figcaption>
+    </figure>
+  
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title">Title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>   
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="public/popup_galery/assets/mobile/touchSwipe.min.js"></script>
+<script src="public/popup_galery/assets/respond/respond.js"></script>
+
+<script src="public/popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+<!-- POP UP LIGHTBOX -->
+<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow-y: scroll;">
+    <div class="modal-dialog" style=" width: 100%;">
+        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
+            <div class="modal-body">
+
+                <button data-dismiss="modal" type="button" >&times;</button>
+
+			<div id="wrapper">
+
+					<div id="main">
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+						</article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+						<article class="thumb">
+							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
+							<h2 style="color:#d5d5d5;">Titre</h2>
+							<p style="color:#d5d5d5;">Description</p>
+                                                </article>
+					</div>
+
+			</div>
+
+			<script src="public/popup_lightbox/assets/js/jquery.min.js"></script>
+			<script src="public/popup_lightbox/js/jquery.poptrox.min.js"></script>
+			<script src="public/popup_lightbox/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="public/popup_lightbox/js/main.js"></script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+// </editor-fold> 
+?>
+
+<?php
+// <editor-fold defaultstate="collapsed" desc="Script JAVA/JQUERY">
+?>
+
 <!-- DEBUT - Facebook intégration -->
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
@@ -140,17 +362,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-
-
 <!-- UTILE POUR LA POP UP -->
 <script>window.jQuery || document.write('<script src="public/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
 
-
-
 <!-- Include Custom Js </-->
 <script src="public/assets/js/custom.min.js"></script>
-
-
 
 <!-- SCRIPT MENU PRINCIPAL -->
 <script src="public/assets/js/classie.js"></script>
@@ -158,8 +374,6 @@
 <script>
     new gnMenu(document.getElementById('gn-menu'));
 </script>
-
-
 
 <!-- SCRIPT POUR CHARGEMENT -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
@@ -169,8 +383,6 @@
         $(".site").fadeIn("1000");
     })
 </script>
-
-
 
 <!-- GOOGLE PLUS -->
 <script type="text/javascript">
@@ -185,235 +397,6 @@
         s.parentNode.insertBefore(po, s);
     })();
 </script>
-
-
-
-
-<!-- SCRIPT POP UP GALLERY -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
-            <div class="modal-body">
-
-<div id="works"  class=" clearfix grid"> 
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/photogroupe.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Aménagement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-                <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/ville2.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Ouvrages techniques</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/ville4.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Ouvrages de traitement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/ville5.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Réseaux humides et secs</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider1.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Eolien</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider2.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Urbanisme juridique et opérationnel</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider3.jpg"/>
-        <figcaption>
-           <?php  $test = "<h2>Etudes hydrauliques, modélisation, dossiers règlementaires</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider4.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Infographies, vidéos</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider5.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Assistance à maîtrise d’ouvrage</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider6.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Digues et barrages</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-    
-    
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider6.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>NOUS CONTACTER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">Redirection</a></p>            
-        </figcaption>
-    </figure><figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider6.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>FERMER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" data-dismiss="modal">X</a></p>            
-        </figcaption>
-    </figure>
-  
-</div>
-
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title">Title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>   
-</div>
-   
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="public/popup_galery/assets/mobile/touchSwipe.min.js"></script>
-<script src="public/popup_galery/assets/respond/respond.js"></script>
-
-<script src="public/popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-<!-- SCRIPT POP UP LIGHTBOX -->
-<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow-y: scroll;">
-    <div class="modal-dialog" style=" width: 100%;">
-        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
-            <div class="modal-body">
-
-                <button data-toggle="modal" data-target="#login-modal" data-dismiss="modal" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-
-		
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-
-
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/02.jpg" class="image"><img src="please/images/thumbs/02.jpg" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/03.jpg" class="image"><img src="please/images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/04.jpg" class="image"><img src="please/images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/05.jpg" class="image"><img src="please/images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/06.jpg" class="image"><img src="please/images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/07.jpg" class="image"><img src="please/images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/08.jpg" class="image"><img src="please/images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/09.jpg" class="image"><img src="please/images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/10.jpg" class="image"><img src="please/images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/11.jpg" class="image"><img src="please/images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="please/images/fulls/12.jpg" class="image"><img src="please/images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-					</div>
-
-				
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="please/assets/js/jquery.min.js"></script>
-			<script src="please/assets/js/jquery.poptrox.min.js"></script>
-			<script src="please/assets/js/skel.min.js"></script>
-			<script src="please/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="please/assets/js/main.js"></script>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
     <!--SCRIPT SLIDER 2--> 
 <script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
@@ -437,7 +420,7 @@
    
     <?php
 // </editor-fold> 
-    ?>      
+?>      
 
 </body>
 </html>

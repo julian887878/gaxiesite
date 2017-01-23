@@ -1,4 +1,7 @@
 <br>
+<?php
+// <editor-fold defaultstate="collapsed" desc="SLIDER 1">
+?>
 <!--pour enlever le zoom enlever le margin-top et mettre height a 100%-->
 <div class="wrapper">
     <div id="ei-slider" class="ei-slider">
@@ -45,7 +48,7 @@
                     <h3 style="text-align: center;">Description</h3>
                 </div>
             </li>
-        </ul><!-- ei-slider-large -->
+        </ul>
         <ul class="ei-slider-thumbs">
             <li class="ei-slider-element"></li>
             <li><a href="#"></a><img src="public/images/slider_principal/photogroupe.jpg"/></li>
@@ -54,10 +57,12 @@
             <li><a href="#"></a><img src="public/images/slider_principal/ville2.jpg"/></li>
             <li><a href="#"></a><img src="public/images/slider_principal/ville4.jpg"/></li>
             <li><a href="#"></a><img src="public/images/slider_principal/ville5.jpg"/></li>
-        </ul><!-- ei-slider-thumbs -->
-    </div><!-- ei-slider -->
-</div><!-- wrapper -->
-
+        </ul>
+    </div>
+</div>
+<?php
+// </editor-fold> 
+?>
 
 <?php
 // <editor-fold defaultstate="collapsed" desc="BANDEAU COMPETENCES">
@@ -89,6 +94,9 @@
 // </editor-fold> 
 ?>
                 
+<?php
+// <editor-fold defaultstate="collapsed" desc="SLIDER 2">
+?>                
 <div id="wowslider-container1">
 <div class="ws_images"><ul>
 		<li><a href="#" data-toggle="modal" data-target="#login-modal"><img src="public/images/slider_secondaire/images/photogroupe.jpg" title="Aménagement" id="wows1_0"/></a></li>
@@ -117,7 +125,10 @@
 </div>
 </div>
 </div>	
-
+<?php
+// </editor-fold> 
+?>
+                
 <?php
 // <editor-fold defaultstate="collapsed" desc="COMPTEUR">
 ?>
@@ -200,13 +211,12 @@
 <?php
 // </editor-fold> 
 ?>
-
-                
-                    
+           
+<?php
+// <editor-fold defaultstate="collapsed" desc="JS ANCRAGE & LIGHTBOX">
+?>               
     <!--ANIMATION ANCRAGE-->
-   
-
-                <script type="text/javascript">
+<script type="text/javascript">
 function juizScrollTo(element){			
 	$(element).click(function(){
 		var goscroll = false;
@@ -237,6 +247,8 @@ function juizScrollTo(element){
 };
 juizScrollTo('a[href^="#"]');
 </script>
-
-
-
+<!--LIGHTBOX--> 
+<script src="public/popup_lightbox/assets/js/skel.min.js"></script>
+<?php
+// </editor-fold> 
+?>

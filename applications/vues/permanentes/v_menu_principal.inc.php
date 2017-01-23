@@ -3,9 +3,8 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <!--<![endif]-->
-
 <html class="no-js" lang="">
-    <head>
+<head>
 
 <?php
 // <editor-fold defaultstate="collapsed" desc="BALISES META & TITLE">
@@ -65,19 +64,18 @@
 
 <!--LIGHTBOX-->
 
-		<link rel="stylesheet" href="please/assets/css/main.css" />
+		<link rel="stylesheet" href="public/popup_lightbox/assets/css/main.css" />
                 
                 <!-- CKEDITOR -->
         <?php // </editor-fold> 
 ?>
+                
 </head>
-
+<body onload="load()">
+    
 <?php
-// <editor-fold defaultstate="collapsed" desc="CHARGEMENT DE PAGE">
-    ?>
-    <!-- PAGE DE CHARGEMENT -->
-    <body onload="load()">
-
+// <editor-fold defaultstate="collapsed" desc="PAGE DE CHARGEMENT">
+?>
         <div class="loader" id="loader">
             <center style="padding-top: 27%;"><div id="ballsWaveG">
                     <div id="ballsWaveG_1" class="ballsWaveG"></div>
@@ -90,14 +88,12 @@
                     <div id="ballsWaveG_8" class="ballsWaveG"></div>
                 </div>
         </div><br></center>
-
-    <!-- DEBUT DU SITE -->        
-    <div id="site">
-        
-        <?php // </editor-fold> 
-?>
-
-        <header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">     
+<?php // </editor-fold> 
+?>  
+            
+<div id="site">        
+<header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">
+    
 <?php
 // <editor-fold defaultstate="collapsed" desc="MENU PRINCIPAL">
             ?>
@@ -137,4 +133,5 @@
 
             <?php // </editor-fold> 
 ?>
-        </header>
+
+</header>

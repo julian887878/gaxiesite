@@ -27,9 +27,10 @@
        <?php
 // </editor-fold> 
 ?> 
+    
 <?php
 // <editor-fold defaultstate="collapsed" desc="Menu déroulant">
-        ?>
+?>
         
     <div class="panel-group" id="accordion1" style="margin-left: 20px;margin-right: 20px;text-align:left;">
     <div class="panel panel-default">
@@ -517,8 +518,9 @@
     
     </div>
     </div>
-</section>
-          <?php
+<?php
 // </editor-fold> 
 ?> 
+</section>
+          
 <br>

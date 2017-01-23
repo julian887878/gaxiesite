@@ -27,8 +27,7 @@
 <?php
 // </editor-fold> 
 ?>
-
-                
+             
 <?php
 // <editor-fold defaultstate="collapsed" desc="FORMULAIRE DE CANDIDATURE">
 ?>
