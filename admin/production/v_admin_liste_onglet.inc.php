@@ -16,7 +16,7 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
         <div class='col-md-12 col-sm-12 col-xs-12'>
             <div class='x_panel tile fixed_height_520'>
                 <div class='x_title'>
-                    <h2>$unOngletCategorie->titre&nbsp;&nbsp;<a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_categorie&titre=$unOngletCategorie->titre&id=$unOngletCategorie->id' alt='Modifier'><i class='fa fa-pencil'></i></a> &nbsp;&nbsp;<a href='#' data-toggle='modal' data-target='.supperimer-onglet-categorie' alt='Supprimer'><i class='fa fa-trash'></i></a></h2>
+                    <h2>$unOngletCategorie->titre&nbsp;&nbsp;<a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_categorie&titre=$unOngletCategorie->titre&id=$unOngletCategorie->id' alt='Modifier'><i class='fa fa-pencil'></i></a> &nbsp;&nbsp;<a href='#' data-toggle='modal' data-target='.supprimer-categorie-$unOngletCategorie->id' alt='Supprimer'><i class='fa fa-trash'></i></a></h2>
                     <ul class='nav navbar-right panel_toolbox'>
                         <li><a class='collapse-link'><i class='fa fa-chevron-up'></i></a>
                         </li>
@@ -65,20 +65,21 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
             <div class='modal-header'>
                 <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
                 </button>
-                <h4 class='modal-title' id='myModalLabel2'>Modification d'un onglet</h4>
+                <h4 class='modal-title' id='myModalLabel2'>Suppression de $uneCateg->titre</h4>
             </div>
             <div class='modal-body'>
-                <h4><i>Onglet</i></h4>
-                <p>Vous allez modifier l'onglet de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
+                <h4><i>Onglet $uneCateg->titre</i></h4>
+                <p>Vous allez supprimer l'onglet de la page <i>Qui sommes-nous</i>. Voulez vous vraiment poursuivre votre action ?</p>
             </div>
             <div class='modal-footer'>
                 <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
-                <button type='submit' class='btn btn-primary'>Oui, modifier</button>
+                <a href='index_admin.php?cas=cacherSectionsAdmin&categorie=supprimer_sous_categorie&id=$uneCateg->id' class='btn btn-primary'>Oui, supprimer</a>
             </div>
 
         </div>
     </div>
-        </div>";}echo"
+        </div>";
+        }echo"
     
 
                                 </div>
@@ -93,9 +94,37 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
      
 ";
     }
-  ?>
+    ?>
+    
+    
+<?php
+foreach ($lesOngletCategorie as $unOngletCategorie) {
+    echo "<div class='modal fade supprimer-categorie-$unOngletCategorie->id' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Suppression de $unOngletCategorie->titre</h4>
+            </div>
+            <div class='modal-body'>
+                <h4><i>Onglet $unOngletCategorie->titre</i></h4>
+                <p>Vous allez supprimer l'onglet de la page <i>Qui sommes-nous</i> ainsi que tout ses sous onglet. Voulez vous vraiment poursuivre votre action ?</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <a href='index_admin.php?cas=cacherSectionsAdmin&categorie=supprimer_categorie&id=$unOngletCategorie->id' class='btn btn-primary'>Oui, supprimer</a>
+            </div>
+
+        </div>
+    </div>
+        </div>";
+}
+
+?>
 </div>
-  
-    
-    
+
+
+
 

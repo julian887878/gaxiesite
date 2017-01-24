@@ -1,6 +1,5 @@
 <?php
-
-GestionAdmin::supprimerCategorie($_REQUEST['id']);
+GestionAdmin::supprimerUtilisateur($_REQUEST['idUtilisateur']);
  echo "<SCRIPT langage=JavaScript>
             document.location.href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_onglet'
             </SCRIPT>";

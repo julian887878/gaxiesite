@@ -18,6 +18,7 @@ class GestionAdmin {
     private static $resultat = null; //resultat de la requete 
 
     // </editor-fold>
+    
     // <editor-fold defaultstate="collapsed" desc="région Méthode statiques">
     /**
      * Permet de se connecter à la base de données 
@@ -44,6 +45,7 @@ class GestionAdmin {
     }
 
     // </editor-fold>
+    
     // <editor-fold defaultstate="collapsed" desc="région utilisateurs">
     /**
      * Permet de se connecter à la base de données 
@@ -143,12 +145,43 @@ class GestionAdmin {
         else
             return false;
     }
+    
+        public static function getUtilisateur() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM utilisateur";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+               public static function supprimerUtilisateur($idUtilisateur) {
+        try {
+            self::seConnecter();
+
+            self::$requete = "DELETE FROM utilisateur WHERE idUtilisateur=:idUtilisateur";
+            self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+            self::$pdoStResults->bindValue('idUtilisateur', $idUtilisateur);
+            self::$pdoStResults->execute();
+        } catch (Exception $ex) {
+            echo $ex->getMessage();
+        }
+    }
+    
+    
 
 //  </editor-fold>
+
     // <editor-fold defaultstate="collapsed" desc="région QUI SOMMES NOUS">
     /**
      * Permet de se connecter à la base de données 
      */
+    
     public static function getOngletCategorie() {
 
         self::seConnecter();
@@ -163,7 +196,19 @@ class GestionAdmin {
         return self::$resultat;
     }
 
-    //  </editor-fold>
+        public static function getOngletResume() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM quisommesnous_resume";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
 
     public static function getOngletSousCategorieByCategorie($id) {
 
@@ -273,8 +318,40 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
     }
+    
+        public static function supprimerSousCategorie($id) {
+        try {
+            self::seConnecter();
 
+            self::$requete = "DELETE FROM quisommesnous_ongletSousCategorie WHERE id=:id";
+            self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+            self::$pdoStResults->bindValue('id', $id);
+            self::$pdoStResults->execute();
+        } catch (Exception $ex) {
+            echo $ex->getMessage();
+        }
+    }
+
+    
+           public static function supprimerCategorie($id) {
+        try {
+            self::seConnecter();
+
+            self::$requete = "DELETE FROM quisommesnous_ongletCategorie WHERE id=:id";
+            self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+            self::$pdoStResults->bindValue('id', $id);
+            self::$pdoStResults->execute();
+        } catch (Exception $ex) {
+            echo $ex->getMessage();
+        }
+    }
+ //  </editor-fold>
+    
+    
 }
+
 ?>
 
 
