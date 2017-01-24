@@ -205,7 +205,8 @@
     <div class="modal-dialog">
         <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
             <div class="modal-body">
-
+<a href="" data-dismiss="modal"><img style="width: 25px;" src="public/images/test.png"></a>
+                
 <div id="works"  class=" clearfix grid"> 
     <figure class="effect-oscar  wowload fadeInUp">
         <img src="public/images/slider_secondaire/images/photogroupe.jpg"/>
@@ -324,13 +325,11 @@
 <script src="public/popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
 
 <!-- POP UP LIGHTBOX -->
-<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow-y: scroll;">
-    <div class="modal-dialog" style=" width: 100%;">
+<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;padding-left: 0px;">
+    <div class="modal-dialog" style="width: 100%;">
         <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
             <div class="modal-body">
-
-                <button data-dismiss="modal" type="button" >&times;</button>
-
+                <a href="" data-dismiss="modal"><img style="width: 25px;" src="public/images/test.png"></a>
 			<div id="wrapper">
 
 					<div id="main">
@@ -408,6 +407,7 @@
         </div>
     </div>
 </div>
+
 
 <?php
 // </editor-fold> 
