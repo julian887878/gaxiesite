@@ -174,6 +174,20 @@ class GestionAdmin {
     }
     
     
+    
+        public static function passerAdmin($idUtilisateur) {
+        self::seConnecter();
+
+        self::$requete = " UPDATE utilisateur SET isAdmin = '1' WHERE idUtilisateur = $idUtilisateur;";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('idUtilisateur', $idUtilisateur);
+
+
+        self::$pdoStResults->execute();
+    }
+        
+    
 
 //  </editor-fold>
 
