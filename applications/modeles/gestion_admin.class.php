@@ -363,12 +363,26 @@ class GestionAdmin {
     }
  //  </editor-fold>
     
-        // <editor-fold defaultstate="collapsed" desc="région ACCUEIL">
+    // <editor-fold defaultstate="collapsed" desc="région ACCUEIL">
         
         public static function getSlider1() {
 
         self::seConnecter();
         self::$requete = "SELECT * FROM accueil_sliderPrincipal";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+    public static function getSlider2() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM accueil_sliderSecondaire";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
