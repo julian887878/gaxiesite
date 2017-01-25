@@ -469,8 +469,79 @@ class GestionAdmin {
     
     
     //</editor-fold>
-}
+    
+    
+    public static function getIcones() {
 
+        self::seConnecter();
+        self::$requete = "SELECT * FROM icone";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+            public static function modifCompteurGauche($image, $nombre, $texte) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_compteur SET image = '$image', nombre = '$nombre', texte = '$texte' WHERE id= 1";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('image', $image);
+        self::$pdoStResults->bindValue('nombre', $nombre);
+        self::$pdoStResults->bindValue('texte', $texte);
+
+
+        self::$pdoStResults->execute();
+    }
+    
+               public static function modifCompteurDroite($image, $nombre, $texte) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_compteur SET image = '$image', nombre = '$nombre', texte = '$texte' WHERE id= 4";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('image', $image);
+        self::$pdoStResults->bindValue('nombre', $nombre);
+        self::$pdoStResults->bindValue('texte', $texte);
+
+
+        self::$pdoStResults->execute();
+    }
+    
+             public static function modifCompteurMiGauche($image, $nombre, $texte) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_compteur SET image = '$image', nombre = '$nombre', texte = '$texte' WHERE id= 2";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('image', $image);
+        self::$pdoStResults->bindValue('nombre', $nombre);
+        self::$pdoStResults->bindValue('texte', $texte);
+
+
+        self::$pdoStResults->execute();
+    }
+    
+    
+        public static function modifCompteurMiDroite($image, $nombre, $texte) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_compteur SET image = '$image', nombre = '$nombre', texte = '$texte' WHERE id= 3";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('image', $image);
+        self::$pdoStResults->bindValue('nombre', $nombre);
+        self::$pdoStResults->bindValue('texte', $texte);
+
+
+        self::$pdoStResults->execute();
+    }
+
+}
 ?>
 
 
