@@ -470,7 +470,8 @@ class GestionAdmin {
     
     //</editor-fold>
     
-    
+    // <editor-fold defaultstate="collapsed" desc="région COMPTEUR">
+        
     public static function getIcones() {
 
         self::seConnecter();
@@ -540,7 +541,25 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
     }
+    //</editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="région Echange">
+         
+        public static function getExplication() {
 
+        self::seConnecter();
+        self::$requete = "SELECT * FROM echange_explication";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+    //</editor-fold>
 }
 ?>
 
