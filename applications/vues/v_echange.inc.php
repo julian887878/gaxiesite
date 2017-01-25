@@ -12,7 +12,11 @@
     <div class="col-md-12">
     <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
         <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Echange de fichier !</b></u></span></h2></center>
-        <center>Blabla explicatif</center>
+         <?php
+    $explicationAffichage = GestionAdmin::getExplication();
+                foreach ($explicationAffichage as $uneExplicationAffichage) {
+                    echo " 
+        $uneExplicationAffichage->texte";}?>
 </div>
     </div>
     </div>

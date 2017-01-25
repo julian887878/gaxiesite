@@ -261,14 +261,14 @@ echo"
 $popupDuSlider = GestionAdmin::getImagePopup($unSliderSecondaire->id);
 foreach ($popupDuSlider as $unePopupDuSlider) {
 echo"
-    <a href='#' data-toggle='modal' data-target='#jetest'><figure class='effect-oscar  wowload fadeInUp'>
+    <figure class='effect-oscar  wowload fadeInUp'>
         <img src='public/images/slider_secondaire/images/$unePopupDuSlider->image'/>
         <figcaption>
            ";$test = "<h2>$unePopupDuSlider->titre</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35).'...';}else{echo $test;}
            echo" <p><br>
                 $unePopupDuSlider->description</p>            
         </figcaption>
-    </figure></a>
+    </figure>
 ";}
   echo"
 </div>
@@ -292,22 +292,6 @@ echo"
 
 
 
-<!--POP UP ZOOM SUR L'IMAGE--> 
-<div class="modal fade" id="jetest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    
-        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">      
-            <a href='' data-dismiss='modal'><img style='width: 25px;' src='public/images/test.png'></a>
-            <div class="modal-body">
-
-                
-                    <img src="public/images/slider_principal/photogroupe.jpg" style="width: 95%;">
-                
-                        </form>
-                    </div>  
-            </div>
-        
-    </div>
-</div>
 
 <?php
 // </editor-fold> 
