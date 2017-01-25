@@ -208,88 +208,18 @@
 <a href="" data-dismiss="modal"><img style="width: 25px;" src="public/images/test.png"></a>
                 
 <div id="works"  class=" clearfix grid"> 
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/photogroupe.jpg"/>
+    <?php $leSliderSecondaire = GestionAdmin::getSlider2();
+foreach ($leSliderSecondaire as $unSliderSecondaire) {
+echo"
+    <figure class='effect-oscar  wowload fadeInUp'>
+        <img src='public/images/slider_secondaire/images/$unSliderSecondaire->image'/>
         <figcaption>
-            <?php  $test = "<h2>Aménagement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-                <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
+            ";$test = "<h2>$unSliderSecondaire->titre</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35).'...';}else{echo $test;}
+            echo"<p><br>
+                <a href='#' data-toggle='modal' data-target='#co-admine-$unSliderSecondaire->id'>Voir plus</a></p>            
         </figcaption>
     </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/ville2.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Ouvrages techniques</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/ville4.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Ouvrages de traitement</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/ville5.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Réseaux humides et secs</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider1.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Eolien</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider2.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Urbanisme juridique et opérationnel</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider3.jpg"/>
-        <figcaption>
-           <?php  $test = "<h2>Etudes hydrauliques, modélisation, dossiers règlementaires</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" >Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider4.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Infographies, vidéos</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine">Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider5.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Assistance à maîtrise d’ouvrage</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" >Voir plus</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/slider_secondaire/images/slider5.jpg"/>
-        <figcaption>
-            <?php  $test = "<h2>Digues et barrages</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-            <p><br>
-            <a href="#" data-toggle="modal" data-target="#co-admine" >Voir plus</a></p>            
-        </figcaption>
-    </figure>
-    
+";}?>
     
     <a href="index.php?cas=afficherSections&categorie=contact"><figure class="effect-oscar  wowload fadeInUp">
         <img src="public/images/popup_galery/contact.png"/>
@@ -319,95 +249,68 @@
     </div>
 </div>
 
+
+<!-- POP UP LIGHTBOX -->
+<?php 
+foreach ($leSliderSecondaire as $unSliderSecondaire) {
+echo"
+<div class='modal fade' id='co-admine-$unSliderSecondaire->id' tabindex='-1' role='dialog' aria-hidden='true' style='background-color: black;padding-left: 0px;'>
+    <div class='modal-dialog' style='width: 100%;'>
+        <div class='modal-content' style='background-color: rgba(255, 0, 0, 0);'>                      
+            <div class='modal-body'>
+                <a href='' data-dismiss='modal'><img style='width: 25px;' src='public/images/test.png'></a>
+			                
+<div id='works'  class=' clearfix grid'>"; 
+$popupDuSlider = GestionAdmin::getImagePopup($unSliderSecondaire->id);
+foreach ($popupDuSlider as $unePopupDuSlider) {
+echo"
+    <a href='#' data-toggle='modal' data-target='#jetest'><figure class='effect-oscar  wowload fadeInUp'>
+        <img src='public/images/slider_secondaire/images/$unePopupDuSlider->image'/>
+        <figcaption>
+           ";$test = "<h2>$unePopupDuSlider->titre</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35).'...';}else{echo $test;}
+           echo" <p><br>
+                $unePopupDuSlider->description</p>            
+        </figcaption>
+    </figure></a>
+";}
+  echo"
+</div>
+
+<div id='blueimp-gallery' class='blueimp-gallery blueimp-gallery-controls'>
+    <div class='slides'></div>
+    <h3 class='title'>Title</h3>
+    <a class='prev'>‹</a>
+    <a class='next'>›</a>
+    <a class='close'>×</a>   
+</div>
+            </div>
+        </div>
+    </div>
+</div>";}?>
+
 <script src="public/popup_galery/assets/mobile/touchSwipe.min.js"></script>
 <script src="public/popup_galery/assets/respond/respond.js"></script>
 
 <script src="public/popup_galery/assets/gallery/jquery.blueimp-gallery.min.js"></script>
 
-<!-- POP UP LIGHTBOX -->
-<div class="modal fade" id="co-admine" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;padding-left: 0px;">
-    <div class="modal-dialog" style="width: 100%;">
-        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
+
+
+<!--POP UP ZOOM SUR L'IMAGE--> 
+<div class="modal fade" id="jetest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    
+        <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">      
+            <a href='' data-dismiss='modal'><img style='width: 25px;' src='public/images/test.png'></a>
             <div class="modal-body">
-                <a href="" data-dismiss="modal"><img style="width: 25px;" src="public/images/test.png"></a>
-			<div id="wrapper">
 
-					<div id="main">
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-						</article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-						<article class="thumb">
-							<a href="public/images/slider_secondaire/images/slider6.jpg" class="image"><img src="public/images/slider_secondaire/images/slider6.jpg" alt="" /></a>
-							<h2 style="color:#d5d5d5;">Titre</h2>
-							<p style="color:#d5d5d5;">Description</p>
-                                                </article>
-					</div>
-
-			</div>
-
-			<script src="public/popup_lightbox/assets/js/jquery.min.js"></script>
-			<script src="public/popup_lightbox/assets/js/jquery.poptrox.min.js"></script>
-			<script src="public/popup_lightbox/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="public/popup_lightbox/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="public/popup_lightbox/assets/js/main.js"></script>
-
+                
+                    <img src="public/images/slider_principal/photogroupe.jpg" style="width: 95%;">
+                
+                        </form>
+                    </div>  
             </div>
-        </div>
+        
     </div>
 </div>
-
 
 <?php
 // </editor-fold> 
