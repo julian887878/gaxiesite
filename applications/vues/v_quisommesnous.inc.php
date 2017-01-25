@@ -1,20 +1,23 @@
 <br>
 
 <section id="services" class="services text-center">
-        
+<div class="about-top">
+<div class="section-padding" style="background-color: #f9f9f9;padding-top: 25px;">
+
 <?php
 // <editor-fold defaultstate="collapsed" desc="Texte du haut 'qui somme nous' au logo">
-        ?>
-    <div class="about-top">
-    <div class="section-padding" style="background-color: #f9f9f9;padding-top: 25px;">
-    
+?>  
     <div class="container">
     <div class="row">
     <div class="col-md-12">
     <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
         <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Qui sommes-nous ?</b></u></span></h2></center>
-    <center><p>Depuis 1972 le cabinet GAXIEU assiste les collectivités locale dans la réalisation de leurs projets d’infrastructures.</p><p>GAXIEU INGENIERIE a pour mission de mobiliser toutes les compétences nécessaires et mettre en oeuvre tous les moyens adaptés pour faire aboutir les projets d’aménagements participants au développement durable du territoire où il est ancré.</p></center></div></div>
-    </div>
+         <?php
+    $resumeraffichage = GestionAdmin::getOngletResume();
+                foreach ($resumeraffichage as $unResumeAfficher) {
+                    echo " 
+        $unResumeAfficher->texte";}?>
+</div>
     </div>
     </div>
     </div>
@@ -88,6 +91,7 @@ echo"
 <?php
 // </editor-fold> 
 ?> 
+    
 </section>
           
 <br>
