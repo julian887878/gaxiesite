@@ -1,5 +1,5 @@
 <?php
-// <editor-fold defaultstate="collapsed" desc="FOOTER">
+// <editor-fold defaultstate="collapsed" desc="FOOTERRR">
 ?>
 <!--FOOTER-->
 <footer id="colophon" class="footer site-footer" role="contentinfo">
