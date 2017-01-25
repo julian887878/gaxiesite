@@ -107,10 +107,8 @@
                                         <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a>
                                     </li>
 
-                                    <li style="width: 100%;"><a class="gn-icon gn-icon-help" style="width: 100%;">Rubrique 2</a></li>
+                                    <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=echange" class="gn-icon gn-icon-download" style="width: 100%;">Echange de fichier</a></li>
 
-
-                                    <li style="width: 100%;"><a class="gn-icon gn-icon-help" style="width: 100%;">Rubrique 2</a></li>
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=candidature" class="gn-icon gn-icon-archive" style="width: 100%;">Candidature</a></li>
                                 </ul>
 

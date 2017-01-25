@@ -1,5 +1,5 @@
 <?php
-// <editor-fold defaultstate="collapsed" desc="FOOTERRR">
+// <editor-fold defaultstate="collapsed" desc="FOOTER">
 ?>
 <!--FOOTER-->
 <footer id="colophon" class="footer site-footer" role="contentinfo">
@@ -14,13 +14,10 @@
                             <div class="widget-details">
                                 <nav>
                                     <ul>
-                                        <li><a href="#">Accueil</a></li>
-                                        <li><a href="#">Qui sommes-nous ?</a></li>
-                                        <li><a href="#">Nous contacter</a></li>
-                                        <li><a href="#">Rubrique 1</a></li>
-                                        <li><a href="#">Rubrique 2</a></li>
-                                        <li><a href="#">Rubrique 3</a></li>
-                                        <li><a href="#">Demande d'emploie</a></li>
+                                        <li><a href="index.php?cas=afficherAccueil">Accueil</a></li>
+                                        <li><a href="index.php?cas=afficherSections&categorie=quisommesnous">Qui sommes-nous ?</a></li>
+                                        <li><a href="index.php?cas=afficherSections&categorie=contact">Nous contacter</a></li>
+                                        <li><a href="index.php?cas=afficherSections&categorie=candidature">Demande d'emploie</a></li>
                                         <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
                                     </ul>
                                 </nav>
