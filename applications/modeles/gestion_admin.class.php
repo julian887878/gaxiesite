@@ -395,6 +395,37 @@ class GestionAdmin {
     
     
   //  </editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="région upload photo">
+        public static function uploadImage($image, $id) {
+        self::seConnecter();
+
+        self::$requete = " UPDATE accueil_sliderPrincipal SET image = '$image' WHERE id = '$id';";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('image', $image);
+        self::$pdoStResults->bindValue('id', $id);
+
+
+        self::$pdoStResults->execute();
+    }
+    
+    public static function getAnciennePhoto($id) {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM accueil_sliderPrincipal WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+    
+    //</editor-fold>
 }
 
 ?>

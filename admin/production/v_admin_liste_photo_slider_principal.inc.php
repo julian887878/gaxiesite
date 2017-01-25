@@ -1,23 +1,7 @@
 <?php
 
-
-    
-    require 'uploadFile.php';
     $images = GestionAdmin::getSlider1();
-    $db = new PDO('mysql:host=ent.btssio.net;dbname=delapena3', 'delapena', 'lv75b');
-    
-    $upload = new uploadFile($db);
-    
-    if (isset($_POST['Envoyer']) && !empty($_POST['Envoyer'])) {
-        $upload->upload($_FILES, $images->id);
-    }
 
-
-    if (isset($_GET['id']) && isset($_GET['name'])) {
-        $id = $images->id;
-        $name = $_GET['name'];
-        $upload->modif($id, $name);
-    }
  ?>
 
 
@@ -59,13 +43,15 @@
             <div class='modal-body'>
                 <h4><i>Image</i></h4>
                 
-                <form method='post' action='' enctype'multipart/form-data'>
-                <input type='file' name='upload'>
+                <form method='post' action='uploadFile.php' enctype='multipart/form-data'>
+                <input type='file' name='icone' id='icone'>
+                <input type='hidden' name='id' value='$uneImage->id'>
             </div>
             <div class='modal-footer'>
                 <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
-                <button type='submit' value='Envoyer' name='$uneImage->id' class='btn btn-primary'>Envoyer</a>
+                <input type='submit' name='submit' value='Envoyer'  class='btn btn-primary'>Envoyer</a>
             </div>
+            </form>
 
         </div>
     </div>
