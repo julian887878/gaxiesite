@@ -412,7 +412,7 @@ class GestionAdmin {
     
   //  </editor-fold>
     
-    // <editor-fold defaultstate="collapsed" desc="région upload photo">
+    // <editor-fold defaultstate="collapsed" desc="région photo">
         public static function uploadImage($image, $id) {
         self::seConnecter();
 
@@ -438,6 +438,21 @@ class GestionAdmin {
         self::$pdoStResults->closeCursor();
 
         return self::$resultat;
+    }
+    
+        public static function modifTexteSliderPrincipal($titre, $description, $id) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_sliderPrincipal SET titre = '$titre', description = '$description' WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('titre', $titre);
+        self::$pdoStResults->bindValue('description', $description);
+        self::$pdoStResults->bindValue('id', $id);
+        
+
+
+        self::$pdoStResults->execute();
     }
     
     
