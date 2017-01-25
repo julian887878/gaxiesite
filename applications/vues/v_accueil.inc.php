@@ -97,77 +97,29 @@
 ?>
 <div class="about-middle">
     <div class="about-breifing">
-        <div class="col-md-3 col-sm-6">
-            <div class="item media wow animated fadeInLeft" data-wow-delay=".35s">
-                <div class="section-padding">
-                    <div class="item-no media-left" style="padding-right: 20px;">
-                        <span class="count text-right"> <i class="fa fa-users"></i></span>
+        
+        <?php
+    $compteurAffichage = GestionAdmin::getCompteur();
+                foreach ($compteurAffichage as $unCompteurAfficher) {
+                echo "
+        <div class='col-md-3 col-sm-6'>
+            <div class='item media wow animated fadeInLeft' data-wow-delay='.35s'>
+                <div class='section-padding'>
+                    <div class='item-no media-left' style='padding-right: 20px;'>
+                        <span class='count text-right'> $unCompteurAfficher->image</span>
                     </div>
-                    <div class="item-details media-body text-center">
-                        <div class="item-icon">
-                            <span class="count-number counter">88</span>
+                    <div class='item-details media-body text-center'>
+                        <div class='item-icon'>
+                            <span class='count-number counter'>$unCompteurAfficher->nombre</span>
                         </div>
-                        <div class="countdown">
-                            <span class="about-item">Employés</span>
+                        <div class='countdown'>
+                            <span class='about-item'>$unCompteurAfficher->texte</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+                </div>";}?>
 
-        <div class="col-md-3 col-sm-6">
-            <div class="item media wow animated fadeInLeft" data-wow-delay=".55s">
-                <div class="section-padding">
-                    <div class="item-no media-left" style="padding-right: 20px;">
-                        <span class="count text-right"><i class="fa fa-truck"></i></span>
-                    </div>
-                    <div class="item-details media-body text-center">
-                        <div class="item-icon">
-                            <span class="count-number counter">259</span>
-                        </div>
-                        <div class="countdown">
-                            <span class="about-item">Chantiers réalisés</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-            <div class="item media wow animated fadeInLeft" data-wow-delay=".55s">
-                <div class="section-padding">
-                    <div class="item-no media-left" style="padding-right: 20px;">
-                        <span class="count text-right"><i class="fa fa-map-marker"></i></span>
-                    </div>
-                    <div class="item-details media-body text-center">
-                        <div class="item-icon">
-                            <span class="count-number counter">10</span>
-                        </div>
-                        <div class="countdown">
-                            <span class="about-item">Sites différents</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-            <div class="item media wow animated fadeInLeft" data-wow-delay=".55s">
-                <div class="section-padding">
-                    <div class="item-no media-left" style="padding-right: 20px;">
-                        <span class="count text-right"><i class="fa fa-dollar"></i></span>
-                    </div>
-                    <div class="item-details media-body text-center">
-                        <div class="item-icon">
-                            <span class="count-number counter">6M</span>
-                        </div>
-                        <div class="countdown">
-                            <span class="about-item">Chiffres d'affaires</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
