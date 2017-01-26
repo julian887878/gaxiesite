@@ -438,10 +438,37 @@ class GestionAdmin {
         self::$pdoStResults->execute();
     }
     
+            public static function uploadImageSlider2($image, $id) {
+        self::seConnecter();
+
+        self::$requete = " UPDATE accueil_sliderSecondaire SET image = '$image' WHERE id = '$id';";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('image', $image);
+        self::$pdoStResults->bindValue('id', $id);
+
+
+        self::$pdoStResults->execute();
+    }
+    
     public static function getAnciennePhoto($id) {
 
         self::seConnecter();
         self::$requete = "SELECT * FROM accueil_sliderPrincipal WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+        public static function getAnciennePhotoSlider2($id) {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM accueil_sliderSecondaire WHERE id='$id'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();

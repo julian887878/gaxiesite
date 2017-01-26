@@ -17,7 +17,7 @@ $images = GestionAdmin::getSlider2();
                     <div class='mask'>
                         <p>  </p>
                         <div class='tools tools-bottom'>
-                            <a href='' data-toggle='modal' data-target='.ajout-image-slider1-$uneImage->id'><i class='fa fa-upload'></i></a>
+                            <a href='' data-toggle='modal' data-target='.ajout-image-slider2-$uneImage->id'><i class='fa fa-upload'></i></a>
                             <a href='' data-toggle='modal' data-target='.changer-texte-slider1-$uneImage->id'><i class='fa fa-edit'></i></a>
                             <a href='' data-toggle='modal' data-target='.ajouter-image-popup-$uneImage->id'><i class='fa fa-file-image-o'></i></a>
                         </div>
@@ -61,7 +61,7 @@ $images = GestionAdmin::getSlider2();
         </div>
         </div>
         <div class = 'caption'>
-        <p></p>
+        <p>$uneImagePopup->description</p>
         </div>
         </div>
 </div>";
@@ -77,4 +77,32 @@ $images = GestionAdmin::getSlider2();
     </div>";
     }
     ?>
+    
+    <?php
+        foreach($images as $uneImage){
+            echo " <div class='modal fade ajout-image-slider2-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Changer l'image</h4>
+            </div>
+            <div class='modal-body'>
+                <h4><i>Taille Maximale : 3100 x 1800</i></h4>
+                
+                <form method='post' action='uploadFileS2.php' enctype='multipart/form-data'>
+                <input type='file' name='icone' id='icone'>
+                <input type='hidden' name='id' value='$uneImage->id'>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <input type='submit' name='submit' value='Envoyer'  class='btn btn-primary'>
+            </div>
+            </form>
+
+        </div>
+    </div>
+        </div>";}?>
 </div>
