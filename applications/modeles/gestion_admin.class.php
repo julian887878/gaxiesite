@@ -420,6 +420,19 @@ class GestionAdmin {
         return self::$resultat;
     }
     
+           public static function getAllImagePopup() {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM accueil_popupSliderSecondaire";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
         public static function getCompteur() {
 
         self::seConnecter();
