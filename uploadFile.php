@@ -19,9 +19,7 @@ $extensions_valides = array('jpg', 'jpeg', 'gif', 'png');
 $extension_upload = strtolower(substr(strrchr($_FILES['icone']['name'], '.'), 1));
 if (in_array($extension_upload, $extensions_valides))
     echo "Extension correcte";
-$image_sizes = getimagesize($_FILES['icone']['tmp_name']);
-if ($image_sizes[0] > $maxwidth OR $image_sizes[1] > $maxheight)
-    $erreur = "Image trop grande";
+
 
 //Créer un identifiant difficile à deviner
 $nom = md5(uniqid(rand(), true));
