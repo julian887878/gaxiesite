@@ -112,6 +112,34 @@ class GestionAdmin {
         else
             return false;
     }
+    
+         public static function isEmailOk($mail1) {
+        self::seConnecter();
+        self::$requete = "SELECT * FROM utilisateur where emailUtilisateur='$mail1'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+        self::$pdoStResults->closeCursor();
+        if ((self::$resultat != null))
+            return true;
+        else
+            return false;
+    }
+    
+    public static function isAdminOK($mail1, $passe1) {
+        self::seConnecter();
+        self::$requete = "SELECT * FROM utilisateur where emailUtilisateur='$mail1' and mdpUtilisateur='".sha1($passe1)."'";
+        
+        
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+        self::$pdoStResults->closeCursor();
+        if ((self::$resultat != null) and (self::$resultat->isAdmin))
+            return true;
+        else
+            return false;
+    }
 
     public static function getUserByMail($emailUtilisateur) {
 
@@ -141,24 +169,6 @@ class GestionAdmin {
         return self::$resultat;
     }
 
-    public static function isAdminOK($emailUtilisateur, $mdpUtilisateur) {
-        self::seConnecter();
-
-        self::$requete = "SELECT * FROM utilisateur WHERE emailUtilisateur=:emailUtilisateur and mdpUtilisateur=:mdpUtilisateur";
-        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
-        self::$pdoStResults->bindValue('emailUtilisateur', $emailUtilisateur);
-        self::$pdoStResults->bindValue('mdpUtilisateur', $mdpUtilisateur);
-        self::$pdoStResults->execute();
-        self::$resultat = self::$pdoStResults->fetch();
-
-        self::$pdoStResults->closeCursor();
-
-        if ((self::$resultat != null) and ( self::$resultat->isAdmin))
-            return true;
-        else
-            return false;
-    }
-    
         public static function getUtilisateur() {
 
         self::seConnecter();
