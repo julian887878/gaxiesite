@@ -500,6 +500,23 @@ class GestionAdmin {
         self::$pdoStResults->execute();
     }
     
+    
+        public static function ajoutImagePopup($relation, $titre, $description, $image) {
+        self::seConnecter();
+
+        self::$requete = "INSERT INTO accueil_popupSliderSecondaire (relation,titre,description,image) values ('$relation','$titre','$description','$image')";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('relation', $relation);
+        self::$pdoStResults->bindValue('titre', $titre);
+        self::$pdoStResults->bindValue('description', $description);
+        self::$pdoStResults->bindValue('image', $image);
+
+
+        self::$pdoStResults->execute();
+    }
+    
+    
     public static function getAnciennePhoto($id) {
 
         self::seConnecter();
@@ -570,6 +587,21 @@ class GestionAdmin {
 
         self::$pdoStResults->execute();
     }
+    
+            public static function supprimerImagePopup($idPopup) {
+        try {
+            self::seConnecter();
+
+            self::$requete = "DELETE FROM accueil_popupSliderSecondaire WHERE idPopup = $idPopup";
+            self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+            self::$pdoStResults->bindValue('idPopup', $idPopup);
+            self::$pdoStResults->execute();
+        } catch (Exception $ex) {
+            echo $ex->getMessage();
+        }
+    }
+
     
     //</editor-fold>
     
