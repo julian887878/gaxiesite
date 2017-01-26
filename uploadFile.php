@@ -6,7 +6,7 @@ require_once Chemins::MODELES . 'gestion_admin.class.php';
 $ancienFichier = GestionAdmin::getAnciennePhoto($_POST['id']);
 unlink('public/images/slider_principal/'.$ancienFichier->image);
 
-$maxsize = 123466;
+$maxsize = 1234666666666666;
 $erreur = "";
 $maxwidth = 100;
 $maxheight = 100;
@@ -28,8 +28,8 @@ $nom = md5(uniqid(rand(), true));
 $resultat = move_uploaded_file($_FILES['icone']['tmp_name'], "public/images/slider_principal/".$nom.".jpg");
 if ($resultat)
     GestionAdmin::uploadImage($nom.".jpg", $_POST['id']);
-echo "<SCRIPT langage=JavaScript>
-            document.location.href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_principal'
-            </SCRIPT>";
+//echo "<SCRIPT langage=JavaScript>
+//            document.location.href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_principal'
+//            </SCRIPT>";
 ?>
 
