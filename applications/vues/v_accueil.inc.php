@@ -81,7 +81,7 @@
 <div>
     <?php
                 foreach ($slider2affichage as $unSlider2afficher) {
-                echo "<a href='#' title='$unSlider2afficher->titre'><img src='public/images/slider_secondaire/images_thumbsnails/$unSlider2afficher->image' /></a>
+                echo "<a href='#' title='$unSlider2afficher->titre'><img src='public/images/slider_secondaire/images/$unSlider2afficher->image' /></a>
 		";
                 
                 }?>
