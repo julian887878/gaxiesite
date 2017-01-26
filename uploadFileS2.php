@@ -5,7 +5,6 @@ require_once Chemins::MODELES . 'gestion_admin.class.php';
 
 $ancienFichier = GestionAdmin::getAnciennePhotoSlider2($_POST['id']);
 unlink('public/images/slider_secondaire/images/'.$ancienFichier->image);
-unlink('public/images/slider_secondaire/images_thumbsnails/'.$ancienFichier->image);
 
 
 $maxsize = 1234666666666666;
