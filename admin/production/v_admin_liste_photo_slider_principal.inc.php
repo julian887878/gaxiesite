@@ -41,7 +41,7 @@
                 <h4 class='modal-title' id='myModalLabel2'>Changer l'image</h4>
             </div>
             <div class='modal-body'>
-                <h4><i></i></h4>
+                <h4><i>Taille Maximale : 3100 x 1800</i></h4>
                 
                 <form method='post' action='uploadFile.php' enctype='multipart/form-data'>
                 <input type='file' name='icone' id='icone'>
@@ -74,10 +74,10 @@
                 
                 <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_texte'>
                 <label for='titre'>Titre de l'image :</label>
-                <input type='text' id='titre' class='form-control' name='titre' value=$uneImage->titre required /><br>
+                <input type='text' id='titre' class='form-control' name='titre' value='$uneImage->titre' required /><br>
                     
                 <label for='titre'>Description de l'image :</label>
-                <input type='text' id='description' class='form-control' name='description' value=$uneImage->description required /><br>
+                <input type='text' id='description' class='form-control' name='description' value='$uneImage->description' required /><br>
                 <input type='hidden' name='id' value=$uneImage->id /><br>
             </div>
             <div class='modal-footer'>
