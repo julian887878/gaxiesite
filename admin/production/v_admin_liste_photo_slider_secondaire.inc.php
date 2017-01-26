@@ -18,7 +18,7 @@ $images = GestionAdmin::getSlider2();
                         <p>  </p>
                         <div class='tools tools-bottom'>
                             <a href='' data-toggle='modal' data-target='.ajout-image-slider2-$uneImage->id'><i class='fa fa-upload'></i></a>
-                            <a href='' data-toggle='modal' data-target='.changer-texte-slider1-$uneImage->id'><i class='fa fa-edit'></i></a>
+                            <a href='' data-toggle='modal' data-target='.changer-texte-slider2-$uneImage->id'><i class='fa fa-edit'></i></a>
                             <a href='' data-toggle='modal' data-target='.ajouter-image-popup-$uneImage->id'><i class='fa fa-file-image-o'></i></a>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ $images = GestionAdmin::getSlider2();
         <div class = 'mask'>
         <p> </p>
         <div class = 'tools tools-bottom'>
-        <a href = '' data-toggle = 'modal' data-target = '.ajout-image-slider1-'><i class = 'fa fa-upload'></i></a>
+        <a href = '' data-toggle = 'modal' data-target = '.modif-image-popup-$uneImagePopup->idPopup'><i class = 'fa fa-upload'></i></a>
         <a href = '' data-toggle = 'modal' data-target = '.changer-texte-slider1-'><i class = 'fa fa-edit'></i></a>
         </div>
         </div>
@@ -90,7 +90,7 @@ $images = GestionAdmin::getSlider2();
                 <h4 class='modal-title' id='myModalLabel2'>Changer l'image</h4>
             </div>
             <div class='modal-body'>
-                <h4><i>Taille Maximale : 3100 x 1800</i></h4>
+                <h4><i>Taille Obligatoire : 1600 x 1090</i></h4>
                 
                 <form method='post' action='uploadFileS2.php' enctype='multipart/form-data'>
                 <input type='file' name='icone' id='icone'>
@@ -104,5 +104,68 @@ $images = GestionAdmin::getSlider2();
 
         </div>
     </div>
+        </div>"
+                    
+                    
+                    
+                    ."<div class='modal fade changer-texte-slider2-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Changer la description / titre</h4>
+            </div>
+            <div class='modal-body'>
+                <h4><i>Changement de la description de l'image</i></h4>
+                
+                <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_description_slider_2'>
+                <label for='titre'>Titre de l'image :</label>
+                <input type='text' id='titre' class='form-control' name='titre' value='$uneImage->titre' required /><br>
+                <input type='hidden' name='id' value=$uneImage->id /><br>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <input type='submit' name='submit' value='Envoyer'  class='btn btn-primary'>
+            </div>
+            </form>
+
+        </div>
+    </div>
         </div>";}?>
+    <?php
+       $lesImagesPopup = GestionAdmin::getAllImagePopup(); 
+    foreach ($lesImagesPopup as $uneImagePop){
+        echo"
+    
+   <div class='modal fade modif-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Changer l'image</h4>
+            </div>
+            <div class='modal-body'>
+                <h4><i>Taille Obligatoire : 1600 x 1090</i></h4>
+                
+                <form method='post' action='uploadFileS2Popup.php' enctype='multipart/form-data'>
+                <input type='file' name='icone' id='icone'>
+                <input type='hidden' name='id' value='$uneImagePop->idPopup'>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <input type='submit' name='submit' value='Envoyer'  class='btn btn-primary'>
+            </div>
+            </form>
+
+        </div>
+    </div>
+    </div>";}?>
+    
+    
+    
+    
 </div>

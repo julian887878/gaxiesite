@@ -70,7 +70,7 @@
                 <h4 class='modal-title' id='myModalLabel2'>Changer la description / titre</h4>
             </div>
             <div class='modal-body'>
-                <h4><i>Changement de l'image du slider</i></h4>
+                <h4><i>Changement de la description de l'image</i></h4>
                 
                 <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_texte'>
                 <label for='titre'>Titre de l'image :</label>
