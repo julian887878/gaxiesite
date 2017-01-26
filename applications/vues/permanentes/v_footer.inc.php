@@ -18,7 +18,7 @@
                                         <li><a href="index.php?cas=afficherSections&categorie=quisommesnous">Qui sommes-nous ?</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=contact">Nous contacter</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=candidature">Demande d'emploie</a></li>
-                                        <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
+                                        <li><a href="" data-toggle="modal" data-target="#co-admin">Administration</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -52,7 +52,7 @@
                         <ul>
                             <li style="display: inline-block;"><a href="#">Accueil</a></li>
                             <li style="display: inline-block;"><a href="#">Contact</a></li>
-                            <li style="display: inline-block"><a href="#" data-toggle="modal" data-target="#co-admin">Connexion</a></li> 
+                            <li style="display: inline-block"><a href="#" data-toggle="modal" data-target="#co-admin">Administration</a></li> 
                         </ul>
                     </nav>
                 </div>
@@ -158,12 +158,12 @@
                     <div class="container"> 
                         <div class="row contact-wrap"> 
                             <div class="status alert alert-success" style="display: none"></div>
-                            <form method="POST" id="main-contact-form" class="contact-form" name="contact-form" action="index_admin.php?cas=cacherSectionsAdmin&categorie=verifier_connexion">
+                            <form method="POST" id="main-contact-form" class="contact-form" name="contact-form" action="index.php?cas=verifConnexion">
                                 <div class="row">
                                     <div class="col-sm-4" style="padding-left: 30px;">
                                         <div class="form-group">
                                             <label>Adresse mail</label><br>
-                                            <input type="emailUtilisateur" name="emailUtilisateur" class="form-control" required="required">
+                                            <input type="text" name="mail1" class="form-control" required="required">
                                         </div> 
                                     </div>
                                 </div>
@@ -171,7 +171,7 @@
                                     <div class="col-sm-4" style="padding-left: 30px;">
                                         <div class="form-group">
                                             <label>Mot de passe</label><br>
-                                            <input type="mdpUtilisateur" name="mdpUtilisateur" class="form-control" required="required">
+                                            <input type="password" name="passe1" class="form-control" required="required">
                                         </div> 
                                     </div>
                                 </div>
