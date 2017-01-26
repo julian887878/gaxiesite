@@ -33,7 +33,7 @@
                                 <li><a><i class="fa fa-home"></i>Page d'accueil<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_principal">Slider principal</a></li>
-                                        <li><a href="index2.html">Slider Secondaire</a></li>
+                                        <li><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_secondaire">Slider Secondaire</a></li>
                                         <li><a href="index_admin.php?cas=afficherSectionsAdmin&categorie=information_entreprise">Informations entreprise</a></li>
                                     </ul>
                                 </li>

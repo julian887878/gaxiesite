@@ -604,6 +604,21 @@ class GestionAdmin {
         self::$pdoStResults->execute();
     }
     
+              public static function modifTextePopup($titre, $description, $idPopup) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_popupSliderSecondaire SET titre = '$titre', description = '$description' WHERE idPopup='$idPopup'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('titre', $titre);
+        self::$pdoStResults->bindValue('description', $description);
+        self::$pdoStResults->bindValue('idPopup', $idPopup);
+        
+
+
+        self::$pdoStResults->execute();
+    }
+    
             public static function modifTexteSliderSecondaire($titre, $id) {
         self::seConnecter();
 

@@ -56,7 +56,8 @@ $images = GestionAdmin::getSlider2();
         <p> </p>
         <div class = 'tools tools-bottom'>
         <a href = '' data-toggle = 'modal' data-target = '.modif-image-popup-$uneImagePopup->idPopup'><i class = 'fa fa-upload'></i></a>
-        <a href = '' data-toggle = 'modal' data-target = '.changer-texte-slider1-'><i class = 'fa fa-edit'></i></a>
+        <a href = '' data-toggle = 'modal' data-target = '.changer-image-popup-$uneImagePopup->idPopup'><i class = 'fa fa-edit'></i></a>
+        <a href = '' data-toggle = 'modal' data-target = '.suppr-image-popup-$uneImagePopup->idPopup'><i class = 'fa fa-close'></i></a>
         </div>
         </div>
         </div>
@@ -68,8 +69,8 @@ $images = GestionAdmin::getSlider2();
         }
         echo "</div>
                         <div class='modal-footer'>
-                          <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
-                          <button type='button' class='btn btn-primary'>Save changes</button>
+                          <button type='button' class='btn btn-default' data-dismiss='modal'>Fermer</button>
+                          <a href = '' data-toggle = 'modal' data-target = '.ajouter-image-$uneImage->id' class='btn btn-primary'>Ajouter une image</a>
                         </div>
 
                       </div>
@@ -163,9 +164,95 @@ $images = GestionAdmin::getSlider2();
 
         </div>
     </div>
+    </div>"
+
+
+
+                . "   <div class='modal fade suppr-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Supprimer l'image</h4>
+            </div>
+            <div class='modal-body'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <a class='btn btn-primary' href='index_admin.php?cas=cacherSectionsAdmin&categorie=suppr_image_popup&idPopup=$uneImagePop->idPopup'>Supprimer</a>
+            </div>
+            </form>
+
+        </div>
+    </div>
+    </div>"
+                
+                
+                . "   <div class='modal fade changer-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>Changer les informations</h4>
+            </div>
+            <div class='modal-body'>
+               <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_texte_popup'>
+                <input type='hidden' id='idPopup' name='idPopup' value='$uneImagePop->idPopup' />
+                <label for='titre'>Titre :</label>
+                 <input type='text' id='titre' class='form-control' name='titre' value='$uneImagePop->titre' required /><br>
+                 
+                  <label for='description'>Description :</label>
+                 <input type='text' id='description' class='form-control' name='description' value='$uneImagePop->description' required /><br>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <input type='submit' name='submit' value='Envoyer'  class='btn btn-primary'>
+            </div>
+            </form>
+
+        </div>
+    </div>
     </div>";}?>
     
+    <?php 
+    foreach ($images as $uneImage)
+    {
+        echo "
     
-    
+     <div class='modal fade ajouter-image-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span>
+                </button>
+                <h4 class='modal-title' id='myModalLabel2'>ajouter une image</h4>
+            </div>
+            <div class='modal-body'>                
+                <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=ajouter_image_popup' enctype='multipart/form-data'>
+                
+                <label for='titre'>Titre :</label>
+                 <input type='text' id='titre' class='form-control' name='titre' required /><br>
+                 
+                  <label for='description'>Description :</label>
+                 <input type='text' id='description' class='form-control' name='description' required /><br>
+                 
+                  <label for='description'>Image (Obligatoire:1800x780)</label>
+                 <input type='hidden' name='relation' value=$uneImage->id />
+                  
+                <input type='file' name='icone' id='icone'>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
+                <input type='submit' name='submit' value='Envoyer'  class='btn btn-primary'>
+            </div>
+            </form>
+
+        </div>
+    </div>
+    </div>";}
+    ?>
     
 </div>
