@@ -140,6 +140,36 @@ class GestionAdmin {
         else
             return false;
     }
+    
+    public static function isPersonnelOK($mail1, $passe1) {
+        self::seConnecter();
+        self::$requete = "SELECT * FROM utilisateur where emailUtilisateur='$mail1' and mdpUtilisateur='".sha1($passe1)."'";
+        
+        
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+        self::$pdoStResults->closeCursor();
+        if ((self::$resultat != null) and (self::$resultat->isPersonnel))
+            return true;
+        else
+            return false;
+    }
+    
+    public static function isUtilisateurValideOK($mail1, $passe1) {
+        self::seConnecter();
+        self::$requete = "SELECT * FROM utilisateur where emailUtilisateur='$mail1' and mdpUtilisateur='".sha1($passe1)."'";
+        
+        
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+        self::$pdoStResults->closeCursor();
+        if ((self::$resultat != null) and (self::$resultat->isUtilisateurValide))
+            return true;
+        else
+            return false;
+    }
 
     public static function getUserByMail($emailUtilisateur) {
 
