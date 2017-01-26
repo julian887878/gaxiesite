@@ -1,4 +1,4 @@
-<?php $infos = GestionAdmin::getUserByMail($_SESSION['membre']); ?>
+<?php $infos = GestionAdmin::getUserByMail($_SESSION['login_admin']); ?>
 
 <body class="nav-md">
     <div class="container body">
