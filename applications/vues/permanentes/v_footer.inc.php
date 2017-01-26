@@ -262,7 +262,7 @@ $popupDuSlider = GestionAdmin::getImagePopup($unSliderSecondaire->id);
 foreach ($popupDuSlider as $unePopupDuSlider) {
 echo"
     <figure class='effect-oscar  wowload fadeInUp'>
-        <img src='public/images/slider_secondaire/images/$unePopupDuSlider->image'/>
+        <img src='public/images/popup_lightbox/$unePopupDuSlider->image'/>
         <figcaption>
            ";$test = "<h2>$unePopupDuSlider->titre</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35).'...';}else{echo $test;}
            echo" <p><br>
