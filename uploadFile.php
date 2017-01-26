@@ -8,13 +8,12 @@ unlink('public/images/slider_principal/'.$ancienFichier->image);
 
 $maxsize = 1234666666666666;
 $erreur = "";
-$maxwidth = 100;
-$maxheight = 100;
+$maxwidth = 500000;
+$maxheight = 500000;
 
 if ($_FILES['icone']['error'] > 0)
     $erreur = "Erreur lors du transfert";
-if ($_FILES['icone']['size'] > $maxsize)
-    $erreur = "Le fichier est trop gros";
+
 $extensions_valides = array('jpg', 'jpeg', 'gif', 'png');
 $extension_upload = strtolower(substr(strrchr($_FILES['icone']['name'], '.'), 1));
 if (in_array($extension_upload, $extensions_valides))
