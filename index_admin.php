@@ -2,6 +2,12 @@
 
 //sds
 session_start();
+
+            if (!isset($_SESSION['login_admin'])) {
+                 echo "<SCRIPT LANGUAGE='JavaScript'>
+           document.location.href='index.php?cas=afficherSections&categorie=connexion'
+           </SCRIPT>";
+            }
 require_once 'configs/chemins.class.php';
 require_once Chemins::CONFIGS . 'mysql_config.class.php';
 require_once Chemins::MODELES . 'gestion_admin.class.php';
@@ -50,5 +56,7 @@ switch ($cas) {
         }
 }
 require Chemins::VUES_PERMANENTES_ADMIN . 'v_footer.inc.php';
+
+                
 ?>
 

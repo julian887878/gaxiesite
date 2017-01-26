@@ -18,7 +18,7 @@
                                         <li><a href="index.php?cas=afficherSections&categorie=quisommesnous">Qui sommes-nous ?</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=contact">Nous contacter</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=candidature">Demande d'emploie</a></li>
-                                        <li><a href="" data-toggle="modal" data-target="#co-admin">Administration</a></li>
+                                        <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -52,7 +52,7 @@
                         <ul>
                             <li style="display: inline-block;"><a href="#">Accueil</a></li>
                             <li style="display: inline-block;"><a href="#">Contact</a></li>
-                            <li style="display: inline-block"><a href="#" data-toggle="modal" data-target="#co-admin">Administration</a></li> 
+                            <li style="display: inline-block;"><a href="index_admin.php?cas=afficherAccueil">Administration</a></li> 
                         </ul>
                     </nav>
                 </div>

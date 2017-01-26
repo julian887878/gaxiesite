@@ -107,9 +107,10 @@
                                         <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a>
                                     </li>
 
-                                    <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=echange" class="gn-icon gn-icon-download" style="width: 100%;">Echange de fichier</a></li>
+                                    <li style="width: 100%;"><a href="index.php?cas=afficherSectionsConnecter&categorie=echange" class="gn-icon gn-icon-download" style="width: 100%;">Echange de fichier</a></li>
 
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=candidature" class="gn-icon gn-icon-archive" style="width: 100%;">Candidature</a></li>
+                                    <li style="width: 100%;"><?php if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) { echo"<a href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'  class='gn-icon gn-icon-earth' style='width: 100%;'>Mon compte</a>";} else { echo"<a href='index.php?cas=afficherSections&categorie=connexion'  class='gn-icon gn-icon-cog' style='width: 100%;'>Se connecter</a>";}?></li>
                                 </ul>
 
                                 </br>
