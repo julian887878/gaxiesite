@@ -494,6 +494,19 @@ class GestionAdmin {
         self::$pdoStResults->execute();
     }
     
+            public static function modifTexteSliderSecondaire($titre, $id) {
+        self::seConnecter();
+
+        self::$requete = "UPDATE accueil_sliderSecondaire SET titre = '$titre' WHERE id='$id'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('titre', $titre);
+        self::$pdoStResults->bindValue('id', $id);
+        
+
+
+        self::$pdoStResults->execute();
+    }
     
     //</editor-fold>
     
