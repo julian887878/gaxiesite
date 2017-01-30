@@ -32,6 +32,15 @@ switch ($cas) {
             break;
         }
         
+    case 'rechercherSections' : {
+            if (file_exists(Chemins::VUES_PERMANENTES . 'v_rechercher.inc.php')) {
+                require Chemins::VUES_PERMANENTES . 'v_rechercher.inc.php';
+            } else {
+                require Chemins::VUES . 'v_erreur404.inc.php';
+            }
+            break;
+        }
+        
    case 'afficherSectionsConnecter': {
             if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) {
                 $chemin = Chemins::VUES_MEMBRE . 'v_' . $categorie . '.inc.php';

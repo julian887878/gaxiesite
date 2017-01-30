@@ -740,6 +740,38 @@ class GestionAdmin {
     }
     
     //</editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="région recheche">
+    
+        public static function recherche($recherche) {
+
+        self::seConnecter();
+        self::$requete = "SELECT * FROM quisommesnous_ongletSousCategorie WHERE contenu like '%$recherche%'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetchAll();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    
+            public static function nbRecherche($recherche) {
+
+        self::seConnecter();
+        self::$requete = "SELECT count(*) as nbrecherche FROM quisommesnous_ongletSousCategorie WHERE contenu like '%$recherche%'";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->execute();
+        self::$resultat = self::$pdoStResults->fetch();
+
+        self::$pdoStResults->closeCursor();
+
+        return self::$resultat;
+    }
+    //</editor-fold>
+
 }
 ?>
 

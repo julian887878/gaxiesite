@@ -103,8 +103,10 @@
                             <div class="gn-scroller">
                                 <ul class="gn-menu">
                                     <li class="gn-search-item" style="width: 100%;">
-                                        <input placeholder="Rechercher..." type="search" class="gn-search">
-                                        <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a>
+                                        <form method="post" action="index.php?cas=rechercherSections" > 
+                                        <input placeholder="Rechercher..." type="text" name="recherche" class="gn-search">
+                                        <input type="submit" style="display: none;">
+                                        <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a></form>
                                     </li>
 
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSectionsConnecter&categorie=echange" class="gn-icon gn-icon-download" style="width: 100%;">Echange de fichier</a></li>
