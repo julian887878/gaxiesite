@@ -61,6 +61,15 @@ switch ($cas) {
             break;
         }
 
+            case'inscription' : {
+                    GestionAdmin::ajouterUser($_POST['mail1'], $_POST['nom'], $_POST['prenom'], $_POST['tel'], $_POST['poste'], $_POST['pass1']);
+                    GestionAdmin::seDeconnecter();
+                    $_SESSION['login_utilisateur'] = $_POST['mail1'];
+                    echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'</SCRIPT>";
+                    break;
+             }
+        
+        
     case 'verifConnexion' : {
             if (!GestionAdmin::isUserOk($_POST['mail1'], $_POST['passe1'])) {
                 if (GestionAdmin::isEmailOk($_POST['mail1'])) {
