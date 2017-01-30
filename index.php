@@ -62,10 +62,14 @@ switch ($cas) {
         }
 
             case'inscription' : {
+                try { 
                     GestionAdmin::ajouterUser($_POST['mail1'], $_POST['nom'], $_POST['prenom'], $_POST['tel'], $_POST['poste'], $_POST['pass1']);
                     GestionAdmin::seDeconnecter();
                     $_SESSION['login_utilisateur'] = $_POST['mail1'];
                     echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'</SCRIPT>";
+                    } catch (Exception $e) {
+                     echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherPage&categorie=inscriptionREGEX'</SCRIPT>";
+    }
                     break;
              }
         
@@ -81,16 +85,15 @@ switch ($cas) {
                 if (GestionAdmin::isAdminOK($_POST['mail1'], $_POST['passe1'])) {
                     //Il est admin
                     $_SESSION['login_admin'] = $_POST['mail1'];
-                    require Chemins::VUES_ADMIN . 'v_admin_accueil.inc.php';
                     echo"<SCRIPT langage=JavaScript>
             document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'
            </SCRIPT>";
                 } else {
                     //Il est simple utilisateur
                     $_SESSION['login_utilisateur'] = $_POST['mail1'];
-                    require Chemins::VUES . 'v_echange.inc.php';
-                    echo"document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'</SCRIPT>";
-                }
+                    echo"<SCRIPT langage=JavaScript>
+            document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'
+           </SCRIPT>";}
             }
             break;
         }
