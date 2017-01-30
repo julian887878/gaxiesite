@@ -69,12 +69,12 @@
 ?>
                 
 </head>
-<body>
+<body onload="loader()">
     
 <?php
 // <editor-fold defaultstate="collapsed" desc="PAGE DE CHARGEMENT">
 ?>
-<!--        <div class="loader" id="loader">
+       <div class="loader" id="loader">
             <center style="padding-top: 27%;"><div id="ballsWaveG">
                     <div id="ballsWaveG_1" class="ballsWaveG"></div>
                     <div id="ballsWaveG_2" class="ballsWaveG"></div>
@@ -85,7 +85,7 @@
                     <div id="ballsWaveG_7" class="ballsWaveG"></div>
                     <div id="ballsWaveG_8" class="ballsWaveG"></div>
                 </div>
-        </div><br></center>-->
+        </div><br></center>
 <?php // </editor-fold> 
 ?>  
             
