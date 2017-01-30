@@ -1,9 +1,9 @@
 <?php
 
 class Mysqlconfig {
-    const SERVEUR = 'ent.btssio.net';
-    const BASE = 'delapena3';
-    const UTILISATEUR = 'delapena';
-    const MOT_DE_PASSE = 'lv75b';
+    const SERVEUR = 'ftp.cluster020.hosting.ovh.net';
+    const BASE = 'gaxieucovietude';
+    const UTILISATEUR = 'gaxieucovietude';
+    const MOT_DE_PASSE = 'Gaxieu34500';
 }
 ?>
