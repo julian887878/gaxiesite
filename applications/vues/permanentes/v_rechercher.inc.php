@@ -13,10 +13,10 @@ $lesResultats = GestionAdmin::recherche($_REQUEST['recherche']);
 
 $nbRecherche = GestionAdmin::nbRecherche($_REQUEST['recherche']);
 if ($nbRecherche == "0"){
-    echo "<center>Aucun contenu ne correspond à votre recherche</center>";
+    echo "<center>Aucun contenu ne correspond à votre recherche</center><br><br>";
 } else {
    echo "<center>Il y a $nbRecherche->nbrecherche resultats pour la recherche suivante : $laRecherche</center>"; 
-   echo "<center>Votre recherche se trouve dans la page <i>Qui sommes-nous ?</i></center>";
+   echo "<center>Votre recherche se trouve dans la page <i>Qui sommes-nous ?</i></center><br><br>";
 }
 
 
@@ -24,7 +24,7 @@ foreach ($lesResultats as $unResultat){
     echo "<div class='container'>
     <div class='row'>
     <div class='col-md-12'>"
-    . "$unResultat->tt > $unResultat->titre <br>"
+    . "<font color='#1A1741'> $unResultat->tt </font> > <font color='#6459FF'> $unResultat->titre </font> > <a href='index.php?cas=afficherSections&categorie=quisommesnous'>Voir l'article</a><br>"
         . "</div></div></div>";
 }
 ?>
