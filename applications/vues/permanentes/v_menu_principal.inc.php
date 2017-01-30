@@ -4,9 +4,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <!--<![endif]-->
 <html class="no-js" lang="">
-<head>
+    <head>
 
-<?php
+        <?php
 // <editor-fold defaultstate="collapsed" desc="BALISES META & TITLE">
         ?>
         <meta charset="utf-8">
@@ -16,9 +16,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="public/images/icon/logo.ico" />
         <?php // </editor-fold> 
-?>
+        ?>
 
-<?php
+        <?php
 // <editor-fold defaultstate="collapsed" desc="TOUS LES CSS">
         ?>
         <!-- Bootstrap CSS -->
@@ -53,28 +53,34 @@
         <noscript>
         <link rel="stylesheet" type="text/css" href="public/assets/css/slider_principal/noscript.css" />
         </noscript>
-        
-        
+
+        <!--CSS CONNEXION/INSCRIPTION-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="public/assets/css/connexion/style.css">
+
         <!--POPUP GALERY-->
 
-<link rel="stylesheet" href="public/popup_galery/assets/animate/animate.css" />
-<link rel="stylesheet" href="public/popup_galery/assets/animate/set.css" />
+        <link rel="stylesheet" href="public/popup_galery/assets/animate/animate.css" />
+        <link rel="stylesheet" href="public/popup_galery/assets/animate/set.css" />
 
-<link rel="stylesheet" href="public/popup_galery/assets/gallery/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="public/popup_galery/assets/gallery/blueimp-gallery.min.css">
 
-<!--LIGHTBOX-->
-<link rel="stylesheet" href="public/popup_lightbox/assets/css/main.css" />
-                
+        <!--LIGHTBOX-->
+        <link rel="stylesheet" href="public/popup_lightbox/assets/css/main.css" />
+
         <?php // </editor-fold> 
-?>
-                
-</head>
-<body onload="loader()">
-    
-<?php
+        ?>
+
+    </head>
+    <body onload="loader()">
+
+        <?php
 // <editor-fold defaultstate="collapsed" desc="PAGE DE CHARGEMENT">
-?>
-       <div class="loader" id="loader">
+        ?>
+        <div class="loader" id="loader">
             <center style="padding-top: 27%;"><div id="ballsWaveG">
                     <div id="ballsWaveG_1" class="ballsWaveG"></div>
                     <div id="ballsWaveG_2" class="ballsWaveG"></div>
@@ -86,13 +92,13 @@
                     <div id="ballsWaveG_8" class="ballsWaveG"></div>
                 </div>
         </div><br></center>
-<?php // </editor-fold> 
-?>  
-            
-<div id="site">        
-<header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">
-    
-<?php
+    <?php // </editor-fold> 
+    ?>  
+
+    <div id="site">        
+        <header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">
+
+            <?php
 // <editor-fold defaultstate="collapsed" desc="MENU PRINCIPAL">
             ?>
             <div class="container2">
@@ -104,15 +110,19 @@
                                 <ul class="gn-menu">
                                     <li class="gn-search-item" style="width: 100%;">
                                         <form method="post" action="index.php?cas=rechercherSections" > 
-                                        <input placeholder="Rechercher..." type="text" name="recherche" class="gn-search">
-                                        <input type="submit" style="display: none;">
-                                        <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a></form>
+                                            <input placeholder="Rechercher..." type="text" name="recherche" class="gn-search">
+                                            <input type="submit" style="display: none;">
+                                            <a class="gn-icon gn-icon-search"><span>Rechercher...</span></a></form>
                                     </li>
 
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSectionsConnecter&categorie=echange" class="gn-icon gn-icon-download" style="width: 100%;">Echange de fichier</a></li>
 
                                     <li style="width: 100%;"><a href="index.php?cas=afficherSections&categorie=candidature" class="gn-icon gn-icon-archive" style="width: 100%;">Candidature</a></li>
-                                    <li style="width: 100%;"><?php if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) { echo"<a href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'  class='gn-icon gn-icon-earth' style='width: 100%;'>Mon compte</a>";} else { echo"<a href='index.php?cas=afficherSections&categorie=connexion'  class='gn-icon gn-icon-cog' style='width: 100%;'>Se connecter</a>";}?></li>
+                                    <li style="width: 100%;"><?php if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) {
+                echo"<a href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'  class='gn-icon gn-icon-earth' style='width: 100%;'>Mon compte</a>";
+            } else {
+                echo"<a href='index.php?cas=afficherSections&categorie=connexion'  class='gn-icon gn-icon-cog' style='width: 100%;'>Se connecter</a>";
+            } ?></li>
                                 </ul>
 
                                 </br>
@@ -130,7 +140,7 @@
                 </ul>
             </div>
 
-            <?php // </editor-fold> 
+<?php // </editor-fold> 
 ?>
 
-</header>
+        </header>

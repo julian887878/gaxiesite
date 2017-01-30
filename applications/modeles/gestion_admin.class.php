@@ -50,19 +50,16 @@ class GestionAdmin {
     /**
      * Permet de se connecter à la base de données 
      */
-    public static function ajoutUsers($nomUtilisateur, $prenomUtilisateur, $emailUtilisateur, $telUtilisateur, $mdpUtilisateur, $posteUtilisateur) {
+    public static function ajouterUser($mail1,$nom,$prenom,$tel,$poste,$pass1) {
         self::seConnecter();
-
-        self::$requete = "INSERT INTO utilisateur (nomUtilisateur,prenomUtilisateur,emailUtilisateur,telUtilisateur,mdpUtilisateur,posteUtilisateur) values ('$nomUtilisateur','$prenomUtilisateur','$emailUtilisateur','$telUtilisateur','$mdpUtilisateur','$posteUtilisateur')";
+        self::$requete = "insert into utilisateur(emailUtilisateur,nomUtilisateur,prenomUtilisateur,telUtilisateur,posteUtilisateur,mdpUtilisateur) values (:emailUtilisateur,:nomUtilisateur,:prenomUtilisateur,:telUtilisateur,:posteUtilisateur,:mdpUtilisateur);";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
-
-        self::$pdoStResults->bindValue('nomUtilisateur', $nomUtilisateur);
-        self::$pdoStResults->bindValue('prenomUtilisateur', $prenomUtilisateur);
-        self::$pdoStResults->bindValue('emailUtilisateur', $emailUtilisateur);
-        self::$pdoStResults->bindValue('telUtilisateur', $telUtilisateur);
-        self::$pdoStResults->bindValue('mdpUtilisateur', $mdpUtilisateur);
-        self::$pdoStResults->bindValue('posteUtilisateur', $posteUtilisateur);
-
+        self::$pdoStResults->bindValue('emailUtilisateur', $mail1);
+        self::$pdoStResults->bindValue('nomUtilisateur', $nom);
+        self::$pdoStResults->bindValue('prenomUtilisateur', $prenom);
+        self::$pdoStResults->bindValue('telUtilisateur', $tel);;
+        self::$pdoStResults->bindValue('posteUtilisateur', $poste);;
+        self::$pdoStResults->bindValue('mdpUtilisateur', sha1($pass1));
         self::$pdoStResults->execute();
     }
 

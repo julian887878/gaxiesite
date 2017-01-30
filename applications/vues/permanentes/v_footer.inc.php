@@ -18,6 +18,8 @@
                                         <li><a href="index.php?cas=afficherSections&categorie=quisommesnous">Qui sommes-nous ?</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=contact">Nous contacter</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=candidature">Demande d'emploie</a></li>
+                                        <li><a href="index.php?cas=afficherSections&categorie=connexion">Connexion</a></li>
+                                        <li><a href="index.php?cas=afficherSectionsConnecter&categorie=echange">Echange de fichiers</a></li>
                                         <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
                                     </ul>
                                 </nav>
@@ -132,7 +134,9 @@
     })();
 </script>
 
-
+<!--CONNEXION/INSCRIPTION-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="public/assets/js/connexion/index.js"></script>
 
    
     <?php
@@ -142,59 +146,6 @@
 <?php
 // <editor-fold defaultstate="collapsed" desc="POPUP">
 ?>
-
-
-<!-- POP UP INSCRIPTION ADMIN -->
-<div class="modal fade" id="co-admin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" style="margin-top: 18%">
-        <div class="modal-content">                      
-            <div class="modal-body">
-
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 align='center'>Connexion Administrateur</h4>
-                <section id="contact" class="contact">
-                    <br><br>
-
-                    <div class="container"> 
-                        <div class="row contact-wrap"> 
-                            <div class="status alert alert-success" style="display: none"></div>
-                            <form method="POST" id="main-contact-form" class="contact-form" name="contact-form" action="index.php?cas=verifConnexion">
-                                <div class="row">
-                                    <div class="col-sm-4" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <label>Adresse mail</label><br>
-                                            <input type="text" name="mail1" class="form-control" required="required">
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <label>Mot de passe</label><br>
-                                            <input type="password" name="passe1" class="form-control" required="required">
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-3" style="padding-left: 30px;">
-                                        <div class="form-group">
-                                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Connexion</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                        </div>
-
-
-                        <p class="aa-lost-password"><a href="" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#mdp-forgot">Mot de passe oublié ?</a></p>
-
-
-                        </form>
-                    </div>  
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- POP UP GALLERY -->
