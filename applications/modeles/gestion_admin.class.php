@@ -530,6 +530,18 @@ class GestionAdmin {
         self::$pdoStResults->execute();
     }
     
+        public static function uploadAvatar($avatarUtilisateur, $idUtilisateur) {
+        self::seConnecter();
+
+        self::$requete = " UPDATE utilisateur SET avatarUtilisateur = '$avatarUtilisateur' WHERE idUtilisateur = '$idUtilisateur';";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+
+        self::$pdoStResults->bindValue('avatarUtilisateur', $avatarUtilisateur);
+        self::$pdoStResults->bindValue('idUtilisateur', $idUtilisateur);
+
+
+        self::$pdoStResults->execute();
+    }
     
         public static function ajoutImagePopup($relation, $titre, $description, $image) {
         self::seConnecter();
