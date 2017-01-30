@@ -1,7 +1,7 @@
 <?php
 
 class Mysqlconfig {
-    const SERVEUR = 'ftp.cluster020.hosting.ovh.net';
+    const SERVEUR = 'gaxieucovietude.mysql.db';
     const BASE = 'gaxieucovietude';
     const UTILISATEUR = 'gaxieucovietude';
     const MOT_DE_PASSE = 'Gaxieu34500';
