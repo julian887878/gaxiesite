@@ -2,7 +2,7 @@
     VariablesGlobales::$lesNews = GestionUsers::getDonneesNews();
     //var_dump(VariablesGlobales::$lesNews);
 require 'uploadFileNews.php';
-$db = new PDO('mysql:host=ent.btssio.net;dbname=delapena2', 'delapena', 'lv75b');
+
  ?>
 
     
