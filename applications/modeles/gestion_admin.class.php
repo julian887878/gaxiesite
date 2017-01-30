@@ -746,7 +746,7 @@ class GestionAdmin {
         public static function recherche($recherche) {
 
         self::seConnecter();
-        self::$requete = "SELECT * FROM quisommesnous_ongletSousCategorie WHERE contenu like '%$recherche%'";
+        self::$requete = "SELECT quisommesnous_ongletSousCategorie.titre as 'titre', quisommesnous_ongletCategorie.titre as 'tt', quisommesnous_ongletSousCategorie.contenu as 'contenu' FROM quisommesnous_ongletSousCategorie, quisommesnous_ongletCategorie WHERE quisommesnous_ongletCategorie.id = quisommesnous_ongletSousCategorie.idCategorie and quisommesnous_ongletSousCategorie.contenu like '%$recherche%'";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
@@ -770,6 +770,10 @@ class GestionAdmin {
 
         return self::$resultat;
     }
+    
+ 
+    
+              
     //</editor-fold>
 
 }

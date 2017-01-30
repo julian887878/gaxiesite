@@ -10,6 +10,7 @@
  <?php
  $laRecherche = $_REQUEST['recherche'];
 $lesResultats = GestionAdmin::recherche($_REQUEST['recherche']);
+
 $nbRecherche = GestionAdmin::nbRecherche($_REQUEST['recherche']);
 if ($nbRecherche == "0"){
     echo "<center>Aucun contenu ne correspond à votre recherche</center>";
@@ -23,7 +24,7 @@ foreach ($lesResultats as $unResultat){
     echo "<div class='container'>
     <div class='row'>
     <div class='col-md-12'>"
-    . "$unResultat->titre <br>"
+    . "$unResultat->tt > $unResultat->titre <br>"
         . "</div></div></div>";
 }
 ?>
