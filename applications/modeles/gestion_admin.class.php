@@ -34,7 +34,7 @@ class GestionAdmin {
             } catch (Exception $ex) {
                 //l'objet pdoCnxBase a généré automatiquement un objet de type exeption 
                 echo 'Erreur : ' . $ex->getMessage() . '<br/>'; //Méthode de la classe exception 
-                echo 'Code : ' . $e->getCode(); //méthode de la classe exception
+                echo 'Code : ' . $ex->getCode(); //méthode de la classe exception
             }
         }
     }
