@@ -443,6 +443,15 @@
       });
     </script>
     <!-- /Custom Notification -->
+    
+    <!-- SCRIPT POUR CHARGEMENT -->
+<script type="text/javascript" src="public/assets/js/chargement/jquery-latest.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $(".loader").fadeOut("1000");
+        $(".site").fadeIn("1000");
+    })
+</script>
   
 </body>
 </html>

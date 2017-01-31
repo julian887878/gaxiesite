@@ -1,7 +1,26 @@
 <?php $infos = GestionAdmin::getUserByMail($_SESSION['login_admin']); ?>
 
-<body class="nav-md">
-    <div class="container body">
+<body class="nav-md" onload="loader()">    
+
+        <?php
+// <editor-fold defaultstate="collapsed" desc="PAGE DE CHARGEMENT">
+        ?>
+        <div class="loader" id="loader">
+            <center style="padding-top: 27%;"><div id="ballsWaveG">
+                    <div id="ballsWaveG_1" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_2" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_3" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_4" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_5" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_6" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_7" class="ballsWaveG"></div>
+                    <div id="ballsWaveG_8" class="ballsWaveG"></div>
+                </div>
+                <br></center>
+        </div>
+    <?php // </editor-fold> 
+    ?>  
+    <div id="site" class="container body" >
         <div class="main_container">
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
