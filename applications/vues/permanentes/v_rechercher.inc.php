@@ -9,9 +9,9 @@
 
  <?php
  $laRecherche = $_REQUEST['recherche'];
-$lesResultats = GestionAdmin::recherche($_REQUEST['recherche']);
+$lesResultats = GestionAdmin::recherche(addslashes($_REQUEST['recherche']));
 
-$nbRecherche = GestionAdmin::nbRecherche($_REQUEST['recherche']);
+$nbRecherche = GestionAdmin::nbRecherche(addslashes($_REQUEST['recherche']));
 if ($nbRecherche == "0"){
     echo "<center>Aucun contenu ne correspond à votre recherche</center><br><br>";
 } else {
