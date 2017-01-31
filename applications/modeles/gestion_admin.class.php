@@ -52,7 +52,7 @@ class GestionAdmin {
      */
     public static function ajouterUser($mail1,$nom,$prenom,$tel,$poste,$pass1) {
         self::seConnecter();
-        self::$requete = "insert into utilisateur(emailUtilisateur,nomUtilisateur,prenomUtilisateur,telUtilisateur,posteUtilisateur,mdpUtilisateur) values (:emailUtilisateur,:nomUtilisateur,:prenomUtilisateur,:telUtilisateur,:posteUtilisateur,:mdpUtilisateur);";
+        self::$requete = "insert into utilisateur(emailUtilisateur,nomUtilisateur,prenomUtilisateur,telUtilisateur,posteUtilisateur,mdpUtilisateur,isPersonnel) values (:emailUtilisateur,:nomUtilisateur,:prenomUtilisateur,:telUtilisateur,:posteUtilisateur,:mdpUtilisateur,1);";
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
         self::$pdoStResults->bindValue('emailUtilisateur', $mail1);
         self::$pdoStResults->bindValue('nomUtilisateur', $nom);
