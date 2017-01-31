@@ -3,9 +3,6 @@ require_once 'configs/chemins.class.php';
 require_once Chemins::CONFIGS . 'mysql_config.class.php';
 require_once Chemins::MODELES . 'gestion_admin.class.php';
 
-$ancienFichier = GestionAdmin::getAnciennePhotoSlider2Popup($_POST['id']);
-unlink('public/images/popup_lightbox/'.$ancienFichier->image);
-
 
 $maxsize = 1234666666666666;
 $erreur = "";
@@ -23,12 +20,12 @@ if (in_array($extension_upload, $extensions_valides))
 
 //Créer un identifiant difficile à deviner
 $nom = md5(uniqid(rand(), true));
-$resultat = move_uploaded_file($_FILES['icone']['tmp_name'], "public/images/popup_lightbox/".$nom.".jpg");
+$resultat = move_uploaded_file($_FILES['icone']['tmp_name'], "public/personnel/avatar/".$nom.".jpg");
 
 if ($resultat)
-    GestionAdmin::uploadImageSlider2Popup($nom.".jpg", $_POST['id']);
+    GestionAdmin::uploadAvatar($nom.".jpg", $_POST['idUtilisateur']);
 echo "<SCRIPT langage=JavaScript>
-            document.location.href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_secondaire'
+            document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'
             </SCRIPT>";
 ?>
 
