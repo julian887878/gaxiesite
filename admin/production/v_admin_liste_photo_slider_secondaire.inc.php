@@ -231,7 +231,7 @@ $images = GestionAdmin::getSlider2();
     </div>
     </div>"
         . "   <div class='modal fade changer-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
-    <div class='modal-dialog modal-sm'>
+    <div class='modal-dialog modal-lg'>
         <div class='modal-content'>
 
             <div class='modal-header'>
@@ -246,7 +246,7 @@ $images = GestionAdmin::getSlider2();
                  <input type='text' id='titre' class='form-control' name='titre' value='$uneImagePop->titre' required /><br>
                  
                   <label for='description'>Description :</label>
-                 <input type='text' id='description' class='form-control' name='description' value='$uneImagePop->description' required /><br>
+                 <textarea cols='30' class='ckeditor' id='description' name='description' rows='10' style='width: 94%;'>$uneImagePop->description</textarea><br>
             </div>
             <div class='modal-footer'>
                 <button type='button' class='btn btn-default' data-dismiss='modal'>Non</button>
