@@ -15,13 +15,6 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu pull-right">
                                         <li><a href="index.php?cas=afficherAccueil">Retour vers le site</a></li>
-                                        <li><a href="javascript:;">Profil</a></li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span>Paramètres</span>
-                                            </a>
-                                        </li>
-                                        <li><a href="javascript:;">Aide</a></li>
                                         <li><a href="index.php?cas=SeDeconnecter"><i class="fa fa-sign-out pull-right"></i>Deconnexion</a></li>
                                     </ul>
                                 </li>
