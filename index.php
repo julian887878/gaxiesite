@@ -116,7 +116,12 @@ switch ($cas) {
             </SCRIPT>";
             break;
         }
+        default :
+         require Chemins::VUES. 'v_erreur404.inc.php';
+       break;
 }
+        
+
 
 require Chemins::VUES_PERMANENTES . 'v_footer.inc.php';
 ?>
