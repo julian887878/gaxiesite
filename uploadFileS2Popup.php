@@ -18,7 +18,7 @@ if ($_FILES['icone']['error'] > 0)
 $extensions_valides = array('jpg', 'jpeg', 'gif', 'png');
 $extension_upload = strtolower(substr(strrchr($_FILES['icone']['name'], '.'), 1));
 if (in_array($extension_upload, $extensions_valides))
-    echo "Extension correcte";
+    echo "";
 
 
 //Créer un identifiant difficile à deviner
