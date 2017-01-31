@@ -78,7 +78,7 @@
                     <div class="widget_summary">
                         <div class="w_95">
                             <ul>
-                                <li><span><a href='#'>Modification slider principal</a></span></li>
+                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_principal'>Modification slider principal</a></span></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -87,7 +87,7 @@
                     <div class="widget_summary">
                         <div class="w_95">
                             <ul>
-                                <li><span><a href='#'>Modification slider secondaire</a></span></li>
+                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_photo_slider_secondaire'>Modification slider secondaire</a></span></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -96,7 +96,7 @@
                     <div class="widget_summary">
                         <div class="w_95">
                             <ul>
-                                <li><span><a href='#'>Modification du bandeau d'information</a></span></li>
+                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=information_entreprise'>Modification du bandeau d'information</a></span></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -124,7 +124,7 @@
                     <div class="widget_summary">
                         <div class="w_95">
                             <ul>
-                                <li><span><a href='#'>Liste des onglets</a></span></li>
+                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=liste_onglet'>Liste des onglets</a></span></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -133,7 +133,7 @@
                     <div class="widget_summary">
                         <div class="w_95">
                             <ul>
-                                <li><span><a href='#'>Modification d'un onglet</a></span></li>
+                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=ajouter_onglet_categorie'>Ajouter une catégorie</a></span></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -142,7 +142,7 @@
                     <div class="widget_summary">
                         <div class="w_95">
                             <ul>
-                                <li><span><a href='#'>Suppression d'un onglet</a></span></li>
+                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=ajouter_onglet_sous_categorie'>Ajouter une sous catégorie</a></span></li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -177,15 +177,6 @@
                         <div class="clearfix"></div>
                     </div>
 
-
-                    <div class="widget_summary">
-                        <div class="w_95">
-                            <ul>
-                                <li><span><a href='index_admin.php?cas=afficherSectionsAdmin&categorie=valider_utilisateur'>Valider un utilisateur</a></span></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
 
                     <div class="widget_summary">
                         <div class="w_95">

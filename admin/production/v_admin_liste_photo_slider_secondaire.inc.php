@@ -298,5 +298,6 @@ $images = GestionAdmin::getSlider2();
     </div>";
     }
     ?>
-
+<iframe width="100%" height="600" frameborder="0" marginheight="0"  
+ marginwidth="0" src="http://localhost/gg/branches/site/index.php?cas=afficherAccueil"></iframe>
 </div>
