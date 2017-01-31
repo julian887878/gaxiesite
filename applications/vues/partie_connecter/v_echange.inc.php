@@ -11,12 +11,11 @@
     <div class="row">
     <div class="col-md-12">
     <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
-        <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>Echange de fichier !</b></u></span></h2></center>
+        <center><h2 style="font-size: 275%;"><span>Echange de fichier avec <i>GAXIEU</i></span></h2></center>
          <?php
     $explicationAffichage = GestionAdmin::getExplication();
-                foreach ($explicationAffichage as $uneExplicationAffichage) {
-                    echo " 
-        $uneExplicationAffichage->texte";}?>
+        Echo "$explicationAffichage->texte";
+                ?>
 </div>
     </div>
     </div>
@@ -24,7 +23,6 @@
 
 
     <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
-    <center><img src="public/images/logo.png"></center>
     </div>
        
        <?php

@@ -22,7 +22,7 @@ elseif (isset($_SESSION['login_utilisateur'])) {
 <center><h2 class="section-title" style="margin-bottom: 0px;"><span><u><b>MON COMPTE</b></u></span></h2>
 
    <img src="public/images/logo.png"></center>
-
+<?php if($infos->isPersonnel == 1 or $infos->isAdmin == 1) { echo "<p><i class='fa fa-lock'></i><a href='index_admin.php?cas=afficherAccueil'> Ajouter un client</a>";} ?>
     <?php if (isset($_SESSION['login_admin'])) { echo"<p><i class='fa fa-lock'></i><a href='index_admin.php?cas=afficherAccueil'> Administration</a>";}?>
        <i class="fa fa-arrow-circle-o-down"></i><a href="index.php?cas=afficherSectionsConnecter&categorie=echange"> Echange de fichier</a>
      
