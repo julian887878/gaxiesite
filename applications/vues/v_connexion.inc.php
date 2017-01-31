@@ -1,3 +1,9 @@
+<?php  if (isset($_SESSION['login_admin']) or isset($_SESSION['login_utilisateur'])) {
+                 echo "<SCRIPT LANGUAGE='JavaScript'>
+           document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'
+           </SCRIPT>";
+            } ?>
+
 <br>
 
 <?php

@@ -18,7 +18,11 @@
                                         <li><a href="index.php?cas=afficherSections&categorie=quisommesnous">Qui sommes-nous ?</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=contact">Nous contacter</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=candidature">Demande d'emploie</a></li>
-                                        <li><a href="index.php?cas=afficherSections&categorie=connexion">Connexion</a></li>
+                                        <?php if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) {
+                echo"<li><a href='index.php?cas=SeDeconnecter'>Deconnexion</a></li>";
+            } else {
+                echo"<li><a href='index.php?cas=afficherSections&categorie=connexion'>Connexion</a></li>";
+            } ?>
                                         <li><a href="index.php?cas=afficherSectionsConnecter&categorie=echange">Echange de fichiers</a></li>
                                         <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
                                     </ul>

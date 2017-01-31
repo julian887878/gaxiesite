@@ -32,6 +32,15 @@ switch ($cas) {
             break;
         }
         
+    case 'modificationparametre' : {
+         
+                    GestionAdmin::modifUser(addslashes($_POST['nom']),addslashes($_POST['prenom']),addslashes($_POST['email']), addslashes($_POST['tel']),addslashes($_POST['poste']));
+                    GestionAdmin::seDeconnecter();
+                    require Chemins::VUES_MEMBRE . 'v_moncompte.inc.php';
+                    echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte</SCRIPT>";
+     break;   
+    }
+        
     case 'rechercherSections' : {
             if (file_exists(Chemins::VUES_PERMANENTES . 'v_rechercher.inc.php')) {
                 require Chemins::VUES_PERMANENTES . 'v_rechercher.inc.php';
@@ -68,7 +77,7 @@ switch ($cas) {
                     $_SESSION['login_utilisateur'] = $_POST['mail1'];
                     echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherSectionsConnecter&categorie=moncompte'</SCRIPT>";
                     } catch (Exception $e) {
-                     echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherPage&categorie=inscriptionREGEX'</SCRIPT>";
+                     echo "<SCRIPT LANGUAGE='JavaScript'>document.location.href='index.php?cas=afficherSections&categorie=dejapris'</SCRIPT>";
     }
                     break;
              }

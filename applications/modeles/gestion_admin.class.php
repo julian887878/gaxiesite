@@ -237,7 +237,12 @@ class GestionAdmin {
         self::$pdoStResults->execute();
     }
         
-    
+     public static function modifUser($nom,$prenom,$email,$tel,$poste) {
+        self::seConnecter();
+        self::$requete = "UPDATE utilisateur SET nomUtilisateur='$nom',prenomUtilisateur='$prenom', emailUtilisateur='$email', telUtilisateur='$tel' , posteUtilisateur='$poste' WHERE emailUtilisateur='$email';";
+        self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
+        self::$pdoStResults->execute();
+    }
 
 //  </editor-fold>
 

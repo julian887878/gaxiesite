@@ -165,7 +165,7 @@ button:focus {
     padding-top: 18px;
 }
 .btn {
-    background: transparent;
+    background: rgb(230, 227, 227);
     border-radius: 0px;
     color: #a7a7a8;
     font-size: .8125em;
@@ -328,10 +328,10 @@ button:focus {
     font-size: .8125em;
 }
 .about-top .btn {
-    border: 2px solid #e74c3c;
+    border: 2px solid #4f5d6d;
 }
 .about-top .btn:hover {
-    background: #e74c3c;
+    background: #5f6f81;
     color: #ffffff;
 }
 .progress {
