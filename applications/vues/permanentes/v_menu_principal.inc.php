@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="public/assets/css/normalize.css">
 
         <!--ICONE-->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="public/assets/css/icone/font-awesome.css" rel="stylesheet">
 
         <!--COULEUR MENU-->
         <script src="public/assets/js/modernizr.custom.js"></script>
@@ -49,15 +49,15 @@
         <!--CSS SLIDER 1--> 
         <link rel="stylesheet" type="text/css" href="public/assets/css/slider_principal/demo.css" />
         <link rel="stylesheet" type="text/css" href="public/assets/css/slider_principal/style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+        <link href='public/assets/css/slider_principal/font.css' rel='stylesheet' type='text/css' />
         <noscript>
         <link rel="stylesheet" type="text/css" href="public/assets/css/slider_principal/noscript.css" />
         </noscript>
 
         <!--CSS CONNEXION/INSCRIPTION-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="public/assets/css/connexion/normalize.min.css">
 
-        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <link rel='stylesheet prefetch' href='public/assets/css/connexion/font-awesome.min.css'>
 
         <link rel="stylesheet" href="public/assets/css/connexion/style.css">
 

@@ -18,11 +18,13 @@
                                         <li><a href="index.php?cas=afficherSections&categorie=quisommesnous">Qui sommes-nous ?</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=contact">Nous contacter</a></li>
                                         <li><a href="index.php?cas=afficherSections&categorie=candidature">Demande d'emploie</a></li>
-                                        <?php if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) {
-                echo"<li><a href='index.php?cas=SeDeconnecter'>Deconnexion</a></li>";
-            } else {
-                echo"<li><a href='index.php?cas=afficherSections&categorie=connexion'>Connexion</a></li>";
-            } ?>
+                                        <?php
+                                        if (isset($_SESSION['login_utilisateur']) or isset($_SESSION['login_admin'])) {
+                                            echo"<li><a href='index.php?cas=SeDeconnecter'>Deconnexion</a></li>";
+                                        } else {
+                                            echo"<li><a href='index.php?cas=afficherSections&categorie=connexion'>Connexion</a></li>";
+                                        }
+                                        ?>
                                         <li><a href="index.php?cas=afficherSectionsConnecter&categorie=echange">Echange de fichiers</a></li>
                                         <li><a href="index_admin.php?cas=afficherAccueil">Administration</a></li>
                                     </ul>
@@ -98,7 +100,7 @@
             return;
         js = d.createElement(s);
         js.id = id;
-        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
+//        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -116,7 +118,7 @@
 </script>
 
 <!-- SCRIPT POUR CHARGEMENT -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="public/assets/js/chargement/jquery-latest.js"></script>
 <script type="text/javascript">
     $(window).load(function () {
         $(".loader").fadeOut("1000");
@@ -139,11 +141,10 @@
 </script>
 
 <!--CONNEXION/INSCRIPTION-->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="public/assets/js/connexion/index.js"></script>
+<script src="public/assets/js/connexion/index.js"></script>
 
-   
-    <?php
+
+<?php
 // </editor-fold> 
 ?>  
 
@@ -157,45 +158,67 @@
     <div class="modal-dialog">
         <div class="modal-content" style="background-color: rgba(255, 0, 0, 0);">                      
             <div class="modal-body">
-<a href="" data-dismiss="modal"><img style="width: 25px;" src="public/images/test.png"></a>
-                
-<div id="works"  class=" clearfix grid"> 
-    <?php $leSliderSecondaire = GestionAdmin::getSlider2();
-foreach ($leSliderSecondaire as $unSliderSecondaire) {
-echo"
+                <a href="" data-dismiss="modal"><img style="width: 25px;" src="public/images/test.png"></a>
+
+                <div id="works"  class=" clearfix grid"> 
+                    <?php
+                    $leSliderSecondaire = GestionAdmin::getSlider2();
+                    foreach ($leSliderSecondaire as $unSliderSecondaire) {
+                        echo"
     <figure class='effect-oscar  wowload fadeInUp'>
         <img src='public/images/slider_secondaire/images/$unSliderSecondaire->image'/>
         <figcaption>
-            ";$test = "<h2>$unSliderSecondaire->titre</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35).'...';}else{echo $test;}
-            echo"<p><br>
+            ";
+                        $test = "<h2>$unSliderSecondaire->titre</h2>";
+                        $longueur = (strlen($test));
+                        if ($longueur >= 35) {
+                            echo substr($test, 0, 35) . '...';
+                        } else {
+                            echo $test;
+                        }
+                        echo"<p><br>
                 <a href='#' data-toggle='modal' data-target='#co-admine-$unSliderSecondaire->id'>Voir plus</a></p>            
         </figcaption>
     </figure>
-";}?>
-    
-    <a href="index.php?cas=afficherSections&categorie=contact"><figure class="effect-oscar  wowload fadeInUp">
-        <img src="public/images/popup_galery/contact.png"/>
-        <figcaption>
-            <?php  $test = "<h2>NOUS CONTACTER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-                      
-        </figcaption>
-        </figure></a><figure class="effect-oscar  wowload fadeInUp" data-dismiss="modal">
-        <img src="public/images/popup_galery/fermer.png"/>
-        <figcaption>
-            <?php  $test = "<h2>FERMER</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35)."...";}else{echo $test;} ?>
-                       
-        </figcaption>
-    </figure>
-  
-</div>
+";
+                    }
+                    ?>
 
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title">Title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>   
-</div>
+                    <a href="index.php?cas=afficherSections&categorie=contact"><figure class="effect-oscar  wowload fadeInUp">
+                            <img src="public/images/popup_galery/contact.png"/>
+                            <figcaption>
+<?php $test = "<h2>NOUS CONTACTER</h2>";
+$longueur = (strlen($test));
+if ($longueur >= 35) {
+    echo substr($test, 0, 35) . "...";
+} else {
+    echo $test;
+} ?>
+
+                            </figcaption>
+                        </figure></a><figure class="effect-oscar  wowload fadeInUp" data-dismiss="modal">
+                        <img src="public/images/popup_galery/fermer.png"/>
+                        <figcaption>
+<?php $test = "<h2>FERMER</h2>";
+$longueur = (strlen($test));
+if ($longueur >= 35) {
+    echo substr($test, 0, 35) . "...";
+} else {
+    echo $test;
+} ?>
+
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title">Title</h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>   
+                </div>
             </div>
         </div>
     </div>
@@ -203,29 +226,37 @@ echo"
 
 
 <!-- POP UP LIGHTBOX -->
-<?php 
+<?php
 foreach ($leSliderSecondaire as $unSliderSecondaire) {
-echo"
+    echo"
 <div class='modal fade' id='co-admine-$unSliderSecondaire->id' tabindex='-1' role='dialog' aria-hidden='true' style='background-color: black;padding-left: 0px;'>
     <div class='modal-dialog' style='width: 100%;'>
         <div class='modal-content' style='background-color: rgba(255, 0, 0, 0);'>                      
             <div class='modal-body'>
                 <a href='' data-dismiss='modal'><img style='width: 25px;' src='public/images/test.png'></a>
 			                
-<div id='works'  class=' clearfix grid'>"; 
-$popupDuSlider = GestionAdmin::getImagePopup($unSliderSecondaire->id);
-foreach ($popupDuSlider as $unePopupDuSlider) {
-echo"
+<div id='works'  class=' clearfix grid'>";
+    $popupDuSlider = GestionAdmin::getImagePopup($unSliderSecondaire->id);
+    foreach ($popupDuSlider as $unePopupDuSlider) {
+        echo"
     <figure class='effect-oscar  wowload fadeInUp'>
         <img src='public/images/popup_lightbox/$unePopupDuSlider->image'/>
         <figcaption>
-           ";$test = "<h2>$unePopupDuSlider->titre</h2>"; $longueur = (strlen($test));  if ($longueur >= 35){echo substr($test,0, 35).'...';}else{echo $test;}
-           echo" <p><br>
+           ";
+        $test = "<h2>$unePopupDuSlider->titre</h2>";
+        $longueur = (strlen($test));
+        if ($longueur >= 35) {
+            echo substr($test, 0, 35) . '...';
+        } else {
+            echo $test;
+        }
+        echo" <p><br>
                 $unePopupDuSlider->description</p>            
         </figcaption>
     </figure>
-";}
-  echo"
+";
+    }
+    echo"
 </div>
 
 <div id='blueimp-gallery' class='blueimp-gallery blueimp-gallery-controls'>
@@ -238,7 +269,9 @@ echo"
             </div>
         </div>
     </div>
-</div>";}?>
+</div>";
+}
+?>
 
 <script src="public/popup_galery/assets/mobile/touchSwipe.min.js"></script>
 <script src="public/popup_galery/assets/respond/respond.js"></script>
@@ -255,24 +288,24 @@ echo"
 <?php
 // <editor-fold defaultstate="collapsed" desc="SCRIPT SLIDER 1 & 2">
 ?>
-        <!--SCRIPT SLIDER 2--> 
+<!--SCRIPT SLIDER 2--> 
 <script type="text/javascript" src="public/assets/js/slider_secondaire/wowslider.js"></script>
 <script type="text/javascript" src="public/assets/js/slider_secondaire/script.js"></script>
 
-    <!--SCRIPT SLIDER 1--> 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.eislideshow.js"></script>
-    <script type="text/javascript" src="public/assets/js/slider_principal/jquery.easing.1.3.js"></script>
-    <script type="text/javascript">
-    $(function () {
-        $('#ei-slider').eislideshow({
-            animation: 'center',
-            autoplay: true,
-            slideshow_interval: 3000,
-            titlesFactor: 0
-        });
+<!--SCRIPT SLIDER 1--> 
+<script type="text/javascript" src=public/assets/js/slider_principal/jquery.min.js"></script>
+<script type="text/javascript" src="public/assets/js/slider_principal/jquery.eislideshow.js"></script>
+<script type="text/javascript" src="public/assets/js/slider_principal/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#ei-slider').eislideshow({
+        animation: 'center',
+        autoplay: true,
+        slideshow_interval: 3000,
+        titlesFactor: 0
     });
-    </script>
+});
+</script>
 <?php
 // </editor-fold> 
 ?>
