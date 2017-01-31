@@ -241,16 +241,7 @@ foreach ($leSliderSecondaire as $unSliderSecondaire) {
         echo"
     <figure class='effect-oscar  wowload fadeInUp'>
         <img src='public/images/popup_lightbox/$unePopupDuSlider->image'/>
-        <figcaption>
-           ";
-        $test = "<h2>$unePopupDuSlider->titre</h2>";
-        $longueur = (strlen($test));
-        if ($longueur >= 35) {
-            echo substr($test, 0, 35) . '...';
-        } else {
-            echo $test;
-        }
-        echo" <p><br>
+        <figcaption><h2>$unePopupDuSlider->titre</h2><p><br>
                 $unePopupDuSlider->description</p>            
         </figcaption>
     </figure>
