@@ -168,7 +168,7 @@ $images = GestionAdmin::getSlider2();
                 
                 <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_description_slider_2'>
                 <label for='titre'>Titre de l'image :</label>
-                <input type='text' id='titre' class='form-control' name='titre' value='$uneImage->titre' required /><br>
+                <input type='text' id='titre' class='form-control' name='titre' value=\"$uneImage->titre\" required /><br>
                 <input type='hidden' name='id' value=$uneImage->id /><br>
             </div>
             <div class='modal-footer'>
@@ -243,7 +243,7 @@ $images = GestionAdmin::getSlider2();
                <form method='post' action='index_admin.php?cas=cacherSectionsAdmin&categorie=modifier_texte_popup'>
                 <input type='hidden' id='idPopup' name='idPopup' value='$uneImagePop->idPopup' />
                 <label for='titre'>Titre :</label>
-                 <input type='text' id='titre' class='form-control' name='titre' value='$uneImagePop->titre' required /><br>
+                 <input type='text' id='titre' class='form-control' name='titre' value=\"$uneImagePop->titre\" required /><br>
                  
                   <label for='description'>Description :</label>
                  <textarea cols='30' class='ckeditor' id='description' name='description' rows='10' style='width: 94%;'>$uneImagePop->description</textarea><br>
