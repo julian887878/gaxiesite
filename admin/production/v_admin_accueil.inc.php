@@ -34,7 +34,45 @@
 
 
                     <br />
+                  <button class="btn btn-default source" onclick="new PNotify({
+                                  title: 'Regular Success',
+                                  text: 'That thing that you were trying to do worked!',
+                                  type: 'success',
+                                  styling: 'bootstrap3'
+                              });">Success</button>
 
+                  <button class="btn btn-default source" onclick="new PNotify({
+                                  title: 'New Thing',
+                                  text: 'Just to let you know, something happened.',
+                                  type: 'info',
+                                  styling: 'bootstrap3'
+                              });">Info</button>
+
+                  <button class="btn btn-default source" onclick="new PNotify({
+                                  title: 'Regular Notice',
+                                  text: 'Check me out! I\'m a notice.',
+                                  styling: 'bootstrap3'
+                              });">Notice</button>
+
+                  <button class="btn btn-default source" onclick="new PNotify({
+                                  title: 'Oh No!',
+                                  text: 'Something terrible happened.',
+                                  type: 'error',
+                                  styling: 'bootstrap3'
+                              });">Error</button>
+
+                  <button class="btn btn-default source" onclick="new PNotify({
+                                  title: 'Oh No!',
+                                  text: 'Something terrible happened.',
+                                  type: 'info',
+                                  styling: 'bootstrap3',
+                                  addclass: 'dark'
+                              });">Dark</button>
+
+                  <hr />
+
+                    
+                    
                     <div class="row">
 
 
@@ -196,3 +234,6 @@
                     <!-- /footer content -->
                 </div>
             </div> 
+            
+            <script>
+

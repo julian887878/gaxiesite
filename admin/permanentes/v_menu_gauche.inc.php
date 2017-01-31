@@ -14,7 +14,7 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                       <?php echo " <img src='public/admin/images/$infos->avatarUtilisateur' alt='...' class='img-circle profile_img'> ";?>
+                       <?php echo " <img src='public/personnel/avatar/$infos->avatarUtilisateur' alt='...' class='img-circle profile_img'> ";?>
                         </div>
                         <div class="profile_info">
                             <span>Bienvenue,</span>
