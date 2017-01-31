@@ -22,7 +22,7 @@ $lesCateg = GestionAdmin::getCategorie();
         <label for="fullname">Titre de la sous catégorie :</label>
         <div class="row">
             <div class="col-lg-12">
-<?php echo "<input type='text' id='titre' class='form-control' name='titre' value='".htmlentities($infosSousCat->titre)."' required/>"; ?>
+<?php echo "<input type='text' id='titre' class='form-control' name='titre' value=\"$infosSousCat->titre\" required/>"; ?>
             </div>
         </div><br>
         <div class='row'>

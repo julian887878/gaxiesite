@@ -1,16 +1,37 @@
 <?php
-
-    $images = GestionAdmin::getSlider1();
-
- ?>
+$images = GestionAdmin::getSlider1();
+?>
 
 
 
 <div class="right_col" role="main">
     <div class="row">
+        <button class="btn btn-default source" onclick="new PNotify({
+                        title: 'Que représente ces photos ?',
+                        text: 'Ces photos représentent l\'ensemble des photos du slider principal. Il est impossible d\'en rajouter cependant elles sont totalement modifiables.',
+                        type: 'info',
+                        hide: false,
+                        styling: 'bootstrap3'
+                    });">Que représente ces photos ?</button>
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Changer une photo ?',
+                    text: 'Pour changer une photo il suffit de passer la souris sur la photo que vous voulez changer puis cliquer sur <i class=\'fa fa-upload\'></i>. Attention: Il faut absolument respecter les dimensions indiquées sinon la photo sera de très faible qualité.',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Changer une photo ?</button>
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                            title: 'Modifier le titre ou la descritption ?',
+                            text: 'Pour modifier le titre ou la description d\'une photo il faut survoler la photo que vous voulez changer puis cliquer sur <i class=\'fa fa-upload\'></i>. Une fois cliqué vous verrez un formulaire préremplis par les informations actuelles et il suffira de les remplacer par les nouvelles. Attention: Ne laissez aucun champ vide lors de la validation.',
+                            type: 'info',
+                            hide: false,
+                            styling: 'bootstrap3'
+                        });">Modifier le titre ou la descritption ?</button>
 
         <p>Liste des photos du slider principal</p>
-<?php foreach($images as $uneImage) {
+<?php foreach ($images as $uneImage) {
     echo "<div class='col-md-3'>
             <div class='thumbnail'>
                 <div class='image view view-first'>
@@ -27,10 +48,12 @@
                     <p>$uneImage->description</p>
                 </div>
             </div>
-        </div>";}?>
-        
+        </div>";
+}
+?>
+
         <?php
-        foreach($images as $uneImage){
+        foreach ($images as $uneImage) {
             echo " <div class='modal fade ajout-image-slider1-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
@@ -56,11 +79,7 @@
         </div>
     </div>
         </div>"
- 
-     
-                    
-                    
-                    . "<div class='modal fade changer-texte-slider1-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
+            . "<div class='modal fade changer-texte-slider1-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -90,10 +109,9 @@
     </div>
         </div>";
         }
-        
         ?>
 
-        
-        
+
+
     </div>
 </div>

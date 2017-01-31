@@ -5,18 +5,40 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
 
 
 <div class='right_col' role='main'> 
+    <button class="btn btn-default source" onclick="new PNotify({
+                title: 'Explications générales',
+                text: 'Cette page fait référence à la page <i>Qui sommes-nous</i>. On y retrouve tous les onglets avec à l\'intérieur les différents sous onglets correspondants.',
+                type: 'info',
+                hide: false,
+                styling: 'bootstrap3'
+            });">Explications générales</button>
 
-    <?php
-    foreach ($lesOngletCategorie as $unOngletCategorie) {
-        $lesSousCategorie = GestionAdmin::getOngletSousCategorieByCategorie($unOngletCategorie->id);
+    <button class="btn btn-default source" onclick="new PNotify({
+                title: 'Modifier/Supprimer un onglet catégorie',
+                text: 'Pour modifier le nom d\'un onglet catégorie: <br> <ul><li>Cliquer sur <i class=\'fa fa-pencil\'></i> qui se trouve à coté du titre puis entrez le nouveau. </li></ul><br> Pour supprimer une catégorie:<br> <ul><li>Cliquer sur <i class=\'fa fa-trash\'></i> qui se trouve à coté de la catgorie puis valider la suppression. A noter: Tous les onglets de sous catégorie liés à cette catégorie seront supprimés.</li></ul>',
+                type: 'info',
+                hide: false,
+                styling: 'bootstrap3'
+            });">Comment modifier/Supprimer un onglet catégorie ?</button>
+
+    <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Modifier/Supprimer un sous onglet',
+                    text: 'Dans le tableau correspondant à la catégorie, appuyer sur l\'icone de votre choix correspondant à l\'action recherchée',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Comment modifier/Supprimer un sous onglet ?</button>
+            <?php
+            foreach ($lesOngletCategorie as $unOngletCategorie) {
+                $lesSousCategorie = GestionAdmin::getOngletSousCategorieByCategorie($unOngletCategorie->id);
 
 
-        echo "
+                echo "
     <div class='row'>
         <div class='col-md-12 col-sm-12 col-xs-12'>
             <div class='x_panel tile fixed_height_520'>
                 <div class='x_title'>
-                    <h2>$unOngletCategorie->titre&nbsp;&nbsp;<a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_categorie&titre=$unOngletCategorie->titre&id=$unOngletCategorie->id' alt='Modifier'><i class='fa fa-pencil'></i></a> &nbsp;&nbsp;<a href='#' data-toggle='modal' data-target='.supprimer-categorie-$unOngletCategorie->id' alt='Supprimer'><i class='fa fa-trash'></i></a></h2>
+                    <h2>$unOngletCategorie->titre&nbsp;&nbsp;<a href='index_admin.php?cas=afficherSectionsAdmin&categorie=modifier_onglet_categorie&titre=" . urlencode($unOngletCategorie->titre) . "&id=$unOngletCategorie->id' alt='Modifier'><i class='fa fa-pencil'></i></a> &nbsp;&nbsp;<a href='#' data-toggle='modal' data-target='.supprimer-categorie-$unOngletCategorie->id' alt='Supprimer'><i class='fa fa-trash'></i></a></h2>
                     <ul class='nav navbar-right panel_toolbox'>
                         <li><a class='collapse-link'><i class='fa fa-chevron-up'></i></a>
                         </li>
@@ -44,8 +66,8 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
                                             </tr>
                                         </thead>
                                         ";
-        foreach ($lesSousCategorie as $uneCateg) {
-            echo "
+                foreach ($lesSousCategorie as $uneCateg) {
+                    echo "
                                         <tbody>
                                             <tr>
                                                 <th scope='row'><center>$uneCateg->id</center></th>
@@ -55,10 +77,10 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
                                         </tr>
                                                               
                                         </tbody>";
-        }echo "
+                }echo "
     </table>";
-        foreach ($lesSousCategorie as $uneCateg) {
-            echo "<div class='modal fade supprimer-onglet-de-sous-categorie-$uneCateg->id' tabindex='-1' role='dialog' aria-hidden='true'>
+                foreach ($lesSousCategorie as $uneCateg) {
+                    echo "<div class='modal fade supprimer-onglet-de-sous-categorie-$uneCateg->id' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -79,7 +101,7 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
         </div>
     </div>
         </div>";
-        }echo"
+                }echo"
     
 
                                 </div>
@@ -93,13 +115,13 @@ $ongletSousCat = GestionAdmin::getOngletSousCategorie();
     </div>
      
 ";
-    }
-    ?>
-    
-    
-<?php
-foreach ($lesOngletCategorie as $unOngletCategorie) {
-    echo "<div class='modal fade supprimer-categorie-$unOngletCategorie->id' tabindex='-1' role='dialog' aria-hidden='true'>
+            }
+            ?>
+
+
+    <?php
+    foreach ($lesOngletCategorie as $unOngletCategorie) {
+        echo "<div class='modal fade supprimer-categorie-$unOngletCategorie->id' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -120,9 +142,8 @@ foreach ($lesOngletCategorie as $unOngletCategorie) {
         </div>
     </div>
         </div>";
-}
-
-?>
+    }
+    ?>
 </div>
 
 

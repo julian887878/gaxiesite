@@ -7,7 +7,55 @@ $images = GestionAdmin::getSlider2();
 <div class="right_col" role="main">
     <div class="row">
 
-        <p>Liste des photos du slider principal</p>
+        <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Que représente ces photos ?',
+                    text: 'Ces photos représentent l\'ensemble des photos du slider secondaire. Il est impossible d\'en rajouter cependant elles sont totalement modifiables. PS: Le slider secondaire est la deuxième galerie de photos de la page d\'accueil qui représente toutes les compétences.',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Que représente ces photos ?</button>
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Changer la photo principale d\'une catégorie',
+                    text: 'Pour changer la photo principale d\'une catégorie il suffit de cliquer sur <i class=\'fa fa-upload\'></i> lors du survole de la photo à changer. Attention: Il faut absolument respecter les dimensions obligation car cela pourrait entrainer des problèmes sur le site.',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Comment changer la photo principale d'une catégorie ?</button>
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Modifier le titre d\'une compétence',
+                    text: 'Pour modifier le titre d\'une compétence, il suffit de cliquer sur <i class=\'fa fa-edit\'></i> lors du survole de la photo représentant la compétence. Un formulaire prérempli apparaîtra avec les informations actuelles et il suffira des les modifier puis confirmer.',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Comment modifier le titre d'une compétence ?</button>
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Ajouter une photo dans une compétence',
+                    text: 'Pour ajouter une photo dans une compétence il suffira d\'appuyer sur <i class=\'fa fa-file-image-o\'></i> lors du survole de la photo. Une fenêtre qui contiendra toutes les photos actuelles de la compétence va s\'ouvrir. Puis cliquer sur <i>Ajouter une image</i> pour en ajouter une nouvelle. Ensuite entrez les informations <i>Titre</i> et <i>Description</i> puis valider. Attention: Respecter les dimensions obligatoire de la photo.',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Comment ajouter une photo dans une compétence ?</button>
+
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                    title: 'Modifier les informations d\'une photo dans une compétence',
+                    text: 'Pour modifier les informations d\'une photo qui se trouvent dans une compétence il faut d\'abord se rendre sur la fenêtre regroupant toutes les photos de la compétence choisie. Ensuite, lors du survole de la photo que l\'on veut modifier, cliquer sur  <i class=\'fa fa-file-image-o\'></i>. Une fenêtre va s\'ouvrir avec un formulaire prérempli par les informations actuelles. Il suffit donc de les changer puis valider.',
+                    type: 'info',
+                    hide: false,
+                    styling: 'bootstrap3'
+                });">Comment modifier les informations d'une photo dans une compétence ?</button>
+
+        <button class="btn btn-default source" onclick="new PNotify({
+                            title: 'Changer/Supprimer une photo dans une compétence',
+                            text: 'Pour changer ou supprimer une photo qui se trouve dans une compétence il faut d\'abord se rendre sur la fenêtre regroupant toutes les photos de la compétence choisie. Ensuite, lors du survole de la photo que l\'on veut changer, cliquer sur  <i class=\'fa fa-upload\'></i>. Une fenêtre va s\'ouvrir et il suffira de rentrer la nouvelle photo en respectant les dimensions demandées. Pour supprimer la photo il faudra cliquer sur <i class=\'fa fa-close\'></i>',
+                            type: 'info',
+                            hide: false,
+                            styling: 'bootstrap3'
+                        });">Comment changer/supprimer une photo dans une compétence ?</button>
+        <p>Liste des photos du slider secondaire</p>
         <?php
         foreach ($images as $uneImage) {
             echo "<div class='col-md-3'>
@@ -78,10 +126,10 @@ $images = GestionAdmin::getSlider2();
     </div>";
     }
     ?>
-    
+
     <?php
-        foreach($images as $uneImage){
-            echo " <div class='modal fade ajout-image-slider2-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
+    foreach ($images as $uneImage) {
+        echo " <div class='modal fade ajout-image-slider2-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -106,10 +154,7 @@ $images = GestionAdmin::getSlider2();
         </div>
     </div>
         </div>"
-                    
-                    
-                    
-                    ."<div class='modal fade changer-texte-slider2-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
+        . "<div class='modal fade changer-texte-slider2-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -134,10 +179,12 @@ $images = GestionAdmin::getSlider2();
 
         </div>
     </div>
-        </div>";}?>
+        </div>";
+    }
+    ?>
     <?php
-       $lesImagesPopup = GestionAdmin::getAllImagePopup(); 
-    foreach ($lesImagesPopup as $uneImagePop){
+    $lesImagesPopup = GestionAdmin::getAllImagePopup();
+    foreach ($lesImagesPopup as $uneImagePop) {
         echo"
     
    <div class='modal fade modif-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
@@ -165,10 +212,7 @@ $images = GestionAdmin::getSlider2();
         </div>
     </div>
     </div>"
-
-
-
-                . "   <div class='modal fade suppr-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
+        . "   <div class='modal fade suppr-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -186,9 +230,7 @@ $images = GestionAdmin::getSlider2();
         </div>
     </div>
     </div>"
-                
-                
-                . "   <div class='modal fade changer-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
+        . "   <div class='modal fade changer-image-popup-$uneImagePop->idPopup' tabindex='-1' role='dialog' aria-hidden='true'>
     <div class='modal-dialog modal-sm'>
         <div class='modal-content'>
 
@@ -214,11 +256,12 @@ $images = GestionAdmin::getSlider2();
 
         </div>
     </div>
-    </div>";}?>
-    
-    <?php 
-    foreach ($images as $uneImage)
-    {
+    </div>";
+    }
+    ?>
+
+    <?php
+    foreach ($images as $uneImage) {
         echo "
     
      <div class='modal fade ajouter-image-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
@@ -252,7 +295,8 @@ $images = GestionAdmin::getSlider2();
 
         </div>
     </div>
-    </div>";}
+    </div>";
+    }
     ?>
-    
+
 </div>
