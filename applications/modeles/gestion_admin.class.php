@@ -746,7 +746,7 @@ class GestionAdmin {
         self::$pdoStResults = self::$pdoCnxBase->prepare(self::$requete);
 
         self::$pdoStResults->execute();
-        self::$resultat = self::$pdoStResults->fetchAll();
+        self::$resultat = self::$pdoStResults->fetch();
 
         self::$pdoStResults->closeCursor();
 
