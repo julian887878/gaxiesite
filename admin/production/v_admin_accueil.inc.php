@@ -34,49 +34,18 @@
 
 
                     <br />
+                    
                   <button class="btn btn-default source" onclick="new PNotify({
-                                  title: 'Regular Success',
-                                  text: 'That thing that you were trying to do worked!',
+                                  title: 'Que représente ces blocs ?',
+                                  text: 'Ces blocs représentent les différentes pages du site et donc vous montrent les parties qu\'il est possible de modifier/ajouter/supprimer.',
                                   type: 'success',
+                                  hide: false,
                                   styling: 'bootstrap3'
-                              });">Success</button>
+                              });">Que représente ces blocs ?</button>
 
-                  <button class="btn btn-default source" onclick="new PNotify({
-                                  title: 'New Thing',
-                                  text: 'Just to let you know, something happened.',
-                                  type: 'info',
-                                  styling: 'bootstrap3'
-                              });">Info</button>
 
-                  <button class="btn btn-default source" onclick="new PNotify({
-                                  title: 'Regular Notice',
-                                  text: 'Check me out! I\'m a notice.',
-                                  styling: 'bootstrap3'
-                              });">Notice</button>
-
-                  <button class="btn btn-default source" onclick="new PNotify({
-                                  title: 'Oh No!',
-                                  text: 'Something terrible happened.',
-                                  type: 'error',
-                                  styling: 'bootstrap3'
-                              });">Error</button>
-
-                  <button class="btn btn-default source" onclick="new PNotify({
-                                  title: 'Oh No!',
-                                  text: 'Something terrible happened.',
-                                  type: 'info',
-                                  styling: 'bootstrap3',
-                                  addclass: 'dark'
-                              });">Dark</button>
-
-                  <hr />
-
-                    
-                    
                     <div class="row">
-
-
-                        <div class="col-md-4 col-sm-4 col-xs-12">
+                       <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="x_panel tile fixed_height_320">
                                 <div class="x_title">
                                     <h2>Page d'accueil</h2>
@@ -235,5 +204,4 @@
                 </div>
             </div> 
             
-            <script>
 
