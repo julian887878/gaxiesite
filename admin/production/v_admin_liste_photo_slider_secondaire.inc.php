@@ -265,7 +265,7 @@ $images = GestionAdmin::getSlider2();
         echo "
     
      <div class='modal fade ajouter-image-$uneImage->id' tabindex='-1' role='dialog' aria-hidden='true'>
-    <div class='modal-dialog modal-sm'>
+    <div class='modal-dialog modal-lg'>
         <div class='modal-content'>
 
             <div class='modal-header'>
@@ -280,9 +280,9 @@ $images = GestionAdmin::getSlider2();
                  <input type='text' id='titre' class='form-control' name='titre' required /><br>
                  
                   <label for='description'>Description :</label>
-                 <input type='text' id='description' class='form-control' name='description' required /><br>
+                 <textarea cols='80' class='ckeditor' id='description' name='description' rows='10'></textarea>
                  
-                  <label for='description'>Image (Obligatoire:1800x780)</label>
+                  <label for='description'>Image (Obligatoire:1600x1090)</label>
                  <input type='hidden' name='relation' value=$uneImage->id />
                   
                 <input type='file' name='icone' id='icone'>
